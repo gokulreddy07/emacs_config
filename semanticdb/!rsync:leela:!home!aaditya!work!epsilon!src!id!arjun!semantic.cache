@@ -1,0 +1,195 @@
+;; Object arjun/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "arjun/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("gevent" include nil nil [40 65])
+            ("gevent_psycopg2" include nil nil [86 108])
+            ("gevent_psycopg2" code nil nil [109 139])
+            ("gevent.pywsgi" include nil nil [140 160])
+            ("id.common" include nil nil [161 197])
+            ("warnings" include nil nil [230 245])
+            ("traceback" include nil nil [246 262])
+            ("sqlalchemy" include nil nil [263 280])
+            ("warnings" code nil nil [282 333])
+            ("warnings" code nil nil [334 391])
+            ("os" include nil nil [393 402])
+            ("sys" include nil nil [403 413])
+            ("pprint" include nil nil [414 440])
+            ("waitress" include nil nil [442 457])
+            ("pyramid.config" include nil nil [458 497])
+            ("pyramid.security" include nil nil [498 547])
+            ("pyramid.paster" include nil nil [548 582])
+            ("pyramid.httpexceptions" include nil nil [583 612])
+            ("pyramid_beaker" include nil nil [614 672])
+            ("beaker" include nil nil [673 707])
+            ("pyramid_whoauth.auth" include nil nil [708 764])
+            ("DBSession" include nil nil [775 791])
+            ("processor" include nil nil [805 826])
+            ("log" include nil nil [805 826])
+            ("init_worker" include nil nil [839 878])
+            ("setup_arjun_globals" include nil nil [839 878])
+            ("EpsilonArjunAuthorizationPolicy" include nil nil [894 945])
+            ("RootFactory" include nil nil [894 945])
+            ("init_caches" include nil nil [958 976])
+            ("id.common.reloader" include nil nil [978 1045])
+            ("id.common.logger" include nil nil [1046 1092])
+            ("id.common.secure" include nil nil [1093 1130])
+            ("id.common.config" include nil nil [1131 1187])
+            ("id.scripts.azpath" include nil nil [1188 1230])
+            ("id.db.schema" include nil nil [1231 1290])
+            ("id.common.version" include nil nil [1291 1340])
+            ("id.common.zwsgi" include nil nil [1342 1388])
+            ("default_config_file" variable nil nil [1391 1462])
+            ("test_config_file" variable nil nil [1463 1536])
+            ("ini_path" variable nil nil [1537 1595])
+            ("test_ini_path" variable nil nil [1596 1664])
+            ("default_key_file" variable nil nil [1665 1729])
+            ("conf_dir_path" variable nil nil [1730 1780])
+            ("epsilon_version" variable nil nil [1781 1820])
+            ("load_epsilon_env" function
+               (:documentation "Load up and init the epsilon specific stuff"
+                :arguments 
+                  ( ("settings" variable nil (reparse-symbol function_parameters) [1844 1852]))                  )
+                nil [1823 2900])
+            ("get_user" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [2915 2922]))              ) nil [2902 3023])
+            ("get_group" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [3039 3046]))              ) nil [3025 3147])
+            ("main" function
+               (:documentation " This function returns a Pyramid WSGI application.
+    "
+                :arguments 
+                  ( ("global_config" variable nil (reparse-symbol function_parameters) [3158 3171])
+                    ("settings" variable nil (reparse-symbol function_parameters) [3173 3183]))                  )
+                nil [3149 5370])
+            ("_serve" function
+               (:documentation "Serve over ZMQ"
+                :arguments 
+                  ( ("ini_path" variable nil (reparse-symbol function_parameters) [5383 5391])
+                    ("config_file" variable nil (reparse-symbol function_parameters) [5393 5404]))                  )
+                nil [5372 6375])
+            ("serve_test" function nil nil [6377 6439])
+            ("serve" function nil nil [6441 6496])
+            ("serve_http" function (:documentation "Serve over HTTP") nil [6498 7168])
+            ("serve_http_test" function (:documentation "Serve test config over HTTP") nil [7170 7864])
+            ("if" code nil nil [7866 7905]))          
+      :file "__init__.py"
+      :pointmax 7905
+      :fsize 7904
+      :lastmodtime '(21003 8379)
+      :unmatched-syntax '((NAME 2767 . 2776) (IF 2796 . 2798) (ELSE 2818 . 2822) (FROM 946 . 950) (PERIOD 951 . 952) (FROM 879 . 883) (PERIOD 884 . 885) (FROM 827 . 831) (PERIOD 832 . 833) (FROM 792 . 796) (PERIOD 797 . 798) (FROM 766 . 770) (PERIOD 771 . 772)))
+    (semanticdb-table "security.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("zope.interface" include nil nil [25 63])
+            ("pyramid.interfaces" include nil nil [64 115])
+            ("pyramid.location" include nil nil [116 152])
+            ("" code nil nil [183 260])
+            ("DBSession" include nil nil [271 287])
+            ("log" include nil nil [301 311])
+            ("RootFactory" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__parent__" variable nil (reparse-symbol indented_block_body) [345 362])
+                    ("__name__" variable nil (reparse-symbol indented_block_body) [367 382])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [425 447]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [401 405])
+                            ("request" variable nil (reparse-symbol function_parameters) [407 414]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [388 448]))                  
+                :type "class")
+                nil [314 448])
+            ("" code nil nil [462 484])
+            ("EpsilonArjunAuthorizationPolicy" type
+               (:superclasses ("object")
+                :members 
+                  ( ("permits" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [548 552])
+                            ("context" variable nil (reparse-symbol function_parameters) [554 561])
+                            ("principals" variable nil (reparse-symbol function_parameters) [563 573])
+                            ("permission" variable nil (reparse-symbol function_parameters) [575 585]))                          )
+                        (reparse-symbol indented_block_body) [536 1320])
+                    ("principals_allowed_by_permission" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1362 1366])
+                            ("context" variable nil (reparse-symbol function_parameters) [1368 1375])
+                            ("permission" variable nil (reparse-symbol function_parameters) [1377 1387]))                          )
+                        (reparse-symbol indented_block_body) [1325 1424]))                  
+                :type "class")
+                nil [485 1424]))          
+      :file "security.py"
+      :pointmax 1424
+      :fsize 1423
+      :lastmodtime '(20803 2870)
+      :unmatched-syntax '((FROM 288 . 292) (PERIOD 293 . 294) (FROM 262 . 266) (PERIOD 267 . 268)))
+    (semanticdb-table "auth.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [25 39])
+            ("pprint" include nil nil [40 66])
+            ("zope.interface" include nil nil [68 123])
+            ("repoze.who.classifiers" include nil nil [124 185])
+            ("repoze.who.interfaces" include nil nil [186 234])
+            ("repoze.who.interfaces" include nil nil [235 287])
+            ("repoze.who.interfaces" include nil nil [288 333])
+            ("repoze.who.api" include nil nil [334 368])
+            ("repoze.who.utils" include nil nil [369 411])
+            ("id.db.schema" include nil nil [413 449])
+            ("id.common.auth" include nil nil [450 494])
+            ("id.common.secure" include nil nil [495 532])
+            ("get_group" include nil nil [546 580])
+            ("check_user_login" include nil nil [546 580])
+            ("log" variable nil nil [582 615])
+            ("auth_separator" variable nil nil [618 639])
+            ("EpsilonAuthPlugin" type
+               (:superclasses ("object")
+                :members 
+                  ( ("implements" code nil (reparse-symbol indented_block_body) [679 705])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [750 776]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [724 728])
+                            ("dbsession" variable nil (reparse-symbol function_parameters) [730 739]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [711 777])
+                    ("authenticate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [799 803])
+                            ("environ" variable nil (reparse-symbol function_parameters) [805 812])
+                            ("identity" variable nil (reparse-symbol function_parameters) [814 822]))                          
+                        :documentation "Return username or None.
+        ")
+                        (reparse-symbol indented_block_body) [782 2765])
+                    ("add_metadata" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2839 2843])
+                            ("environ" variable nil (reparse-symbol function_parameters) [2845 2852])
+                            ("identity" variable nil (reparse-symbol function_parameters) [2854 2862]))                          )
+                        (reparse-symbol indented_block_body) [2822 2878]))                  
+                :type "class")
+                nil [641 2878])
+            ("make_auth_plugin" function (:arguments 
+              ( ("dbsession" variable nil (reparse-symbol function_parameters) [2900 2909]))              ) nil [2879 2987]))          
+      :file "auth.py"
+      :pointmax 2987
+      :fsize 2986
+      :lastmodtime '(20964 50190)
+      :unmatched-syntax '((FROM 534 . 538) (PERIOD 539 . 540))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!arjun!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

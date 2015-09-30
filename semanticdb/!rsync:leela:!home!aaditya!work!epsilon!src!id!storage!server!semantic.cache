@@ -1,0 +1,177 @@
+;; Object server/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "server/"
+  :tables
+  (list
+    (semanticdb-table "dispatch.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Application Server for storage\"\"\"" code nil nil [47 83])
+            ("warnings" include nil nil [85 100])
+            ("traceback" include nil nil [101 117])
+            ("sqlalchemy" include nil nil [118 135])
+            ("warnings" code nil nil [137 188])
+            ("warnings" code nil nil [189 246])
+            ("os" include nil nil [248 257])
+            ("gevent" include nil nil [259 284])
+            ("gevent.wsgi" include nil nil [308 342])
+            ("gevent_psycopg2" include nil nil [343 365])
+            ("gevent_psycopg2" code nil nil [366 396])
+            ("webob" include nil nil [398 433])
+            ("webob" include nil nil [434 455])
+            ("routes" include nil nil [457 482])
+            ("handler" include nil nil [483 520])
+            ("id.storage.escript" include nil nil [521 566])
+            ("id.scripts.azpath" include nil nil [568 610])
+            ("id.db.schema" include nil nil [611 653])
+            ("id.common.secure" include nil nil [654 691])
+            ("id.common.config" include nil nil [692 734])
+            ("id.common.version" include nil nil [735 784])
+            ("default_config_file" variable nil nil [786 862])
+            ("default_key_file" variable nil nil [863 927])
+            ("epsilon_version" variable nil nil [928 967])
+            ("map" variable nil nil [969 1018])
+            ("map" code nil nil [1019 1080])
+            ("map" code nil nil [1081 1141])
+            ("Session" variable nil nil [1143 1157])
+            ("StorageApp" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1217 1252]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1202 1206]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1189 1253])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1271 1275])
+                            ("environ" variable nil (reparse-symbol function_parameters) [1277 1284])
+                            ("start_response" variable nil (reparse-symbol function_parameters) [1286 1300]))                          )
+                        (reparse-symbol indented_block_body) [1258 2560]))                  
+                :type "class")
+                nil [1159 2560])
+            ("setup" function nil nil [2561 3616])
+            ("if" code nil nil [3617 3845])
+            ("zz" variable nil nil [3868 3880])
+            ("app" function (:arguments 
+              ( ("environ" variable nil (reparse-symbol function_parameters) [3890 3897])
+                ("start_response" variable nil (reparse-symbol function_parameters) [3899 3913]))              ) nil [3882 3955]))          
+      :file "dispatch.py"
+      :pointmax 3955
+      :fsize 3954
+      :lastmodtime '(21003 8373)
+      :unmatched-syntax '((INDENT_BLOCK 2482 . 2515) (NEWLINE 2481 . 2482) (COLON 2480 . 2481) (FINALLY 2473 . 2480)))
+    (semanticdb-table "handler.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"URL Handler for controller\"\"\"" code nil nil [25 57])
+            ("simplejson" include nil nil [59 76])
+            ("gevent.local" include nil nil [78 108])
+            ("gevent.coros" include nil nil [109 150])
+            ("webob" include nil nil [152 178])
+            ("repoze.lru" include nil nil [179 210])
+            ("id.common.secure" include nil nil [212 249])
+            ("id.storage" include nil nil [250 276])
+            ("id.storage.escript" include nil nil [277 322])
+            ("id.db.schema" include nil nil [323 359])
+            ("id.db.schema" include nil nil [360 467])
+            ("auth_cache" variable nil nil [469 495])
+            ("id_cache" variable nil nil [496 520])
+            ("row_cache" variable nil nil [521 546])
+            ("definition_cache" variable nil nil [547 579])
+            ("user_cache" variable nil nil [580 606])
+            ("group_cache" variable nil nil [607 634])
+            ("table_cache" variable nil nil [635 662])
+            ("cache_lock" variable nil nil [664 688])
+            ("cache_read_lock" variable nil nil [689 714])
+            ("decode_auth" function (:arguments 
+              ( ("token" variable nil (reparse-symbol function_parameters) [733 738]))              ) nil [717 1121])
+            ("get_row_cache" function (:arguments 
+              ( ("rowid" variable nil (reparse-symbol function_parameters) [1141 1146]))              ) nil [1123 1187])
+            ("get_type_definition" function
+               (:documentation "Return a type definition from the cache, otherwise
+    populate cache and return"
+                :arguments 
+                  ( ("usertype" variable nil (reparse-symbol function_parameters) [1213 1221]))                  )
+                nil [1189 1787])
+            ("get_cached_user" function
+               (:documentation "Return a user from the cache, after merging with session"
+                :arguments 
+                  ( ("session" variable nil (reparse-symbol function_parameters) [1809 1816])
+                    ("username" variable nil (reparse-symbol function_parameters) [1818 1826]))                  )
+                nil [1789 2219])
+            ("get_cached_group" function
+               (:documentation "Return a group from the cache, after merging with session"
+                :arguments 
+                  ( ("session" variable nil (reparse-symbol function_parameters) [2242 2249])
+                    ("groupname" variable nil (reparse-symbol function_parameters) [2251 2260]))                  )
+                nil [2221 2670])
+            ("get_cached_table" function
+               (:documentation "Return a table from the cache, after merging with session"
+                :arguments 
+                  ( ("session" variable nil (reparse-symbol function_parameters) [2693 2700])
+                    ("tablename" variable nil (reparse-symbol function_parameters) [2702 2711])
+                    ("group" variable nil (reparse-symbol function_parameters) [2713 2718]))                  )
+                nil [2672 3118])
+            ("encode_auth" function (:arguments 
+              ( ("token" variable nil (reparse-symbol function_parameters) [3136 3141]))              ) nil [3120 3391])
+            ("StorageController" type
+               (:superclasses ("local")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3485 3507])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3516 3538])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3547 3602])
+                            ("if" code nil (reparse-symbol indented_block_body) [3611 3690])
+                            ("self, self" code nil (reparse-symbol indented_block_body) [3698 3758])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3767 3784])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3793 3849])
+                            ("if" code nil (reparse-symbol indented_block_body) [3953 4032])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4040 4099])
+                            ("if" code nil (reparse-symbol indented_block_body) [4207 4289])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4297 4319]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3443 3447])
+                            ("request" variable nil (reparse-symbol function_parameters) [3449 3456])
+                            ("session" variable nil (reparse-symbol function_parameters) [3458 3465])
+                            ("wrapper" variable nil (reparse-symbol function_parameters) [3467 3474]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3430 4320])
+                    ("_reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4336 4340])
+                            ("request" variable nil (reparse-symbol function_parameters) [4342 4349])
+                            ("session" variable nil (reparse-symbol function_parameters) [4351 4358]))                          )
+                        (reparse-symbol indented_block_body) [4325 4802])
+                    ("get_row" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4819 4823]))                          )
+                        (reparse-symbol indented_block_body) [4807 5592])
+                    ("set_row" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5609 5613]))                          )
+                        (reparse-symbol indented_block_body) [5597 6597])
+                    ("create_row" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6617 6621]))                          )
+                        (reparse-symbol indented_block_body) [6602 7812]))                  
+                :type "class")
+                nil [3393 7812]))          
+      :file "handler.py"
+      :pointmax 7812
+      :fsize 7811
+      :lastmodtime '(20948 470)
+      :unmatched-syntax '((INDENT_BLOCK 3301 . 3345) (NEWLINE 3300 . 3301) (COLON 3299 . 3300) (TRY 3221 . 3224) (AS 3295 . 3297) (INDENT_BLOCK 886 . 938) (NEWLINE 885 . 886) (COLON 884 . 885) (TRY 807 . 810) (AS 880 . 882))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!storage!server!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

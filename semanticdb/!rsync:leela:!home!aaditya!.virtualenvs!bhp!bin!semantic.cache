@@ -1,0 +1,20 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "azpath.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__requires__" variable nil nil [114 138])
+            ("sys" include nil nil [139 149])
+            ("pkg_resources" include nil nil [150 192])
+            ("if" code nil nil [194 311]))          
+      :file "azpath.py"
+      :pointmax 311
+      :fsize 310
+      :lastmodtime '(21003 7840)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!.virtualenvs!bhp!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object engine/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "engine/"
+  :tables
+  (list
+    (semanticdb-table "cmd.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "cmd.py"
+      :pointmax 131639
+      :fsize 131649
+      :lastmodtime '(21003 8374)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!engine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

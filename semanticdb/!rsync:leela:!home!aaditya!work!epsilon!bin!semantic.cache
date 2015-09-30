@@ -1,0 +1,409 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "azpath.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [63 72])
+            ("sys" include nil nil [73 83])
+            ("logging" include nil nil [84 98])
+            ("id.scripts.azpath" include nil nil [100 148])
+            ("log" variable nil nil [150 183])
+            ("logging" code nil nil [184 257])
+            ("main" code nil nil [259 265])
+            ("if" code nil nil [267 366]))          
+      :file "azpath.py"
+      :pointmax 474
+      :fsize 365
+      :lastmodtime '(21003 8172)
+      :unmatched-syntax nil)
+    (semanticdb-table "list.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [23 38])
+            ("sqlalchemy" include nil nil [39 56])
+            ("warnings" code nil nil [58 109])
+            ("warnings" code nil nil [110 167])
+            ("os" include nil nil [169 178])
+            ("os.path" include nil nil [179 193])
+            ("csv" include nil nil [194 204])
+            ("shutil" include nil nil [205 218])
+            ("logging" include nil nil [219 233])
+            ("optparse" include nil nil [234 267])
+            ("cStringIO" include nil nil [268 298])
+            ("argparse" include nil nil [299 314])
+            ("logging" code nil nil [316 448])
+            ("id.scripts.azpath" include nil nil [450 492])
+            ("id.db.schema" include nil nil [494 523])
+            ("id.db.schema" include nil nil [524 560])
+            ("id.common.config" include nil nil [561 594])
+            ("id.common.version" include nil nil [595 644])
+            ("log" variable nil nil [646 679])
+            ("default_config_file" variable nil nil [681 752])
+            ("epsilon_version" variable nil nil [753 792])
+            ("generate_user_list" function (:arguments 
+              ( ("options" variable nil (reparse-symbol function_parameters) [817 824]))              ) nil [794 1973])
+            ("generate_group_list" function (:arguments 
+              ( ("options" variable nil (reparse-symbol function_parameters) [1999 2006]))              ) nil [1975 3418])
+            ("if" code nil nil [3434 4718]))          
+      :file "list.py"
+      :pointmax 4707
+      :fsize 4717
+      :lastmodtime '(21003 8155)
+      :unmatched-syntax nil)
+    (semanticdb-table "key.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("base64" include nil nil [33 46])
+            ("logging" include nil nil [47 61])
+            ("warnings" include nil nil [62 77])
+            ("sqlalchemy" include nil nil [78 95])
+            ("ConfigParser" include nil nil [96 137])
+            ("log" variable nil nil [139 172])
+            ("logging" code nil nil [173 234])
+            ("warnings" code nil nil [236 286])
+            ("warnings" code nil nil [287 343])
+            ("id.scripts.azpath" include nil nil [345 387])
+            ("optparse" include nil nil [388 421])
+            ("getpass" include nil nil [422 449])
+            ("id.common.secure.id_crypto" include nil nil [450 489])
+            ("id.db.schema" include nil nil [490 519])
+            ("id.common.secure.scramble" include nil nil [520 564])
+            ("id.judo.server" include nil nil [565 605])
+            ("id.common.version" include nil nil [606 655])
+            ("epsilon_version" variable nil nil [657 696])
+            ("make_new_keyfile" function (:arguments 
+              ( ("keyfile" variable nil (reparse-symbol function_parameters) [720 727]))              ) nil [699 1066])
+            ("migrate_to_new_keyfile" function (:arguments 
+              ( ("old_keyfile" variable nil (reparse-symbol function_parameters) [1095 1106])
+                ("keyfile" variable nil (reparse-symbol function_parameters) [1108 1115]))              ) nil [1068 2011])
+            ("update_db_pass" function (:arguments 
+              ( ("config_file" variable nil (reparse-symbol function_parameters) [2031 2042])
+                ("old_keyfile" variable nil (reparse-symbol function_parameters) [2044 2055])
+                ("new_keyfile" variable nil (reparse-symbol function_parameters) [2057 2068]))              ) nil [2012 2513])
+            ("usage" variable nil nil [2533 3053])
+            ("parser" variable nil nil [3055 3128])
+            ("parser" code nil nil [3129 3262])
+            ("parser" code nil nil [3263 3404])
+            ("parser" code nil nil [3405 3614])
+            ("parser" code nil nil [3615 3736])
+            ("parser" code nil nil [3737 3860])
+            ("parser" code nil nil [3861 3973])
+            ("" code nil nil [3976 4013])
+            ("if" code nil nil [4015 4078])
+            ("if" code nil nil [4079 4386])
+            ("if" code nil nil [4386 4495])
+            ("cfg" variable nil nil [4496 4531])
+            ("dburi" variable nil nil [4532 4559])
+            ("if" code nil nil [4561 4893]))          
+      :file "key.py"
+      :pointmax 4893
+      :fsize 4892
+      :lastmodtime '(21003 8156)
+      :unmatched-syntax nil)
+    (semanticdb-table "judo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [23 38])
+            ("sqlalchemy" include nil nil [39 56])
+            ("logging" include nil nil [57 71])
+            ("warnings" code nil nil [73 123])
+            ("warnings" code nil nil [124 180])
+            ("logging" code nil nil [182 222])
+            ("signal" include nil nil [224 246])
+            ("sys" include nil nil [224 246])
+            ("os" include nil nil [224 246])
+            ("id.scripts.azpath" include nil nil [247 289])
+            ("warnings" include nil nil [290 305])
+            ("sys" code nil nil [306 358])
+            ("reload" code nil nil [359 375])
+            ("id.judo.server" include nil nil [377 416])
+            ("conf_file" variable nil nil [418 475])
+            ("cfile_path" variable nil nil [476 530])
+            ("log" variable nil nil [532 566])
+            ("usage" function nil nil [568 652])
+            ("judo_start" function nil nil [654 787])
+            ("judo_stop" function (:arguments 
+              ( ("abort" variable nil (reparse-symbol function_parameters) [803 808]))              ) nil [789 1052])
+            ("if" code nil nil [1053 1084])
+            ("if" code nil nil [1085 1245]))          
+      :file "judo.py"
+      :pointmax 1245
+      :fsize 1244
+      :lastmodtime '(21003 8156)
+      :unmatched-syntax '((NAME 845 . 850) (IF 865 . 867) (ELSE 887 . 891) (NAME 706 . 711) (IF 726 . 728) (ELSE 748 . 752)))
+    (semanticdb-table "backup.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("sys" include nil nil [33 43])
+            ("os.path" include nil nil [44 58])
+            ("stat" include nil nil [59 70])
+            ("datetime" include nil nil [71 86])
+            ("shutil" include nil nil [87 100])
+            ("logging" include nil nil [101 115])
+            ("warnings" include nil nil [117 132])
+            ("sqlalchemy" include nil nil [133 150])
+            ("warnings" code nil nil [152 203])
+            ("warnings" code nil nil [204 261])
+            ("optparse" include nil nil [264 297])
+            ("logging" code nil nil [299 431])
+            ("id.scripts.azpath" include nil nil [433 475])
+            ("id.db.schema" include nil nil [477 506])
+            ("id.common.config" include nil nil [507 540])
+            ("id.common.version" include nil nil [541 590])
+            ("log" variable nil nil [592 625])
+            ("default_config_file" variable nil nil [627 698])
+            ("default_backup_loc" variable nil nil [699 756])
+            ("epsilon_version" variable nil nil [757 796])
+            ("chunks" function
+               (:documentation "Split a list into chunks of equal size, odd ones being left out"
+                :arguments 
+                  ( ("l" variable nil (reparse-symbol function_parameters) [810 811])
+                    ("n" variable nil (reparse-symbol function_parameters) [813 814]))                  )
+                nil [799 942])
+            ("prepare_backup_loc" function (:arguments 
+              ( ("loc" variable nil (reparse-symbol function_parameters) [967 970]))              ) nil [944 1320])
+            ("setup_pgpass" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1338 1342])
+                ("password" variable nil (reparse-symbol function_parameters) [1344 1352])
+                ("db" variable nil (reparse-symbol function_parameters) [1354 1356])
+                ("host" variable nil (reparse-symbol function_parameters) [1358 1362])
+                ("port" variable nil (reparse-symbol function_parameters) [1364 1368]))              ) nil [1321 1574])
+            ("remove_pgpass" function nil nil [1575 1663])
+            ("full_backup" function (:arguments 
+              ( ("loc" variable nil (reparse-symbol function_parameters) [1680 1683])
+                ("engine" variable nil (reparse-symbol function_parameters) [1685 1691]))              ) nil [1664 3766])
+            ("full_restore" function (:arguments 
+              ( ("loc" variable nil (reparse-symbol function_parameters) [3785 3788])
+                ("bdir" variable nil (reparse-symbol function_parameters) [3790 3794])
+                ("engine" variable nil (reparse-symbol function_parameters) [3796 3802]))              ) nil [3768 4642])
+            ("show_stats" function (:arguments 
+              ( ("older_than" variable nil (reparse-symbol function_parameters) [4659 4669])
+                ("everything" variable nil (reparse-symbol function_parameters) [4676 4686]))              ) nil [4644 5296])
+            ("do_delete" function (:arguments 
+              ( ("older_than" variable nil (reparse-symbol function_parameters) [5312 5322])
+                ("everything" variable nil (reparse-symbol function_parameters) [5329 5339])
+                ("chunk_size" variable nil (reparse-symbol function_parameters) [5346 5356])
+                ("run_limit" variable nil (reparse-symbol function_parameters) [5363 5372]))              ) nil [5298 8989])
+            ("usage" variable nil nil [9005 9268])
+            ("parser" variable nil nil [9270 9343])
+            ("parser" code nil nil [9344 9510])
+            ("parser" code nil nil [9511 9653])
+            ("parser" code nil nil [9654 9793])
+            ("parser" code nil nil [9794 9922])
+            ("parser" code nil nil [9923 10048])
+            ("parser" code nil nil [10049 10200])
+            ("parser" code nil nil [10201 10378])
+            ("parser" code nil nil [10379 10532])
+            ("parser" code nil nil [10533 10668])
+            ("parser" code nil nil [10669 10844])
+            ("parser" code nil nil [10845 10978])
+            ("" code nil nil [10981 11018])
+            ("if" code nil nil [11021 11203])
+            ("if" code nil nil [11204 11256])
+            ("now" variable nil nil [11257 11286])
+            ("cfg" variable nil nil [11287 11327])
+            ("dburi" variable nil nil [11328 11356])
+            ("" code nil nil [11357 11403])
+            ("options" variable nil nil [11405 11451])
+            ("if" code nil nil [11453 11864]))          
+      :file "backup.py"
+      :pointmax 11864
+      :fsize 11863
+      :lastmodtime '(21003 8156)
+      :unmatched-syntax nil)
+    (semanticdb-table "search.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [23 45])
+            ("sys" include nil nil [23 45])
+            ("os" include nil nil [23 45])
+            ("sys" code nil nil [46 78])
+            ("warnings" include nil nil [79 94])
+            ("sqlalchemy" include nil nil [95 112])
+            ("warnings" code nil nil [114 164])
+            ("warnings" code nil nil [165 221])
+            ("os" include nil nil [223 237])
+            ("sys" include nil nil [223 237])
+            ("id.scripts.azpath" include nil nil [238 280])
+            ("id.common.config" include nil nil [281 314])
+            ("cfile" variable nil nil [316 335])
+            ("cfg" variable nil nil [336 369])
+            ("jar_file" code nil nil [371 422])
+            ("idx_dir" code nil nil [423 460])
+            ("port" variable nil nil [461 486])
+            ("user, ptr, dburi" code nil nil [488 545])
+            ("password" variable nil nil [546 574])
+            ("db" variable nil nil [575 613])
+            ("cmd" code nil nil [615 737])
+            ("print" code nil nil [738 778])
+            ("f" variable nil nil [779 801])
+            ("f" code nil nil [802 819])
+            ("print" code nil nil [820 876])
+            ("f" code nil nil [877 886]))          
+      :file "search.py"
+      :pointmax 887
+      :fsize 886
+      :lastmodtime '(21003 8156)
+      :unmatched-syntax nil)
+    (semanticdb-table "karan_scramble_auth.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("sys" include nil nil [11 21])
+            ("id.common.secure" include nil nil [22 59])
+            ("id.scripts.azpath" include nil nil [60 102])
+            ("key_file" variable nil nil [104 160])
+            ("usage" function nil nil [163 260])
+            ("scramble_auth" function nil nil [262 491])
+            ("if" code nil nil [493 576]))          
+      :file "karan_scramble_auth.py"
+      :pointmax 576
+      :fsize 575
+      :lastmodtime '(21003 8156)
+      :unmatched-syntax '((NAME 301 . 306) (IF 321 . 323) (ELSE 343 . 347)))
+    (semanticdb-table "patcher.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "patcher.py"
+      :pointmax 30802
+      :fsize 30801
+      :lastmodtime '(21003 8156)
+      :unmatched-syntax nil)
+    (semanticdb-table "supervisorevents.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "supervisorevents.py"
+      :pointmax 3830
+      :fsize 3829
+      :lastmodtime '(21003 8157)
+      :unmatched-syntax nil)
+    (semanticdb-table "snmp.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [24 39])
+            ("signal" include nil nil [41 63])
+            ("sys" include nil nil [41 63])
+            ("os" include nil nil [41 63])
+            ("id.scripts.azpath" include nil nil [64 106])
+            ("warnings" include nil nil [107 122])
+            ("sys" code nil nil [123 175])
+            ("reload" code nil nil [176 192])
+            ("id.snmp.server" include nil nil [193 232])
+            ("id.snmp.logger" include nil nil [233 263])
+            ("id.snmp.conf" include nil nil [264 291])
+            ("conf_dir" variable nil nil [293 346])
+            ("usage" function nil nil [348 431])
+            ("snmp_start" function nil nil [432 562])
+            ("snmp_stop" function (:arguments 
+              ( ("abort" variable nil (reparse-symbol function_parameters) [577 582]))              ) nil [563 820])
+            ("if" code nil nil [821 852])
+            ("if" code nil nil [853 1013]))          
+      :file "snmp.py"
+      :pointmax 1013
+      :fsize 1012
+      :lastmodtime '(21003 8157)
+      :unmatched-syntax '((NAME 619 . 624) (IF 639 . 641) (ELSE 661 . 665) (NAME 484 . 488) (IF 503 . 505) (ELSE 525 . 529)))
+    (semanticdb-table "tweak.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [23 38])
+            ("sqlalchemy" include nil nil [39 56])
+            ("warnings" code nil nil [58 108])
+            ("warnings" code nil nil [109 165])
+            ("logging" include nil nil [167 181])
+            ("os" include nil nil [182 191])
+            ("id.scripts.azpath" include nil nil [192 234])
+            ("optparse" include nil nil [235 268])
+            ("getpass" include nil nil [269 296])
+            ("sys" include nil nil [297 317])
+            ("logging" code nil nil [319 380])
+            ("id.common.secure" include nil nil [382 426])
+            ("id.db.schema" include nil nil [427 456])
+            ("id.common.secure.scramble" include nil nil [457 501])
+            ("id.judo.server" include nil nil [502 542])
+            ("id.common.version" include nil nil [543 592])
+            ("epsilon_version" variable nil nil [594 633])
+            ("usage" variable nil nil [635 907])
+            ("parser" variable nil nil [908 981])
+            ("parser" code nil nil [983 1186])
+            ("parser" code nil nil [1187 1377])
+            ("parser" code nil nil [1379 1516])
+            ("parser" code nil nil [1517 1599])
+            ("parser" code nil nil [1600 1698])
+            ("parser" code nil nil [1699 1781])
+            ("parser" code nil nil [1782 1873])
+            ("parser" code nil nil [1874 1968])
+            ("parser" code nil nil [1969 2075])
+            ("parser" code nil nil [2076 2174])
+            ("parser" code nil nil [2175 2261])
+            ("parser" code nil nil [2262 2397])
+            ("parser" code nil nil [2398 2519])
+            ("parser" code nil nil [2520 2632])
+            ("" code nil nil [2634 2671])
+            ("if" code nil nil [2673 2752])
+            ("if" code nil nil [2752 2843])
+            ("if" code nil nil [2843 2906])
+            ("cfg" variable nil nil [2907 2938])
+            ("dburi" variable nil nil [2939 2966])
+            ("scramble" code nil nil [2967 2989])
+            ("meta, sess, engine" code nil nil [2990 3043])
+            ("if" code nil nil [3045 6123]))          
+      :file "tweak.py"
+      :pointmax 6123
+      :fsize 6122
+      :lastmodtime '(21003 8157)
+      :unmatched-syntax nil)
+    (semanticdb-table "invoke-wf-dispatch.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "invoke-wf-dispatch.py"
+      :pointmax 10169
+      :fsize 10168
+      :lastmodtime '(21003 8157)
+      :unmatched-syntax nil)
+    (semanticdb-table "load_library.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [23 38])
+            ("sqlalchemy" include nil nil [39 56])
+            ("warnings" code nil nil [58 108])
+            ("warnings" code nil nil [109 165])
+            ("os" include nil nil [167 176])
+            ("optparse" include nil nil [177 210])
+            ("id.scripts.azpath" include nil nil [212 254])
+            ("id.db.schema" include nil nil [256 282])
+            ("id.common.config" include nil nil [283 321])
+            ("conf_file" variable nil nil [323 380])
+            ("key_file" variable nil nil [381 433])
+            ("parser" variable nil nil [435 458])
+            ("parser" code nil nil [459 611])
+            ("parser" code nil nil [612 739])
+            ("" code nil nil [741 778])
+            ("judo_conf" variable nil nil [780 834])
+            ("dburi" variable nil nil [835 859])
+            ("scramble" code nil nil [861 892])
+            ("cleanup_olderinstances" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [921 925]))              ) nil [894 1191])
+            ("load_library" function (:arguments 
+              ( ("oname" variable nil (reparse-symbol function_parameters) [1209 1214])
+                ("wfs" variable nil (reparse-symbol function_parameters) [1216 1219]))              ) nil [1192 3924])
+            ("a, s, c" code nil nil [3961 3992])
+            ("admin" variable nil nil [3993 4044])
+            ("wfs" variable nil nil [4045 4053])
+            ("for" code nil nil [4054 4368])
+            ("wf_names" variable nil nil [4368 4389])
+            ("" code nil nil [4390 4441])
+            ("" code nil nil [4442 4488]))          
+      :file "load_library.py"
+      :pointmax 4489
+      :fsize 4488
+      :lastmodtime '(21003 8157)
+      :unmatched-syntax '((NAME 3473 . 3479) (IF 3494 . 3496) (ELSE 3511 . 3515) (NAME 2620 . 2627) (IF 2648 . 2650) (ELSE 2671 . 2675))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

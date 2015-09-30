@@ -1,0 +1,21 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "setup.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("setuptools" include nil nil [25 68])
+            ("distutils.extension" include nil nil [69 110])
+            ("glob" include nil nil [111 126])
+            ("os" include nil nil [111 126])
+            ("get_depends" function nil nil [129 680]))          
+      :file "setup.py"
+      :pointmax 4819
+      :fsize 4823
+      :lastmodtime '(21003 18584)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

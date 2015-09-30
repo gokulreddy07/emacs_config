@@ -1,0 +1,27 @@
+;; Object secure/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "secure/"
+  :tables
+  (list
+    (semanticdb-table "scramble.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("id_crypto" include nil nil [1 23])
+            ("_id_ctx" variable nil nil [25 39])
+            ("init" function (:arguments 
+              ( ("kfile" variable nil (reparse-symbol function_parameters) [50 55]))              ) nil [41 265])
+            ("encrypt" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [278 279]))              ) nil [266 343])
+            ("decrypt" function (:arguments 
+              ( ("s" variable nil (reparse-symbol function_parameters) [356 357]))              ) nil [344 421])
+            ("write" function (:arguments 
+              ( ("keyfile" variable nil (reparse-symbol function_parameters) [432 439])
+                ("keydata" variable nil (reparse-symbol function_parameters) [441 448]))              ) nil [422 490]))          
+      :file "scramble.py"
+      :pointmax 495
+      :fsize 494
+      :lastmodtime '(21002 30646 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!aaditya!work!epsilon!src!id!common!secure!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

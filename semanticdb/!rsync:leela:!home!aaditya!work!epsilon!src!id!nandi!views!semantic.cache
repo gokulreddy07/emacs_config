@@ -1,0 +1,34 @@
+;; Object views/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "views/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"URL Handler for controller\"\"\"" code nil nil [25 57])
+            ("pyramid.view" include nil nil [58 94])
+            ("pyramid.response" include nil nil [95 132])
+            ("log" include nil nil [148 158])
+            ("generate_e3_token" include nil nil [171 213])
+            ("check_user_login" include nil nil [171 213])
+            ("" code nil nil [228 252])
+            ("home_view" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [267 274]))              ) nil [253 343])
+            ("" code nil nil [357 386])
+            ("forbidden_view" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [406 413]))              ) nil [387 686])
+            ("" code nil nil [700 729])
+            ("auth_user_view" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [749 756]))              ) nil [730 1071])
+            ("" code nil nil [1085 1115])
+            ("auth_token_view" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1136 1143]))              ) nil [1116 1511]))          
+      :file "__init__.py"
+      :pointmax 1510
+      :fsize 1510
+      :lastmodtime '(21003 60538)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!nandi!views!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

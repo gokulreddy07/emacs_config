@@ -1,0 +1,254 @@
+;; Object snmp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "snmp/"
+  :tables
+  (list
+    (semanticdb-table "logger.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [26 35])
+            ("sys" include nil nil [36 46])
+            ("socket" include nil nil [47 60])
+            ("traceback" include nil nil [61 77])
+            ("datetime" include nil nil [78 107])
+            ("dateutil.tz" include nil nil [108 139])
+            ("logbook" include nil nil [141 155])
+            ("logbook" include nil nil [156 206])
+            ("logbook" include nil nil [207 317])
+            ("logbook.base" include nil nil [318 359])
+            ("logbook.compat" include nil nil [360 409])
+            ("logbook.more" include nil nil [410 457])
+            ("logging" include nil nil [459 473])
+            ("id.scripts.azpath" include nil nil [475 517])
+            ("SNMP_LOGGER" variable nil nil [519 542])
+            ("SNMP_CHILD" variable nil nil [543 558])
+            ("stderr_format_string" variable nil nil [594 1034])
+            ("syslog_format_string" variable nil nil [1036 1334])
+            ("syslog_format_string_errors" variable nil nil [1336 1653])
+            ("file_format_string" variable nil nil [1655 1985])
+            ("stderr_handler" variable nil nil [2126 2199])
+            ("logbook" code nil nil [2200 2241])
+            ("logbook" variable nil nil [2242 2280])
+            ("split_len" function (:arguments 
+              ( ("seq" variable nil (reparse-symbol function_parameters) [2296 2299])
+                ("length" variable nil (reparse-symbol function_parameters) [2301 2307]))              ) nil [2282 2375])
+            ("EpsilonSyslogHandler" type
+               (:documentation "A handler class which sends formatted logging records to a
+    syslog server.  .
+    "
+                :superclasses ("SyslogHandler")
+                :members 
+                  ( ("send_to_socket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2538 2542])
+                            ("data" variable nil (reparse-symbol function_parameters) [2544 2548]))                          )
+                        (reparse-symbol indented_block_body) [2519 3520]))                  
+                :type "class")
+                nil [2376 3520])
+            ("EpsilonTimedRotatingFileHandler" type
+               (:documentation "Make the file open in 'a' mode again for multiple processes"
+                :superclasses ("TimedRotatingFileHandler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("TimedRotatingFileHandler" code nil (reparse-symbol indented_block_body) [3870 4029])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4038 4060]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3675 3679])
+                            ("filename" variable nil (reparse-symbol function_parameters) [3681 3689])
+                            ("mode" variable nil (reparse-symbol function_parameters) [3691 3695])
+                            ("encoding" variable nil (reparse-symbol function_parameters) [3701 3709])
+                            ("level" variable nil (reparse-symbol function_parameters) [3719 3724])
+                            ("format_string" variable nil (reparse-symbol function_parameters) [3757 3770])
+                            ("date_format" variable nil (reparse-symbol function_parameters) [3777 3788])
+                            ("backup_count" variable nil (reparse-symbol function_parameters) [3818 3830])
+                            ("filter" variable nil (reparse-symbol function_parameters) [3834 3840])
+                            ("bubble" variable nil (reparse-symbol function_parameters) [3847 3853]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3662 4061])
+                    ("_get_timed_filename" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4090 4094])
+                            ("datetime" variable nil (reparse-symbol function_parameters) [4096 4104]))                          
+                        :documentation "Add PID to the filename")
+                        (reparse-symbol indented_block_body) [4066 4243])
+                    ("perform_rollover" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4269 4273]))                          )
+                        (reparse-symbol indented_block_body) [4248 4558]))                  
+                :type "class")
+                nil [3522 4558])
+            ("syslog_handler" variable nil nil [4580 4709])
+            ("file_handler" variable nil nil [4711 4993])
+            ("update_log_file_name" function (:documentation "Update the stored pid for logger to update filename") nil [4995 5120])
+            ("get_log_file_name" function (:documentation "Return the filename being used by file logger") nil [5122 5237])
+            ("MyRewindFormatter" type
+               (:superclasses ("logbook.StringFormatter")
+                :members 
+                  ( ("format_record" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5311 5315])
+                            ("record" variable nil (reparse-symbol function_parameters) [5317 5323])
+                            ("handler" variable nil (reparse-symbol function_parameters) [5325 5332]))                          )
+                        (reparse-symbol indented_block_body) [5293 5513])
+                    ("format_exception" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5539 5543])
+                            ("record" variable nil (reparse-symbol function_parameters) [5545 5551]))                          )
+                        (reparse-symbol indented_block_body) [5518 5690]))                  
+                :type "class")
+                nil [5239 5690])
+            ("rewind_syslog" variable nil nil [5691 5819])
+            ("rewind_syslog" variable nil nil [5820 5890])
+            ("fingers_handler" variable nil nil [5891 5982])
+            ("fingers_handler" code nil nil [5983 6023])
+            ("get_color" function
+               (:documentation "Returns the color for this record."
+                :arguments 
+                  ( ("record" variable nil (reparse-symbol function_parameters) [6061 6067]))                  )
+                nil [6047 6258])
+            ("stderr_handler" variable nil nil [6285 6319])
+            ("log" variable nil nil [6475 6498])
+            ("localtz" variable nil nil [6499 6518])
+            ("update_record" function (:arguments 
+              ( ("record" variable nil (reparse-symbol function_parameters) [6538 6544]))              ) nil [6520 7060])
+            ("log_group" variable nil nil [7061 7146])
+            ("add_logger" function
+               (:documentation "Add a logger to our group of handlers: main inerface for a logger to do what we want"
+                :arguments 
+                  ( ("lg" variable nil (reparse-symbol function_parameters) [7163 7165]))                  )
+                nil [7148 7382])
+            ("add_logger" code nil nil [7383 7398])
+            ("find_caller_frame" function
+               (:documentation "Tries to find the caller that issued the call."
+                :arguments 
+                  ( ("bypass" variable nil (reparse-symbol function_parameters) [7422 7428]))                  )
+                nil [7400 7819])
+            ("ourRedirectHandler" type
+               (:superclasses ("RedirectLoggingHandler")
+                :members 
+                  ( ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7916 7920])
+                            ("record" variable nil (reparse-symbol function_parameters) [7921 7927]))                          )
+                        (reparse-symbol indented_block_body) [7907 7985])
+                    ("find_caller" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8005 8009])
+                            ("old_record" variable nil (reparse-symbol function_parameters) [8011 8021]))                          
+                        :documentation "Tries to find the caller that issued the call.")
+                        (reparse-symbol indented_block_body) [7989 8121]))                  
+                :type "class")
+                nil [7853 8121])
+            ("del" code nil nil [8163 8191])
+            ("base_logger" variable nil nil [8192 8224])
+            ("logging" code nil nil [8225 8261])
+            ("server_logger" function (:arguments 
+              ( ("cfg" variable nil (reparse-symbol function_parameters) [8281 8284])
+                ("name" variable nil (reparse-symbol function_parameters) [8286 8290]))              ) nil [8263 8735]))          
+      :file "logger.py"
+      :pointmax 8735
+      :fsize 8734
+      :lastmodtime '(21003 8377)
+      :unmatched-syntax '((NAME 5599 . 5600) (IF 5615 . 5617) (ELSE 5620 . 5624) (NAME 5422 . 5423) (IF 5438 . 5440) (ELSE 5443 . 5447)))
+    (semanticdb-table "server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pysnmp.carrier.asynsock.dispatch" include nil nil [256 319])
+            ("pysnmp.carrier.asynsock.dgram" include nil nil [320 365])
+            ("pyasn1.codec.ber" include nil nil [366 402])
+            ("pysnmp.proto" include nil nil [403 431])
+            ("pysnmp.entity.rfc3413.oneliner" include nil nil [432 481])
+            ("pysnmp.smi" include nil nil [482 518])
+            ("pysnmp.proto" include nil nil [519 551])
+            ("requests" include nil nil [552 567])
+            ("datetime" include nil nil [568 583])
+            ("gevent" include nil nil [584 629])
+            ("id.scripts.azpath" include nil nil [631 673])
+            ("conf" include nil nil [674 685])
+            ("id.snmp.logger" include nil nil [686 716])
+            ("CFG" variable nil nil [718 726])
+            ("QUEUES" variable nil nil [727 738])
+            ("monkey" code nil nil [739 757])
+            ("SNMPTrap" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [858 878])
+                            ("self" variable nil (reparse-symbol indented_block_body) [887 901])
+                            ("self" variable nil (reparse-symbol indented_block_body) [910 926]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [800 804])
+                            ("source" variable nil (reparse-symbol function_parameters) [806 812])
+                            ("oid" variable nil (reparse-symbol function_parameters) [814 817])
+                            ("when" variable nil (reparse-symbol function_parameters) [819 823]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [787 927]))                  
+                :type "class")
+                nil [759 927])
+            ("make_wf_call" function (:arguments 
+              ( ("sec" variable nil (reparse-symbol function_parameters) [945 948])
+                ("ev" variable nil (reparse-symbol function_parameters) [950 952]))              ) nil [928 1433])
+            ("reap_queues" function (:documentation "Processes entries in QUEUES") nil [1434 2700])
+            ("handle_event" function (:arguments 
+              ( ("ev" variable nil (reparse-symbol function_parameters) [2718 2720]))              ) nil [2701 3725])
+            ("cbFun" function (:arguments 
+              ( ("transportDispatcher" variable nil (reparse-symbol function_parameters) [3736 3755])
+                ("transportDomain" variable nil (reparse-symbol function_parameters) [3757 3772])
+                ("transportAddress" variable nil (reparse-symbol function_parameters) [3774 3790])
+                ("wholeMsg" variable nil (reparse-symbol function_parameters) [3792 3800]))              ) nil [3726 5678])
+            ("start_server" function (:arguments 
+              ( ("cdir" variable nil (reparse-symbol function_parameters) [5696 5700]))              ) nil [5679 6259]))          
+      :file "server.py"
+      :pointmax 6259
+      :fsize 6258
+      :lastmodtime '(21003 8378)
+      :unmatched-syntax nil)
+    (semanticdb-table "conf.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+server configuration file parsing and server defaults
+\"\"\"" code nil nil [25 86])
+            ("os" include nil nil [87 96])
+            ("collections" include nil nil [97 115])
+            ("glob" include nil nil [116 127])
+            ("ConfigParser" include nil nil [128 184])
+            ("id.scripts.azpath" include nil nil [186 228])
+            ("id.common.secure.scramble" include nil nil [229 271])
+            ("logger" include nil nil [272 294])
+            ("DEFAULT_CONFIG_DIR" variable nil nil [296 359])
+            ("DEFAULT_PID_FILE" variable nil nil [360 424])
+            ("DEFAULT_KEY_FILE" variable nil nil [425 489])
+            ("snmp_config" function (:arguments 
+              ( ("config_dir" variable nil (reparse-symbol function_parameters) [507 517]))              ) nil [491 1840])
+            ("oid_map" function
+               (:documentation "Return a map of OIDs to workflows, keyed by priority."
+                :arguments 
+                  ( ("config" variable nil (reparse-symbol function_parameters) [1853 1859]))                  )
+                nil [1841 2272])
+            ("setup_queues" function
+               (:documentation "Setup queues for those sections that need it"
+                :arguments 
+                  ( ("config" variable nil (reparse-symbol function_parameters) [2290 2296]))                  )
+                nil [2273 3027])
+            ("create_pidfile" function nil nil [3028 3316])
+            ("get_pid" function nil nil [3317 3387]))          
+      :file "conf.py"
+      :pointmax 3387
+      :fsize 3386
+      :lastmodtime '(21003 8378)
+      :unmatched-syntax '((NAME 524 . 534) (IF 556 . 558) (ELSE 574 . 578))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!snmp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

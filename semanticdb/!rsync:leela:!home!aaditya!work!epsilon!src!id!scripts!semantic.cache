@@ -1,0 +1,363 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables
+  (list
+    (semanticdb-table "esupport.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [26 35])
+            ("sys" include nil nil [36 46])
+            ("logging" include nil nil [47 61])
+            ("argparse" include nil nil [63 78])
+            ("id.scripts.azpath" include nil nil [80 122])
+            ("id.common.esupport" include nil nil [123 165])
+            ("id.common.version" include nil nil [166 215])
+            ("log" variable nil nil [218 251])
+            ("logging" code nil nil [252 333])
+            ("default_config_file" variable nil nil [336 477])
+            ("default_test_config_file" variable nil nil [478 639])
+            ("default_key_file" variable nil nil [640 768])
+            ("epsilon_version" variable nil nil [769 808])
+            ("main" function (:documentation "Run the main pass") nil [811 2178]))          
+      :file "esupport.py"
+      :pointmax 2178
+      :fsize 2177
+      :lastmodtime '(21003 8376)
+      :unmatched-syntax nil)
+    (semanticdb-table "azpath.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os.path" include nil nil [1 37])
+            ("sys" include nil nil [38 48])
+            ("epsilon_base" variable nil nil [50 118])
+            ("__all__" variable nil nil [119 145])
+            ("main" function nil nil [147 331]))          
+      :file "azpath.py"
+      :pointmax 331
+      :fsize 330
+      :lastmodtime '(21003 7962)
+      :unmatched-syntax '(($EOI 331 . 331) ($EOI 322 . 322) ($EOI 339 . 339) ($EOI 335 . 335)))
+    (semanticdb-table "eshell.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [47 62])
+            ("sqlalchemy" include nil nil [63 80])
+            ("getpass" include nil nil [81 95])
+            ("warnings" code nil nil [97 148])
+            ("warnings" code nil nil [149 206])
+            ("os" include nil nil [208 217])
+            ("sys" include nil nil [218 228])
+            ("os.path" include nil nil [229 243])
+            ("logging" include nil nil [244 258])
+            ("logging.config" include nil nil [259 280])
+            ("argparse" include nil nil [281 296])
+            ("log" variable nil nil [298 331])
+            ("logging" code nil nil [332 453])
+            ("logbook" include nil nil [455 469])
+            ("logbook.more" include nil nil [470 517])
+            ("logbook.compat" include nil nil [518 567])
+            ("id.scripts.azpath" include nil nil [569 611])
+            ("id.db.schema" include nil nil [613 642])
+            ("id.common.config" include nil nil [643 685])
+            ("id.common.auth" include nil nil [686 730])
+            ("id.common.secure" include nil nil [731 768])
+            ("id.common.version" include nil nil [769 818])
+            ("IPython.frontend.terminal.embed" include nil nil [820 885])
+            ("IPShellFactory" variable nil nil [886 924])
+            ("default_config_file" variable nil nil [926 1067])
+            ("default_test_config_file" variable nil nil [1068 1229])
+            ("default_key_file" variable nil nil [1230 1358])
+            ("epsilon_version" variable nil nil [1359 1398])
+            ("stderr_handler" variable nil nil [1400 1531])
+            ("stderr_handler" variable nil nil [1532 1567])
+            ("get_color" function
+               (:documentation "Returns the color for this record."
+                :arguments 
+                  ( ("record" variable nil (reparse-symbol function_parameters) [1608 1614]))                  )
+                nil [1594 1805])
+            ("stderr_handler" variable nil nil [1832 1868])
+            ("try" code nil nil [1870 1951])
+            ("logbook" variable nil nil [1951 1991])
+            ("del" code nil nil [2033 2061])
+            ("base_logger" variable nil nil [2062 2100])
+            ("logging" code nil nil [2101 2137])
+            ("try" code nil nil [2139 2221])
+            ("meta, engine, sess" code nil nil [2222 2259])
+            ("make_shell" function nil nil [2262 2483])
+            ("help_text" variable nil nil [2484 2717])
+            ("start_shell" function (:documentation "Start an embedded ipython shell") nil [2720 2991])
+            ("run" function (:arguments 
+              ( ("config_file" variable nil (reparse-symbol function_parameters) [3001 3012]))              ) nil [2993 5138])
+            ("main" function nil nil [5140 5295])
+            ("main_test" function nil nil [5297 5462]))          
+      :file "eshell.py"
+      :pointmax 5462
+      :fsize 5461
+      :lastmodtime '(21003 8376)
+      :unmatched-syntax nil)
+    (semanticdb-table "epdb.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [23 38])
+            ("sqlalchemy" include nil nil [39 56])
+            ("warnings" code nil nil [58 109])
+            ("warnings" code nil nil [110 167])
+            ("os" include nil nil [169 178])
+            ("sys" include nil nil [179 189])
+            ("glob" include nil nil [190 201])
+            ("os.path" include nil nil [202 216])
+            ("logging" include nil nil [217 231])
+            ("logging.config" include nil nil [232 253])
+            ("argparse" include nil nil [254 269])
+            ("csv" include nil nil [270 280])
+            ("log" variable nil nil [282 316])
+            ("logging" code nil nil [317 438])
+            ("logbook" include nil nil [440 454])
+            ("logbook.more" include nil nil [455 502])
+            ("logbook.compat" include nil nil [503 552])
+            ("id.scripts.azpath" include nil nil [554 596])
+            ("redis" include nil nil [598 610])
+            ("id.db.schema" include nil nil [612 641])
+            ("id.common.config" include nil nil [642 684])
+            ("id.common.secure" include nil nil [685 722])
+            ("id.common.logger" include nil nil [723 771])
+            ("id.common.license" include nil nil [772 809])
+            ("id.db.tools" include nil nil [810 866])
+            ("id.db.tools" include nil nil [867 925])
+            ("id.db.tools" include nil nil [926 982])
+            ("id.common.version" include nil nil [983 1032])
+            ("id.common.loader" include nil nil [1033 1102])
+            ("alembic.config" include nil nil [1105 1156])
+            ("alembic" include nil nil [1157 1203])
+            ("default_config_file" variable nil nil [1205 1276])
+            ("test_config_file" variable nil nil [1277 1350])
+            ("default_key_file" variable nil nil [1351 1415])
+            ("default_license_file" variable nil nil [1416 1484])
+            ("epsilon_version" variable nil nil [1485 1524])
+            ("meta" variable nil nil [1526 1537])
+            ("engine" variable nil nil [1538 1551])
+            ("sess" variable nil nil [1552 1563])
+            ("redis_conn" variable nil nil [1564 1581])
+            ("stderr_handler" variable nil nil [1583 1714])
+            ("stderr_handler" variable nil nil [1715 1750])
+            ("get_color" function
+               (:documentation "Returns the color for this record."
+                :arguments 
+                  ( ("record" variable nil (reparse-symbol function_parameters) [1791 1797]))                  )
+                nil [1777 1988])
+            ("stderr_handler" variable nil nil [2015 2051])
+            ("try" code nil nil [2053 2134])
+            ("logbook" variable nil nil [2134 2174])
+            ("del" code nil nil [2216 2244])
+            ("base_logger" variable nil nil [2245 2283])
+            ("logging" code nil nil [2284 2320])
+            ("log" variable nil nil [2322 2353])
+            ("handle_init" function
+               (:documentation "Handle DB init"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [2594 2598]))                  )
+                nil [2578 2810])
+            ("handle_clear" function
+               (:documentation "Handle DB init"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [2829 2833]))                  )
+                nil [2812 2958])
+            ("handle_seed" function
+               (:documentation "Handle DB init"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [2976 2980]))                  )
+                nil [2960 3381])
+            ("handle_reset" function
+               (:documentation "Handle DB init"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [3400 3404]))                  )
+                nil [3383 3617])
+            ("handle_reset_seed" function
+               (:documentation "Handle DB init and seeding"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [3641 3645]))                  )
+                nil [3619 4129])
+            ("handle_import" function
+               (:documentation "Handle DB init"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [4149 4153]))                  )
+                nil [4131 4896])
+            ("handle_wf_export" function
+               (:documentation "Handle workflow export"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [4919 4923]))                  )
+                nil [4898 5605])
+            ("handle_entity_export" function
+               (:documentation "Handle entity export"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [5632 5636]))                  )
+                nil [5607 6314])
+            ("handle_machine_export" function
+               (:documentation "Handle machine export"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [6342 6346]))                  )
+                nil [6316 7024])
+            ("setup_alembic" function
+               (:documentation "Setup DB Config for alembic to work"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [7044 7048]))                  )
+                nil [7026 7395])
+            ("do_alembic_init" function
+               (:documentation "Stamp the current db with version"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [7417 7421]))                  )
+                nil [7397 7539])
+            ("handle_db_current" function
+               (:documentation "Run alembic current command"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [7563 7567]))                  )
+                nil [7541 7686])
+            ("handle_db_history" function
+               (:documentation "Run alembic history command"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [7710 7714]))                  )
+                nil [7688 7833])
+            ("handle_db_branches" function
+               (:documentation "Run alembic branches command"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [7858 7862]))                  )
+                nil [7835 7983])
+            ("handle_db_revision" function
+               (:documentation "Run alembic revision command"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [8008 8012]))                  )
+                nil [7985 8252])
+            ("handle_db_upgrade" function
+               (:documentation "Run alembic upgrade command"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [8276 8280]))                  )
+                nil [8254 8434])
+            ("handle_db_downgrade" function
+               (:documentation "Run alembic downgrade command"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [8460 8464]))                  )
+                nil [8436 8622])
+            ("handle_db_stamp" function
+               (:documentation "Run alembic stamp command"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [8644 8648]))                  )
+                nil [8624 8798])
+            ("write_errf" function (:arguments 
+              ( ("errf" variable nil (reparse-symbol function_parameters) [8815 8819])
+                ("rejects_list" variable nil (reparse-symbol function_parameters) [8821 8833]))              ) nil [8800 8968])
+            ("handle_csv" function
+               (:documentation "Load up entities from a CSV file"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [8985 8989])
+                    ("otype" variable nil (reparse-symbol function_parameters) [8991 8996]))                  )
+                nil [8970 10711])
+            ("run" function (:arguments 
+              ( ("config_file" variable nil (reparse-symbol function_parameters) [10721 10732]))              ) nil [10713 24204])
+            ("main" function nil nil [24206 24361])
+            ("main_test" function nil nil [24363 24520]))          
+      :file "epdb.py"
+      :pointmax 24520
+      :fsize 24519
+      :lastmodtime '(21003 8376)
+      :unmatched-syntax '((NAME 23699 . 23707) (IF 23731 . 23733) (ELSE 23752 . 23756) (NAME 23622 . 23632) (IF 23658 . 23660) (ELSE 23681 . 23685) (NAME 23543 . 23553) (IF 23574 . 23576) (ELSE 23597 . 23601) (NAME 10420 . 10430) (IF 10445 . 10447) (ELSE 10466 . 10470) (NAME 9930 . 9940) (IF 9951 . 9953) (ELSE 9971 . 9975)))
+    (semanticdb-table "backup.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "backup.py"
+      :pointmax 11864
+      :fsize 13437
+      :lastmodtime '(21003 14404)
+      :unmatched-syntax nil)
+    (semanticdb-table "load_library.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("optparse" include nil nil [33 66])
+            ("id.scripts.azpath" include nil nil [68 110])
+            ("id.db.schema" include nil nil [112 138])
+            ("id.common.config" include nil nil [147 185])
+            ("default_config_file" variable nil nil [187 258])
+            ("default_test_config_file" variable nil nil [259 340])
+            ("key_file" variable nil nil [341 397])
+            ("cleanup_olderinstances" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [427 431]))              ) nil [400 697])
+            ("load_library" function (:arguments 
+              ( ("oname" variable nil (reparse-symbol function_parameters) [716 721])
+                ("wfs" variable nil (reparse-symbol function_parameters) [723 726]))              ) nil [699 3491])
+            ("run" function (:arguments 
+              ( ("config_file" variable nil (reparse-symbol function_parameters) [3501 3512]))              ) nil [3493 4642])
+            ("main" function nil nil [4644 4799])
+            ("main_test" function nil nil [4801 4966]))          
+      :file "load_library.py"
+      :pointmax 4966
+      :fsize 4965
+      :lastmodtime '(21003 14712)
+      :unmatched-syntax '((NAME 3040 . 3046) (IF 3061 . 3063) (ELSE 3078 . 3082) (NAME 2185 . 2192) (IF 2213 . 2215) (ELSE 2236 . 2240) ($EOI 4488 . 4488) ($EOI 4482 . 4482) ($EOI 4388 . 4388)))
+    (semanticdb-table "patcher.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "patcher.py"
+      :pointmax 31043
+      :fsize 31085
+      :lastmodtime '(21003 15003)
+      :unmatched-syntax nil)
+    (semanticdb-table "search.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [23 45])
+            ("sys" include nil nil [23 45])
+            ("os" include nil nil [23 45])
+            ("sys" code nil nil [46 78])
+            ("warnings" include nil nil [79 94])
+            ("sqlalchemy" include nil nil [95 112])
+            ("warnings" code nil nil [114 164])
+            ("warnings" code nil nil [165 221])
+            ("os" include nil nil [223 237])
+            ("sys" include nil nil [223 237])
+            ("id.scripts.azpath" include nil nil [238 280])
+            ("id.common.config" include nil nil [281 314])
+            ("default_config_file" variable nil nil [316 387])
+            ("default_test_config_file" variable nil nil [388 464])
+            ("default_key_file" variable nil nil [465 529])
+            ("run" function (:arguments 
+              ( ("config_file" variable nil (reparse-symbol function_parameters) [540 551]))              ) nil [532 1194])
+            ("main" function nil nil [1196 1351])
+            ("main_test" function nil nil [1353 1518]))          
+      :file "search.py"
+      :pointmax 1518
+      :fsize 1517
+      :lastmodtime '(21003 18497)
+      :unmatched-syntax '((INDENT_BLOCK 1167 . 1194) (INDENT_BLOCK 1106 . 1194) (INDENT_BLOCK 1084 . 1194) (INDENT_BLOCK 1057 . 1194) (INDENT_BLOCK 1012 . 1194) (INDENT_BLOCK 885 . 1194) (INDENT_BLOCK 841 . 1194) (INDENT_BLOCK 808 . 1194) (INDENT_BLOCK 746 . 1194) (INDENT_BLOCK 715 . 1194) (INDENT_BLOCK 673 . 1194) (INDENT_BLOCK 617 . 1194) (INDENT_BLOCK 578 . 1194)))
+    (semanticdb-table "tweak.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [23 37])
+            ("os" include nil nil [38 47])
+            ("sys" include nil nil [48 58])
+            ("id.scripts.azpath" include nil nil [59 101])
+            ("optparse" include nil nil [102 135])
+            ("getpass" include nil nil [136 163])
+            ("logbook" include nil nil [164 190])
+            ("logging" code nil nil [192 253])
+            ("id.db.schema" include nil nil [255 284])
+            ("id.common.secure.scramble" include nil nil [285 329])
+            ("id.judo.server" include nil nil [330 370])
+            ("id.common.version" include nil nil [371 420])
+            ("default_config_file" variable nil nil [422 493])
+            ("default_test_config_file" variable nil nil [494 570])
+            ("default_key_file" variable nil nil [571 635])
+            ("epsilon_version" variable nil nil [636 675])
+            ("log" variable nil nil [677 703])
+            ("run" function (:arguments 
+              ( ("config_file" variable nil (reparse-symbol function_parameters) [714 725]))              ) nil [706 6723])
+            ("main" function nil nil [6725 6880])
+            ("main_test" function nil nil [6882 7047]))          
+      :file "tweak.py"
+      :pointmax 7047
+      :fsize 7046
+      :lastmodtime '(21003 18395)
+      :unmatched-syntax '((IMPORT 192 . 198) ($EOI 7106 . 7106) ($EOI 6579 . 6579))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

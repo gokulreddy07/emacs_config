@@ -1,0 +1,74 @@
+;; Object runtask/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "runtask/"
+  :tables
+  (list
+    (semanticdb-table "exec2.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [25 34])
+            ("md5" include nil nil [35 45])
+            ("base64" include nil nil [46 59])
+            ("simplejson" include nil nil [60 85])
+            ("id.common.secure" include nil nil [97 134])
+            ("id.common.auth" include nil nil [135 181])
+            ("id.db.schema" include nil nil [182 235])
+            ("id.db.schema" include nil nil [236 278])
+            ("id.scripts.azpath" include nil nil [280 322])
+            ("LOGDIR" variable nil nil [332 374])
+            ("id.common.zconstants" include nil nil [382 462])
+            ("E3RunTaskBase" include nil nil [476 496])
+            ("log" include nil nil [504 514])
+            ("expand" include nil nil [528 541])
+            ("make_json_secrets" function (:arguments 
+              ( ("secrets" variable nil (reparse-symbol function_parameters) [566 573]))              ) nil [544 638])
+            ("get_filedir" function (:arguments 
+              ( ("trl" variable nil (reparse-symbol function_parameters) [656 659])
+                ("is_win" variable nil (reparse-symbol function_parameters) [661 667])
+                ("is_vos" variable nil (reparse-symbol function_parameters) [669 675]))              ) nil [640 1460])
+            ("start" function (:arguments 
+              ( ("trl" variable nil (reparse-symbol function_parameters) [1560 1563])
+                ("econtext" variable nil (reparse-symbol function_parameters) [1565 1573])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [1575 1583]))              ) nil [1550 1989])
+            ("start_escript" function (:arguments 
+              ( ("trl" variable nil (reparse-symbol function_parameters) [2008 2011])
+                ("econtext" variable nil (reparse-symbol function_parameters) [2013 2021])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [2023 2031]))              ) nil [1990 4596])
+            ("start_arjun" function (:arguments 
+              ( ("trl" variable nil (reparse-symbol function_parameters) [4613 4616])
+                ("econtext" variable nil (reparse-symbol function_parameters) [4618 4626])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [4628 4636]))              ) nil [4597 15093])
+            ("resume" function (:arguments 
+              ( ("trl" variable nil (reparse-symbol function_parameters) [15106 15109])
+                ("econtext" variable nil (reparse-symbol function_parameters) [15111 15119])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [15121 15129]))              ) nil [15095 17182])
+            ("E3RunTaskExec2" type
+               (:documentation "Exec2 trl"
+                :superclasses ("E3RunTaskBase")
+                :members 
+                  ( ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17255 17259])
+                            ("econtext" variable nil (reparse-symbol function_parameters) [17261 17269])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17271 17279]))                          
+                        :documentation "Start Exec2 Task")
+                        (reparse-symbol indented_block_body) [17245 17581])
+                    ("resume" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17597 17601])
+                            ("econtext" variable nil (reparse-symbol function_parameters) [17603 17611])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17613 17621]))                          
+                        :documentation "Resume Exec2 trl")
+                        (reparse-symbol indented_block_body) [17586 17774]))                  
+                :type "class")
+                nil [17184 17774]))          
+      :file "exec2.py"
+      :pointmax 17778
+      :fsize 17773
+      :lastmodtime '(21003 8376)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!e3!runtask!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

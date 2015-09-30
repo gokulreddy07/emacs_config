@@ -1,0 +1,61 @@
+;; Object cedet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cedet/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-bsdmake-mode
+    :tags 
+        '( ("PROJECTS" variable (:default-value ("lisp/cedet" "lisp/eieio" "lisp/speedbar" "lisp/cedet/cogre" "lisp/cedet/semantic" "lisp/cedet/ede" "lisp/cedet/srecode" "lisp/cedet/semantic/bovine" "lisp/cedet/semantic/wisent" "lisp/cedet/semantic/analyze" "lisp/cedet/semantic/decorate" "lisp/cedet/semantic/ectags" "lisp/cedet/semantic/symref" "doc/texi" "doc/texi/semantic")) nil [772 1086])
+            ("PROJECTS_AUTOLOADS" variable (:default-value ("lisp/cedet" "lisp/eieio" "lisp/speedbar" "lisp/cedet/cogre" "lisp/cedet/semantic" "lisp/cedet/ede" "lisp/cedet/srecode")) nil [1087 1215])
+            ("EMACS" variable (:default-value ("/Applications/Emacs.app/Contents/MacOS/Emacs")) nil [1216 1267])
+            ("EMACSFLAGS" variable (:default-value ("-batch" "--no-site-file" "-l" "cedet-remove-builtin.el")) nil [1267 1327])
+            ("LOADDEFS" variable (:default-value ("loaddefs.el")) nil [1327 1348])
+            ("BOOTSTRAP" variable (:default-value ("(progn (global-ede-mode) (find-file \"$(CURDIR)/lisp/Project.ede\") (ede-proj-regenerate) (find-file \"$(CURDIR)/doc/texi/Project.ede\") (ede-proj-regenerate))")) nil [1348 1514])
+            ("UTEST" variable (:default-value ("(progn (add-to-list (quote load-path) \"$(CURDIR)/tests\") (add-to-list (quote load-path) \"$(CURDIR)/tests/eieio\") (require (quote cedet-utests)) (semantic-mode))")) nil [1514 1681])
+            ("SHOWVERSION" variable (:default-value ("(message \"Emacs version: %s %s on %s \" emacs-version (bound-and-true-p emacs-bzr-version) (symbol-name system-type))")) nil [1681 1810])
+            ("RM" variable (:default-value ("rm")) nil [1810 1816])
+            ("FIND" variable (:default-value ("find")) nil [1816 1826])
+            ("INSTALL-INFO" variable (:default-value ("install-info")) nil [1826 1852])
+            ("INFO_FILES" variable (:default-value ("$(shell $(FIND) $(CURDIR)/doc/texi -type f -name '*.info')")) nil [1852 1922])
+            ("INFODIR" variable (:default-value ("$(CURDIR)/doc/info")) nil [1922 1949])
+            ("all" function (:arguments ("showversion" "clean-autoloads" "autoloads" "touch-makefiles" "compile" "info" "install-info")) nil [1950 2035])
+            ("ebuild" function nil nil [2036 2098])
+            ("compile" function nil nil [2099 2125])
+            ("makefiles" function (:arguments ("$(addsuffix /Makefile,$(PROJECTS))")) nil [2126 2172])
+            ("$(addsuffix /Makefile,$(PROJECTS))" function (:arguments ("$(addsuffix /Project.ede,$(PROJECTS))")) nil [2172 2452])
+            ("makefiles-bootstrap" function nil nil [2453 2699])
+            ("touch-makefiles" function nil nil [2700 2810])
+            ("autoloads" function nil nil [2811 2936])
+            ("info" function nil nil [2937 2967])
+            ("install-info" function nil nil [2968 3163])
+            ("clean-autoloads" function nil nil [3164 3349])
+            ("clean-all" function (:arguments ("clean-autoloads")) nil [3350 3515])
+            ("utest" function nil nil [3516 3592])
+            ("utest-batch" function nil nil [3593 3692])
+            ("itest" function (:arguments ("itest-make" "itest-automake" "itest-cpproot" "itest-javaroot")) nil [3693 3755])
+            ("itest-make" function nil nil [3756 3807])
+            ("itest-automake" function nil nil [3808 3867])
+            ("itest-cpproot" function nil nil [3868 3925])
+            ("itest-javaroot" function nil nil [3926 3985])
+            ("itest-android" function nil nil [3986 4043])
+            ("itest-arduino" function nil nil [4044 4101])
+            ("itest-batch" function (:arguments ("itest-make-batch" "itest-automake-batch" "itest-cpproot-batch" "itest-javaroot-batch")) nil [4102 4194])
+            ("itest-make-batch" function nil nil [4195 4260])
+            ("itest-automake-batch" function nil nil [4261 4334])
+            ("itest-cpproot-batch" function nil nil [4335 4406])
+            ("itest-javaroot-batch" function nil nil [4407 4480])
+            ("itest-android-batch" function nil nil [4481 4552])
+            ("itest-arduino-batch" function nil nil [4553 4624])
+            ("itest-stl-batch" function nil nil [4625 4734])
+            ("showversion" function nil nil [4735 4794]))          
+    :file "Makefile"
+    :pointmax 4794
+    :fsize 4793
+    :lastmodtime '(21002 32075 0 0)
+    :unmatched-syntax '((shell-command 4749 . 4793) (bol 4748 . 4748))
+    )
+   )
+  :file "!Users!aaditya!.emacs.d!cedet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.1beta"
+  )

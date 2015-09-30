@@ -1,0 +1,203 @@
+;; Object brahma/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "brahma/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("gevent" include nil nil [25 50])
+            ("gevent_psycopg2" include nil nil [71 93])
+            ("gevent_psycopg2" code nil nil [94 124])
+            ("id.common" include nil nil [125 161])
+            ("warnings" include nil nil [194 209])
+            ("sqlalchemy" include nil nil [210 227])
+            ("os" include nil nil [229 238])
+            ("sys" include nil nil [239 249])
+            ("time" include nil nil [250 261])
+            ("waitress" include nil nil [279 294])
+            ("pyramid.config" include nil nil [295 334])
+            ("pyramid.events" include nil nil [335 372])
+            ("pyramid.paster" include nil nil [373 422])
+            ("pyramid_beaker" include nil nil [423 481])
+            ("zmq.green" include nil nil [495 518])
+            ("DBSession" include nil nil [548 564])
+            ("processor" include nil nil [578 599])
+            ("log" include nil nil [578 599])
+            ("HttpMethodOverrideMiddleware" include nil nil [611 646])
+            ("RootFactory" include nil nil [662 680])
+            ("setup_routes" include nil nil [695 714])
+            ("setup_events" include nil nil [728 747])
+            ("init_caches" include nil nil [760 778])
+            ("Dispatcher" include nil nil [797 814])
+            ("Scheduler" include nil nil [831 847])
+            ("rakhizWFQ" include nil nil [861 899])
+            ("rakhizTOQ" include nil nil [861 899])
+            ("rakhizTIQ" include nil nil [861 899])
+            ("arjunWFQ" include nil nil [913 948])
+            ("arjunTOQ" include nil nil [913 948])
+            ("arjunTIQ" include nil nil [913 948])
+            ("gadarzWFQ" include nil nil [962 1000])
+            ("gadarzTOQ" include nil nil [962 1000])
+            ("gadarzTIQ" include nil nil [962 1000])
+            ("forbidden_view" include nil nil [1013 1034])
+            ("id.common.reloader" include nil nil [1047 1114])
+            ("id.common.logger" include nil nil [1115 1161])
+            ("id.common.secure" include nil nil [1162 1199])
+            ("id.common.config" include nil nil [1200 1242])
+            ("id.scripts.azpath" include nil nil [1244 1286])
+            ("id.db.schema" include nil nil [1287 1341])
+            ("id.db.schema" include nil nil [1342 1361])
+            ("id.common.version" include nil nil [1362 1411])
+            ("id.common.connxns" include nil nil [1425 1461])
+            ("id.common.zwsgi" include nil nil [1462 1513])
+            ("default_config_file" variable nil nil [1590 1666])
+            ("test_config_file" variable nil nil [1667 1740])
+            ("ini_path" variable nil nil [1741 1800])
+            ("test_ini_path" variable nil nil [1801 1870])
+            ("default_key_file" variable nil nil [1871 1935])
+            ("conf_dir_path" variable nil nil [1936 1986])
+            ("epsilon_version" variable nil nil [1987 2026])
+            ("request_counter" variable nil nil [2027 2046])
+            ("request_timestamp" variable nil nil [2047 2078])
+            ("stats" variable nil nil [2079 2091])
+            ("zcontext" variable nil nil [2093 2108])
+            ("connxn" variable nil nil [2109 2122])
+            ("load_epsilon_env" function
+               (:documentation "Load up and init the epsilon specific stuff"
+                :arguments 
+                  ( ("settings" variable nil (reparse-symbol function_parameters) [2146 2154]))                  )
+                nil [2125 3929])
+            ("get_stats" function
+               (:documentation "Get the stats object"
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [3945 3952]))                  )
+                nil [3931 4003])
+            ("main" function
+               (:documentation " This function returns a Pyramid WSGI application.
+    "
+                :arguments 
+                  ( ("global_config" variable nil (reparse-symbol function_parameters) [4014 4027])
+                    ("settings" variable nil (reparse-symbol function_parameters) [4029 4039]))                  )
+                nil [4005 5692])
+            ("_serve" function
+               (:documentation "Serve over ZMQ"
+                :arguments 
+                  ( ("ini_path" variable nil (reparse-symbol function_parameters) [5705 5713])
+                    ("config_file" variable nil (reparse-symbol function_parameters) [5715 5726]))                  )
+                nil [5694 7611])
+            ("serve" function nil nil [7613 7668])
+            ("serve_test" function nil nil [7670 7732])
+            ("serve_http" function (:documentation "Serve over HTTP") nil [7734 8385])
+            ("if" code nil nil [8387 8426]))          
+      :file "__init__.py"
+      :pointmax 8426
+      :fsize 8425
+      :lastmodtime '(21003 61482)
+      :unmatched-syntax '((FROM 1001 . 1005) (PERIOD 1006 . 1007) (FROM 949 . 953) (PERIOD 954 . 955) (FROM 900 . 904) (PERIOD 905 . 906) (FROM 848 . 852) (PERIOD 853 . 854) (FROM 815 . 819) (PERIOD 820 . 821) (FROM 780 . 784) (PERIOD 785 . 786) (FROM 748 . 752) (PERIOD 753 . 754) (FROM 715 . 719) (PERIOD 720 . 721) (FROM 681 . 685) (PERIOD 686 . 687) (FROM 647 . 651) (PERIOD 652 . 653) (FROM 600 . 604) (PERIOD 605 . 606) (FROM 565 . 569) (PERIOD 570 . 571) (FROM 539 . 543) (PERIOD 544 . 545) ($EOI 8426 . 8426) ($EOI 8830 . 8830) ($EOI 9081 . 9081)))
+    (semanticdb-table "security.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pprint" include nil nil [25 51])
+            ("zope.interface" include nil nil [53 91])
+            ("pyramid.interfaces" include nil nil [92 143])
+            ("pyramid.location" include nil nil [144 180])
+            ("" code nil nil [211 284])
+            ("log" include nil nil [299 309])
+            ("RootFactory" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__parent__" variable nil (reparse-symbol indented_block_body) [343 360])
+                    ("__name__" variable nil (reparse-symbol indented_block_body) [365 380])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [423 445]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [399 403])
+                            ("request" variable nil (reparse-symbol function_parameters) [405 412]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [386 446]))                  
+                :type "class")
+                nil [312 446]))          
+      :file "security.py"
+      :pointmax 446
+      :fsize 445
+      :lastmodtime '(21003 61545)
+      :unmatched-syntax nil)
+    (semanticdb-table "events.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("setup_events" function
+               (:documentation "Setup Subscribers"
+                :arguments 
+                  ( ("config" variable nil (reparse-symbol function_parameters) [75 81]))                  )
+                nil [58 229]))          
+      :file "events.py"
+      :pointmax 229
+      :fsize 228
+      :lastmodtime '(20994 24965)
+      :unmatched-syntax nil)
+    (semanticdb-table "auth.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [25 39])
+            ("pprint" include nil nil [40 66])
+            ("zope.interface" include nil nil [68 123])
+            ("repoze.who.classifiers" include nil nil [124 185])
+            ("repoze.who.interfaces" include nil nil [186 234])
+            ("repoze.who.interfaces" include nil nil [235 287])
+            ("repoze.who.interfaces" include nil nil [288 333])
+            ("repoze.who.api" include nil nil [334 368])
+            ("repoze.who.utils" include nil nil [369 411])
+            ("id.db.schema" include nil nil [413 449])
+            ("id.common.auth" include nil nil [450 494])
+            ("id.common.secure" include nil nil [495 532])
+            ("get_group" include nil nil [546 580])
+            ("check_user_login" include nil nil [546 580])
+            ("log" variable nil nil [582 615]))          
+      :file "auth.py"
+      :pointmax 616
+      :fsize 615
+      :lastmodtime '(21003 61570)
+      :unmatched-syntax nil)
+    (semanticdb-table "cache.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Caching for Brahma\"\"\"" code nil nil [25 49])
+            ("beaker.cache" include nil nil [51 103])
+            ("id.common.secure" include nil nil [105 142])
+            ("id.db.schema" include nil nil [143 173])
+            ("DBSession" include nil nil [184 200])
+            ("log" include nil nil [214 224])
+            ("manager" variable nil nil [226 240])
+            ("crypto_cache" variable nil nil [241 260])
+            ("auth_cache" variable nil nil [261 278])
+            ("group_cache" variable nil nil [279 297])
+            ("user_cache" variable nil nil [298 315])
+            ("init_caches" function nil nil [318 753])
+            ("get_decoded_string" function
+               (:documentation "Return the decoded string"
+                :arguments 
+                  ( ("encrypted_string" variable nil (reparse-symbol function_parameters) [778 794]))                  )
+                nil [755 1227])
+            ("check_user_login" function
+               (:documentation "Check a username:password combo from the cache"
+                :arguments 
+                  ( ("username" variable nil (reparse-symbol function_parameters) [1250 1258])
+                    ("password" variable nil (reparse-symbol function_parameters) [1260 1268])
+                    ("get_auth" variable nil (reparse-symbol function_parameters) [1270 1278]))                  )
+                nil [1229 1761])
+            ("get_group" function
+               (:documentation "Return a group from the cache if possible"
+                :arguments 
+                  ( ("groupname" variable nil (reparse-symbol function_parameters) [1777 1786]))                  )
+                nil [1763 2002]))          
+      :file "cache.py"
+      :pointmax 2002
+      :fsize 2001
+      :lastmodtime '(20994 24965)
+      :unmatched-syntax '((FROM 201 . 205) (PERIOD 206 . 207) (FROM 175 . 179) (PERIOD 180 . 181) (FROM 201 . 205) (PERIOD 206 . 207) (FROM 175 . 179) (PERIOD 180 . 181))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!brahma!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

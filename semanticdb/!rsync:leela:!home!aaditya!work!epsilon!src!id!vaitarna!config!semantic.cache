@@ -1,0 +1,56 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables
+  (list
+    (semanticdb-table "logger.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logbook" include nil nil [26 40])
+            ("id.scripts.azpath" include nil nil [42 84])
+            ("id.common.logger" include nil nil [85 155])
+            ("VAITARNA_LOGGER" variable nil nil [158 189])
+            ("stderr_format_string" variable nil nil [226 510])
+            ("log, processor" code nil nil [512 626]))          
+      :file "logger.py"
+      :pointmax 627
+      :fsize 626
+      :lastmodtime '(21003 8375)
+      :unmatched-syntax nil)
+    (semanticdb-table "environment.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Pylons environment configuration\"\"\"" code nil nil [1 39])
+            ("os" include nil nil [40 49])
+            ("warnings" include nil nil [51 66])
+            ("sqlalchemy" include nil nil [67 84])
+            ("warnings" code nil nil [86 137])
+            ("warnings" code nil nil [138 195])
+            ("mako.lookup" include nil nil [197 235])
+            ("pylons.configuration" include nil nil [236 281])
+            ("pylons.error" include nil nil [282 324])
+            ("sqlalchemy" include nil nil [325 366])
+            ("paste.deploy.config" include nil nil [367 405])
+            ("ConfigParser" include nil nil [406 447])
+            ("id.vaitarna.lib.app_globals" include nil nil [449 498])
+            ("id.vaitarna.lib.helpers" include nil nil [499 529])
+            ("id.vaitarna.config.routing" include nil nil [530 577])
+            ("id.vaitarna.model" include nil nil [578 618])
+            ("id.scripts.azpath" include nil nil [619 661])
+            ("id.db.schema" include nil nil [662 702])
+            ("load_environment" function
+               (:documentation "Configure the Pylons environment via the ``pylons.config``
+    object
+    "
+                :arguments 
+                  ( ("global_conf" variable nil (reparse-symbol function_parameters) [728 739])
+                    ("app_conf" variable nil (reparse-symbol function_parameters) [741 749]))                  )
+                nil [707 2600]))          
+      :file "environment.py"
+      :pointmax 2706
+      :fsize 2705
+      :lastmodtime '(21003 8375)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!vaitarna!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

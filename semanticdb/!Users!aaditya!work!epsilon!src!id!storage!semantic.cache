@@ -1,0 +1,104 @@
+;; Object storage/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "storage/"
+  :tables
+  (list
+    (semanticdb-table "escript.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Storage escript APIs\"\"\"" code nil nil [25 51])
+            ("sqlalchemy.sql" include nil nil [53 111])
+            ("id.db.schema" include nil nil [113 158])
+            ("id.db.schema" include nil nil [159 240])
+            ("id.db.schema" include nil nil [241 348])
+            ("id.common.secure" include nil nil [350 387])
+            ("EscriptWrapper" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [461 483]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [437 441])
+                            ("session" variable nil (reparse-symbol function_parameters) [443 450]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [424 484])
+                    ("create_empty_value" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [512 516])
+                            ("data_type" variable nil (reparse-symbol function_parameters) [518 527]))                          
+                        :documentation "Create an empty value for a data_type")
+                        (reparse-symbol indented_block_body) [489 1234])
+                    ("_extract_id_token" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1261 1265])
+                            ("token" variable nil (reparse-symbol function_parameters) [1267 1272])
+                            ("prefix" variable nil (reparse-symbol function_parameters) [1274 1280]))                          
+                        :documentation "Extract a given token from an encrypted id
+        Assumes the original string was prefix:id ")
+                        (reparse-symbol indented_block_body) [1239 1935])
+                    ("generate_rowid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1959 1963])
+                            ("rowid" variable nil (reparse-symbol function_parameters) [1965 1970]))                          
+                        :documentation "Generate encrypted rowid")
+                        (reparse-symbol indented_block_body) [1940 2033])
+                    ("extract_rowid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2110 2114])
+                            ("token" variable nil (reparse-symbol function_parameters) [2116 2121]))                          
+                        :documentation "Generate encrypted rowid")
+                        (reparse-symbol indented_block_body) [2092 2215])
+                    ("generate_tableid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2241 2245])
+                            ("tableid" variable nil (reparse-symbol function_parameters) [2247 2254]))                          
+                        :documentation "Generate encrypted tableid")
+                        (reparse-symbol indented_block_body) [2220 2321])
+                    ("extract_tableid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2404 2408])
+                            ("token" variable nil (reparse-symbol function_parameters) [2410 2415]))                          
+                        :documentation "Generate encrypted tableid")
+                        (reparse-symbol indented_block_body) [2384 2513])
+                    ("generate_typeid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2538 2542])
+                            ("typeid" variable nil (reparse-symbol function_parameters) [2544 2550]))                          
+                        :documentation "Generate encrypted typeid")
+                        (reparse-symbol indented_block_body) [2518 2615])
+                    ("extract_typeid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2695 2699])
+                            ("token" variable nil (reparse-symbol function_parameters) [2701 2706]))                          
+                        :documentation "Generate encrypted typeid")
+                        (reparse-symbol indented_block_body) [2676 2802])
+                    ("load_value_from_row" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2831 2835])
+                            ("row" variable nil (reparse-symbol function_parameters) [2837 2840]))                          
+                        :documentation "Load value from a row")
+                        (reparse-symbol indented_block_body) [2807 3161])
+                    ("save_value_to_row" function (:arguments 
+                      ( ("session" variable nil (reparse-symbol function_parameters) [3188 3195])
+                        ("value" variable nil (reparse-symbol function_parameters) [3197 3202]))                      ) (reparse-symbol indented_block_body) [3166 3820]))                  
+                :type "class")
+                nil [390 3820]))          
+      :file "escript.py"
+      :pointmax 3820
+      :fsize 3819
+      :lastmodtime '(21002 30696 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!aaditya!work!epsilon!src!id!storage!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

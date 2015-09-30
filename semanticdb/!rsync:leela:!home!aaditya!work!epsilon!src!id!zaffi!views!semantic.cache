@@ -1,0 +1,273 @@
+;; Object views/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "views/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"URL Handler for controller\"\"\"" code nil nil [25 57])
+            ("simplejson" include nil nil [58 75])
+            ("time" include nil nil [76 87])
+            ("gevent.local" include nil nil [89 119])
+            ("pyramid.view" include nil nil [121 172])
+            ("pyramid.response" include nil nil [173 210])
+            ("pyramid.security" include nil nil [211 260])
+            ("pyramid.httpexceptions" include nil nil [261 334])
+            ("transaction" include nil nil [335 353])
+            ("sqlalchemy.exc" include nil nil [356 397])
+            ("id.common.secure" include nil nil [399 436])
+            ("id.storage" include nil nil [437 463])
+            ("id.storage.escript" include nil nil [464 509])
+            ("id.db.schema" include nil nil [510 546])
+            ("id.db.schema" include nil nil [547 615])
+            ("id.db.schema" include nil nil [616 678])
+            ("id.common.interfaces.zaffi" include nil nil [679 723])
+            ("DBSession" include nil nil [735 751])
+            ("log" include nil nil [766 776])
+            ("get_user_groups" include nil nil [790 862])
+            ("get_group" include nil nil [790 862])
+            ("set_row" include nil nil [790 862])
+            ("get_row" include nil nil [790 862])
+            ("get_type" include nil nil [790 862])
+            ("get_table" include nil nil [790 862])
+            ("set_row_value" include nil nil [876 911])
+            ("get_row_value" include nil nil [876 911])
+            ("get_row_cache" include nil nil [924 974])
+            ("decode_obj_auth" include nil nil [924 974])
+            ("decode_auth" include nil nil [924 974])
+            ("update_cached_table_id" include nil nil [987 1093])
+            ("update_cached_table" include nil nil [987 1093])
+            ("get_cached_user" include nil nil [987 1093])
+            ("get_type_definition" include nil nil [987 1093])
+            ("update_row_cache" include nil nil [987 1093])
+            ("get_cached_table_id" include nil nil [1106 1168])
+            ("get_cached_table" include nil nil [1106 1168])
+            ("get_cached_group" include nil nil [1106 1168])
+            ("encode_auth" include nil nil [1181 1199])
+            ("wrapper" variable nil nil [1201 1231])
+            ("" code nil nil [1246 1248])
+            ("home_view" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [1263 1270]))              ) nil [1249 1307])
+            ("" code nil nil [1321 1389])
+            ("row_index" function
+               (:documentation "Read all rows in a table"
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [1404 1411]))                  )
+                nil [1390 3692])
+            ("" code nil nil [3706 3766])
+            ("row_get" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [3779 3786]))              ) nil [3767 4831])
+            ("" code nil nil [4846 4902])
+            ("Row" type
+               (:documentation "handler for UserDataRow"
+                :superclasses ("local")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5005 5027])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5036 5058])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5067 5091])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5100 5158])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5167 5221])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5306 5330])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5339 5365])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5374 5402]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4972 4976])
+                            ("context" variable nil (reparse-symbol function_parameters) [4978 4985])
+                            ("request" variable nil (reparse-symbol function_parameters) [4987 4994]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4959 5403])
+                    ("" code nil (reparse-symbol indented_block_body) [5420 5446])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5459 5463]))                          )
+                        (reparse-symbol indented_block_body) [5451 6322])
+                    ("" code nil (reparse-symbol indented_block_body) [6339 6368])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6384 6388]))                          
+                        :documentation "Delete a row")
+                        (reparse-symbol indented_block_body) [6373 7048])
+                    ("" code nil (reparse-symbol indented_block_body) [7065 7090])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7106 7110]))                          
+                        :documentation "Create a new row")
+                        (reparse-symbol indented_block_body) [7095 8586])
+                    ("" code nil (reparse-symbol indented_block_body) [8603 8632])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8648 8652]))                          
+                        :documentation "Set a row to a new value")
+                        (reparse-symbol indented_block_body) [8637 9650]))                  
+                :type "class")
+                nil [4903 9650])
+            ("" code nil nil [9669 9730])
+            ("Rows" type
+               (:documentation "handler for list of  UserDataRow"
+                :superclasses ("local")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9843 9865])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9874 9896])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9905 9929])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9938 9996])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10005 10029])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10038 10064])
+                            ("self" variable nil (reparse-symbol indented_block_body) [10073 10101]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9810 9814])
+                            ("context" variable nil (reparse-symbol function_parameters) [9816 9823])
+                            ("request" variable nil (reparse-symbol function_parameters) [9825 9832]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9797 10102])
+                    ("" code nil (reparse-symbol indented_block_body) [10120 10149])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10165 10169])
+                            ("values" variable nil (reparse-symbol function_parameters) [10171 10177]))                          
+                        :documentation "Delete list of rows")
+                        (reparse-symbol indented_block_body) [10154 11119])
+                    ("" code nil (reparse-symbol indented_block_body) [11136 11165])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11181 11185])
+                            ("values" variable nil (reparse-symbol function_parameters) [11187 11193]))                          
+                        :documentation "Create list of new rows")
+                        (reparse-symbol indented_block_body) [11170 12845])
+                    ("" code nil (reparse-symbol indented_block_body) [12862 12891])
+                    ("update" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12907 12911]))                          
+                        :documentation "Set the list rows to new values")
+                        (reparse-symbol indented_block_body) [12896 14347]))                  
+                :type "class")
+                nil [9731 14347])
+            ("" code nil nil [14362 14434])
+            ("table_index" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [14451 14458]))              ) nil [14435 16457])
+            ("" code nil nil [16474 16534])
+            ("Table" type
+               (:documentation "REST handler for UserDataTable"
+                :superclasses ("local")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [16646 16668])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16677 16699])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16708 16732])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16741 16799])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16808 16832])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16841 16867])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16876 16904]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16613 16617])
+                            ("context" variable nil (reparse-symbol function_parameters) [16619 16626])
+                            ("request" variable nil (reparse-symbol function_parameters) [16628 16635]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [16600 16905])
+                    ("" code nil (reparse-symbol indented_block_body) [16922 16948])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16961 16965]))                          )
+                        (reparse-symbol indented_block_body) [16953 18254])
+                    ("" code nil (reparse-symbol indented_block_body) [18271 18300])
+                    ("search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18316 18320]))                          )
+                        (reparse-symbol indented_block_body) [18305 20113])
+                    ("" code nil (reparse-symbol indented_block_body) [20130 20157])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20173 20177]))                          
+                        :documentation "Create a new table")
+                        (reparse-symbol indented_block_body) [20162 23732])
+                    ("" code nil (reparse-symbol indented_block_body) [23749 23778])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23794 23798]))                          
+                        :documentation "Delete a table")
+                        (reparse-symbol indented_block_body) [23783 24521]))                  
+                :type "class")
+                nil [16535 24521])
+            ("" code nil nil [24536 24606])
+            ("type_index" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [24622 24629]))              ) nil [24607 25365])
+            ("" code nil nil [25380 25438])
+            ("Type" type
+               (:documentation "REST handler for UserDataType"
+                :superclasses ("local")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [25548 25570])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25579 25601])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25610 25634])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25643 25699])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25708 25732])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25741 25767])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25776 25804]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25515 25519])
+                            ("context" variable nil (reparse-symbol function_parameters) [25521 25528])
+                            ("request" variable nil (reparse-symbol function_parameters) [25530 25537]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [25502 25805])
+                    ("" code nil (reparse-symbol indented_block_body) [25822 25878])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25891 25895]))                          )
+                        (reparse-symbol indented_block_body) [25883 26776])
+                    ("" code nil (reparse-symbol indented_block_body) [26793 26858])
+                    ("search" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26874 26878]))                          )
+                        (reparse-symbol indented_block_body) [26863 27995])
+                    ("" code nil (reparse-symbol indented_block_body) [28012 28083])
+                    ("search_types" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28105 28109]))                          )
+                        (reparse-symbol indented_block_body) [28088 29707])
+                    ("" code nil (reparse-symbol indented_block_body) [29724 29789])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29805 29809]))                          )
+                        (reparse-symbol indented_block_body) [29794 30227])
+                    ("" code nil (reparse-symbol indented_block_body) [30244 30306])
+                    ("create" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30322 30326]))                          )
+                        (reparse-symbol indented_block_body) [30311 33191]))                  
+                :type "class")
+                nil [25439 33191]))          
+      :file "__init__.py"
+      :pointmax 33191
+      :fsize 33190
+      :lastmodtime '(21003 50711)
+      :unmatched-syntax '((PERIOD 1175 . 1176) (FROM 1169 . 1173) (PERIOD 1174 . 1175) (PERIOD 1100 . 1101) (FROM 1094 . 1098) (PERIOD 1099 . 1100) (PERIOD 981 . 982) (FROM 975 . 979) (PERIOD 980 . 981) (PERIOD 918 . 919) (FROM 912 . 916) (PERIOD 917 . 918) (PERIOD 869 . 870) (FROM 863 . 867) (PERIOD 868 . 869) (PERIOD 783 . 784) (FROM 777 . 781) (PERIOD 782 . 783) (PERIOD 758 . 759) (FROM 752 . 756) (PERIOD 757 . 758) (PERIOD 731 . 732) (FROM 725 . 729) (PERIOD 730 . 731) (PERIOD 1175 . 1176) (FROM 1169 . 1173) (PERIOD 1174 . 1175) (PERIOD 1100 . 1101) (FROM 1094 . 1098) (PERIOD 1099 . 1100) (PERIOD 981 . 982) (FROM 975 . 979) (PERIOD 980 . 981) (PERIOD 918 . 919) (FROM 912 . 916) (PERIOD 917 . 918) (PERIOD 869 . 870) (FROM 863 . 867) (PERIOD 868 . 869) (PERIOD 783 . 784) (FROM 777 . 781) (PERIOD 782 . 783) (PERIOD 758 . 759) (FROM 752 . 756) (PERIOD 757 . 758) (PERIOD 731 . 732) (FROM 725 . 729) (PERIOD 730 . 731) (PERIOD 1175 . 1176) (FROM 1169 . 1173) (PERIOD 1174 . 1175) (PERIOD 1100 . 1101) (FROM 1094 . 1098) (PERIOD 1099 . 1100) (PERIOD 981 . 982) (FROM 975 . 979) (PERIOD 980 . 981) (PERIOD 918 . 919) (FROM 912 . 916) (PERIOD 917 . 918) (PERIOD 869 . 870) (FROM 863 . 867) (PERIOD 868 . 869) (PERIOD 783 . 784) (FROM 777 . 781) (PERIOD 782 . 783) (PERIOD 758 . 759) (FROM 752 . 756) (PERIOD 757 . 758) (PERIOD 731 . 732) (FROM 725 . 729) (PERIOD 730 . 731))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!zaffi!views!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

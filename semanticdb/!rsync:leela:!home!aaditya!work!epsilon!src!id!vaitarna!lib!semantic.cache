@@ -1,0 +1,962 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "wiki.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [2 16])
+            ("os" include nil nil [17 26])
+            ("re" include nil nil [27 36])
+            ("datetime" include nil nil [37 52])
+            ("functools" include nil nil [53 82])
+            ("pprint" include nil nil [83 109])
+            ("MoinMoin.app" include nil nil [111 146])
+            ("webob" include nil nil [148 160])
+            ("webob.exc" include nil nil [161 184])
+            ("webob" include nil nil [185 211])
+            ("id.scripts.azpath" include nil nil [213 255])
+            ("log" variable nil nil [257 290])
+            ("wiki_base_path" variable nil nil [292 343])
+            ("wiki_config_file" variable nil nil [344 408])
+            ("WikiLoaderApp" type
+               (:documentation "Render the wiki component"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [521 541])
+                            ("self" variable nil (reparse-symbol indented_block_body) [550 590])
+                            ("self" variable nil (reparse-symbol indented_block_body) [599 613])
+                            ("log" code nil (reparse-symbol indented_block_body) [622 663]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [493 497])
+                            ("app" variable nil (reparse-symbol function_parameters) [499 502])
+                            ("config" variable nil (reparse-symbol function_parameters) [504 510]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [480 664])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [683 687])
+                            ("environ" variable nil (reparse-symbol function_parameters) [689 696])
+                            ("start_response" variable nil (reparse-symbol function_parameters) [698 712]))                          )
+                        (reparse-symbol indented_block_body) [670 1069]))                  
+                :type "class")
+                nil [411 1069])
+            ("make_app" function
+               (:documentation "Construct WSGI App from JSON file"
+                :arguments 
+                  ( ("app" variable nil (reparse-symbol function_parameters) [1084 1087])
+                    ("config" variable nil (reparse-symbol function_parameters) [1089 1095]))                  )
+                nil [1071 1206]))          
+      :file "wiki.py"
+      :pointmax 1206
+      :fsize 1205
+      :lastmodtime '(21003 8375)
+      :unmatched-syntax nil)
+    (semanticdb-table "sqzloader.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [1 15])
+            ("os" include nil nil [16 25])
+            ("re" include nil nil [26 35])
+            ("datetime" include nil nil [36 51])
+            ("functools" include nil nil [52 81])
+            ("pprint" include nil nil [82 108])
+            ("webob" include nil nil [110 122])
+            ("webob.exc" include nil nil [123 146])
+            ("paste.deploy.converters" include nil nil [147 189])
+            ("webob" include nil nil [190 216])
+            ("id.scripts.azpath" include nil nil [218 260])
+            ("log" variable nil nil [262 295])
+            ("url_base_path" variable nil nil [297 365])
+            ("sqz_map" variable nil nil [367 919])
+            ("url_re" variable nil nil [921 958])
+            ("get_css_img_path" function (:arguments 
+              ( ("base_path" variable nil (reparse-symbol function_parameters) [982 991])
+                ("css_path" variable nil (reparse-symbol function_parameters) [993 1001])
+                ("path_cache" variable nil (reparse-symbol function_parameters) [1003 1013])
+                ("m" variable nil (reparse-symbol function_parameters) [1015 1016]))              ) nil [961 1662])
+            ("SqzLoaderApp" type
+               (:documentation "Squeeze Multiple HTTP requests into one, combo loading FTW!!!"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1804 1824]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1781 1785])
+                            ("config" variable nil (reparse-symbol function_parameters) [1787 1793]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1768 1825])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1843 1847])
+                            ("environ" variable nil (reparse-symbol function_parameters) [1849 1856])
+                            ("start_response" variable nil (reparse-symbol function_parameters) [1858 1872]))                          )
+                        (reparse-symbol indented_block_body) [1830 5650]))                  
+                :type "class")
+                nil [1664 5650])
+            ("make_app" function
+               (:documentation "Construct WSGI App from JSON file"
+                :arguments 
+                  ( ("config" variable nil (reparse-symbol function_parameters) [5665 5671]))                  )
+                nil [5652 5776]))          
+      :file "sqzloader.py"
+      :pointmax 5776
+      :fsize 5775
+      :lastmodtime '(21003 8375)
+      :unmatched-syntax '((INDENT_BLOCK 4246 . 4419) (NEWLINE 4245 . 4246) (COLON 4244 . 4245) (TRY 4103 . 4106) (AS 4240 . 4242)))
+    (semanticdb-table "app_globals.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"The application's Globals object\"\"\"" code nil nil [1 39])
+            ("logging" include nil nil [40 54])
+            ("os" include nil nil [55 64])
+            ("sys" include nil nil [65 75])
+            ("socket" include nil nil [76 89])
+            ("datetime" include nil nil [90 105])
+            ("cPickle" include nil nil [106 120])
+            ("base64" include nil nil [121 134])
+            ("zmq" include nil nil [136 146])
+            ("redis" include nil nil [147 159])
+            ("pylons" include nil nil [160 173])
+            ("pylons" include nil nil [174 204])
+            ("beaker.cache" include nil nil [205 242])
+            ("if" code nil nil [244 292])
+            ("log" variable nil nil [344 377])
+            ("myppath" variable nil nil [379 414])
+            ("iddbpath" variable nil nil [415 501])
+            ("idbinpath" variable nil nil [502 560])
+            ("_init_done" variable nil nil [561 579])
+            ("try" code nil nil [609 760])
+            ("try" code nil nil [761 917])
+            ("id.common.secure" include nil nil [918 955])
+            ("id.common.license" include nil nil [956 993])
+            ("id.common.error" include nil nil [994 1037])
+            ("id.common" include nil nil [1038 1066])
+            ("id.common.emailer" include nil nil [1067 1107])
+            ("id.common.version" include nil nil [1108 1157])
+            ("id.common.config" include nil nil [1158 1199])
+            ("id.common.connxns" include nil nil [1200 1236])
+            ("id.common.audit" include nil nil [1237 1273])
+            ("Globals" type
+               (:documentation "Globals acts as a container for objects available throughout the
+    life of the application
+
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"One instance of Globals is created during application
+        initialization and is available during requests via the
+        'app_globals' variable
+
+        \"\"\"" code nil (reparse-symbol indented_block_body) [1449 1613])
+                            ("global" code nil (reparse-symbol indented_block_body) [1622 1639])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1648 1698])
+                            ("log" code nil (reparse-symbol indented_block_body) [1707 1780])
+                            ("global_conf" variable nil (reparse-symbol indented_block_body) [1789 1824])
+                            ("judo_conf" variable nil (reparse-symbol indented_block_body) [1834 1894])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1903 1937])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1946 1993])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2002 2043])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2052 2072])
+                            ("if" code nil (reparse-symbol indented_block_body) [2081 2165])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2174 2203])
+                            ("if" code nil (reparse-symbol indented_block_body) [2212 2308])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2317 2362])
+                            ("'epsilon_karan_shared_secret'" code nil (reparse-symbol indented_block_body) [2472 2501])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2510 2602])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2612 2655])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2664 2713])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2722 2776])
+                            ("log" code nil (reparse-symbol indented_block_body) [2786 2885])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2894 2920])
+                            ("'127.0.0.1'" code nil (reparse-symbol indented_block_body) [3006 3017])
+                            ("7777" code nil (reparse-symbol indented_block_body) [3108 3112])
+                            ("'127.0.0.1'" code nil (reparse-symbol indented_block_body) [3207 3218])
+                            ("8888" code nil (reparse-symbol indented_block_body) [3318 3322])
+                            ("'127.0.0.1'" code nil (reparse-symbol indented_block_body) [3411 3422])
+                            ("8899" code nil (reparse-symbol indented_block_body) [3516 3520])
+                            ("'127.0.0.1'" code nil (reparse-symbol indented_block_body) [3612 3623])
+                            ("1978" code nil (reparse-symbol indented_block_body) [3720 3724])
+                            ("False" code nil (reparse-symbol indented_block_body) [3816 3821])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3830 3861])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3870 3921])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3930 3991])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4000 4065])
+                            ("self" code nil (reparse-symbol indented_block_body) [4074 4153])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4162 4206])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4215 4232])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4241 4270])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4279 4341])
+                            ("log" code nil (reparse-symbol indented_block_body) [4350 4417])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4426 4510])
+                            ("if" code nil (reparse-symbol indented_block_body) [4586 4787])
+                            ("if" code nil (reparse-symbol indented_block_body) [4796 4969])
+                            ("'127.0.0.1'" code nil (reparse-symbol indented_block_body) [5103 5114])
+                            ("6379" code nil (reparse-symbol indented_block_body) [5208 5212])
+                            ("0" code nil (reparse-symbol indented_block_body) [5300 5301])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5310 5396])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5406 5472])
+                            ("log" code nil (reparse-symbol indented_block_body) [5481 5575])
+                            ("log" code nil (reparse-symbol indented_block_body) [5585 5639])
+                            ("try" code nil (reparse-symbol indented_block_body) [5649 5922])
+                            ("try" code nil (reparse-symbol indented_block_body) [5931 6269])
+                            ("init_email" code nil (reparse-symbol indented_block_body) [6278 6299])
+                            ("log" code nil (reparse-symbol indented_block_body) [6308 6330])
+                            ("try" code nil (reparse-symbol indented_block_body) [6407 6982])
+                            ("if" code nil (reparse-symbol indented_block_body) [6991 7168]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1426 1430])
+                            ("config" variable nil (reparse-symbol function_parameters) [1432 1438]))                          
+                        :documentation "One instance of Globals is created during application
+        initialization and is available during requests via the
+        'app_globals' variable
+
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1413 7168]))                  
+                :type "class")
+                nil [1276 7168]))          
+      :file "app_globals.py"
+      :pointmax 7168
+      :fsize 7167
+      :lastmodtime '(21003 8375)
+      :unmatched-syntax '((NAME 5221 . 5225) (IF 5266 . 5268) (ELSE 5295 . 5299) (NAME 5123 . 5127) (IF 5172 . 5174) (ELSE 5203 . 5207) (NAME 5023 . 5027) (IF 5067 . 5069) (ELSE 5098 . 5102) (NAME 3733 . 3737) (IF 3764 . 3766) (ELSE 3811 . 3815) (NAME 3632 . 3636) (IF 3683 . 3685) (ELSE 3715 . 3719) (NAME 3529 . 3533) (IF 3575 . 3577) (ELSE 3607 . 3611) (NAME 3431 . 3435) (IF 3480 . 3482) (ELSE 3511 . 3515) (NAME 3331 . 3335) (IF 3375 . 3377) (ELSE 3406 . 3410) (NAME 3227 . 3231) (IF 3280 . 3282) (ELSE 3313 . 3317) (NAME 3121 . 3125) (IF 3169 . 3171) (ELSE 3202 . 3206) (NAME 3026 . 3030) (IF 3073 . 3075) (ELSE 3103 . 3107) (NAME 2929 . 2933) (IF 2971 . 2973) (ELSE 3001 . 3005) (NAME 2371 . 2395) (IF 2430 . 2432) (ELSE 2467 . 2471)))
+    (semanticdb-table "cache.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [39 53])
+            ("cPickle" include nil nil [54 68])
+            ("sets" include nil nil [69 89])
+            ("pylons" include nil nil [91 121])
+            ("id.common.cache" include nil nil [123 205])
+            ("id.common.cache" include nil nil [206 268])
+            ("id.vaitarna.model" include nil nil [269 300])
+            ("log" variable nil nil [302 335]))          
+      :file "cache.py"
+      :pointmax 336
+      :fsize 335
+      :lastmodtime '(20994 22450)
+      :unmatched-syntax nil)
+    (semanticdb-table "auth.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "auth.py"
+      :pointmax 7143
+      :fsize 7547
+      :lastmodtime '(21003 62880)
+      :unmatched-syntax nil)
+    (semanticdb-table "base.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"The base Controller API
+
+Provides the BaseController class for subclassing.
+\"\"\"" code nil nil [1 83])
+            ("logging" include nil nil [84 98])
+            ("datetime" include nil nil [99 114])
+            ("time" include nil nil [115 126])
+            ("pprint" include nil nil [127 153])
+            ("string" include nil nil [154 181])
+            ("simplejson" include nil nil [203 220])
+            ("pylons" include nil nil [222 246])
+            ("pylons" include nil nil [247 273])
+            ("pylons" include nil nil [274 301])
+            ("pylons" include nil nil [302 346])
+            ("pylons" include nil nil [347 369])
+            ("pylons" include nil nil [370 395])
+            ("pylons" include nil nil [396 426])
+            ("pylons" include nil nil [427 466])
+            ("pylons.controllers" include nil nil [468 513])
+            ("pylons.controllers.util" include nil nil [514 555])
+            ("pylons.controllers.util" include nil nil [556 600])
+            ("pylons.templating" include nil nil [602 653])
+            ("helpers" include nil nil [677 696])
+            ("util" include nil nil [697 708])
+            ("id.common.prefs" include nil nil [710 741])
+            ("id.vaitarna.model" include nil nil [742 773])
+            ("id.vaitarna.model.meta" include nil nil [774 816])
+            ("id.vaitarna.lib.cache" include nil nil [817 879])
+            ("log" variable nil nil [882 915])
+            ("_get_epsilon_pref" function (:arguments 
+              ( ("pref_name" variable nil (reparse-symbol function_parameters) [940 949]))              ) nil [918 1175])
+            ("_get_user_pref" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1196 1200])
+                ("group" variable nil (reparse-symbol function_parameters) [1202 1207])
+                ("prefix" variable nil (reparse-symbol function_parameters) [1209 1215]))              ) nil [1177 1292])
+            ("BaseController" type
+               (:superclasses ("WSGIController")
+                :members 
+                  ( ("require_auth" variable nil (reparse-symbol indented_block_body) [1365 1384])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1403 1407])
+                            ("environ" variable nil (reparse-symbol function_parameters) [1409 1416])
+                            ("start_response" variable nil (reparse-symbol function_parameters) [1418 1432]))                          
+                        :documentation "Invoke the Controller")
+                        (reparse-symbol indented_block_body) [1390 3390])
+                    ("_find_user_group" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3501 3505])
+                            ("user" variable nil (reparse-symbol function_parameters) [3507 3511]))                          
+                        :documentation "Try to find out one user group for the given user")
+                        (reparse-symbol indented_block_body) [3480 4172])
+                    ("_get_chosen_group" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4199 4203]))                          
+                        :documentation "Figure out a default chosen_group for the user")
+                        (reparse-symbol indented_block_body) [4177 5314])
+                    ("__before__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5484 5488]))                          
+                        :documentation "Setup env for controllers")
+                        (reparse-symbol indented_block_body) [5469 14814]))                  
+                :type "class")
+                nil [1294 14814]))          
+      :file "base.py"
+      :pointmax 14835
+      :fsize 14813
+      :lastmodtime '(21004 18807)
+      :unmatched-syntax nil)
+    (semanticdb-table "util.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [40 54])
+            ("urllib2" include nil nil [55 69])
+            ("os" include nil nil [70 79])
+            ("pprint" include nil nil [80 93])
+            ("base64" include nil nil [94 107])
+            ("cgi" include nil nil [108 118])
+            ("ntpath" include nil nil [119 132])
+            ("posixpath" include nil nil [133 149])
+            ("macpath" include nil nil [150 164])
+            ("urllib" include nil nil [166 194])
+            ("httplib" include nil nil [195 228])
+            ("itertools" include nil nil [229 258])
+            ("pprint" include nil nil [259 285])
+            ("simplejson" include nil nil [287 304])
+            ("pylons.controllers.util" include nil nil [305 356])
+            ("pylons.templating" include nil nil [357 418])
+            ("formencode" include nil nil [419 449])
+            ("webob.exc" include nil nil [451 479])
+            ("string" include nil nil [480 507])
+            ("render" include nil nil [520 533])
+            ("Session" include nil nil [574 588])
+            ("pylons" include nil nil [589 641])
+            ("helpers" include nil nil [642 661])
+            ("props" include nil nil [662 688])
+            ("id.common.prefs" include nil nil [825 894])
+            ("id.common.emailer" include nil nil [895 940])
+            ("id.common.auth" include nil nil [941 983])
+            ("id.common.util" include nil nil [984 1089])
+            ("id.db.schema" include nil nil [1090 1179])
+            ("id.common.winpsutil" include nil nil [1180 1225])
+            ("id.common.zrequests" include nil nil [1226 1270])
+            ("log" variable nil nil [1273 1306])
+            ("judo_host" variable nil nil [1335 1385])
+            ("judo_port" variable nil nil [1386 1436])
+            ("medalin_host" variable nil nil [1438 1494])
+            ("medalin_port" variable nil nil [1495 1551])
+            ("arjun_host" variable nil nil [1553 1605])
+            ("arjun_port" variable nil nil [1606 1658])
+            ("karan_enabled" variable nil nil [1660 1721])
+            ("kcfg" variable nil nil [1722 1770])
+            ("karan_host" variable nil nil [1771 1823])
+            ("karan_auth" variable nil nil [1824 1890])
+            ("info_deleted" variable nil nil [1892 1925])
+            ("info_inactive" variable nil nil [1926 1960])
+            ("_prop_type_map" variable nil nil [1962 2127])
+            ("http_sess_config" variable nil nil [2130 2275])
+            ("is_karan_enabled" function nil nil [2278 2327])
+            ("get_karan_info" function nil nil [2329 3026])
+            ("make_approvals_dict" function (:arguments 
+              ( ("stat" variable nil (reparse-symbol function_parameters) [3052 3056])
+                ("target_type" variable nil (reparse-symbol function_parameters) [3058 3069]))              ) nil [3028 4939])
+            ("choose_send" function (:arguments 
+              ( ("url" variable nil (reparse-symbol function_parameters) [4957 4960])
+                ("json" variable nil (reparse-symbol function_parameters) [4962 4966])
+                ("resp" variable nil (reparse-symbol function_parameters) [4968 4972])
+                ("format" variable nil (reparse-symbol function_parameters) [4974 4980]))              ) nil [4941 5143])
+            ("choose_response" function
+               (:documentation "either send json, or a rendered page in response"
+                :arguments 
+                  ( ("renderpath" variable nil (reparse-symbol function_parameters) [5165 5175])
+                    ("json" variable nil (reparse-symbol function_parameters) [5177 5181])
+                    ("resp" variable nil (reparse-symbol function_parameters) [5183 5187])
+                    ("format" variable nil (reparse-symbol function_parameters) [5189 5195]))                  )
+                nil [5145 5507])
+            ("parse_task_list" function (:arguments 
+              ( ("p" variable nil (reparse-symbol function_parameters) [5529 5530])
+                ("count" variable nil (reparse-symbol function_parameters) [5532 5537])
+                ("encoding" variable nil (reparse-symbol function_parameters) [5539 5547]))              ) nil [5509 7225])
+            ("parse_prop_list" function (:arguments 
+              ( ("p" variable nil (reparse-symbol function_parameters) [7247 7248])
+                ("ii" variable nil (reparse-symbol function_parameters) [7250 7252])
+                ("filter" variable nil (reparse-symbol function_parameters) [7254 7260])
+                ("encoding" variable nil (reparse-symbol function_parameters) [7265 7273]))              ) nil [7227 7679])
+            ("get_id" function
+               (:documentation "return typ object of id after lookup in attrlist"
+                :arguments 
+                  ( ("typ" variable nil (reparse-symbol function_parameters) [7692 7695])
+                    ("name" variable nil (reparse-symbol function_parameters) [7697 7701])
+                    ("attrlist" variable nil (reparse-symbol function_parameters) [7703 7711])
+                    ("_s" variable nil (reparse-symbol function_parameters) [7713 7715]))                  )
+                nil [7681 8023])
+            ("get_entity_machine" function
+               (:documentation "find (or create) an entity machine"
+                :arguments 
+                  ( ("entity" variable nil (reparse-symbol function_parameters) [8048 8054])
+                    ("machine" variable nil (reparse-symbol function_parameters) [8056 8063])
+                    ("_s" variable nil (reparse-symbol function_parameters) [8065 8067]))                  )
+                nil [8025 8549])
+            ("get_chosen_group" function
+               (:documentation "figure out the selected group, or redirect to group select page"
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [8572 8576])
+                    ("session" variable nil (reparse-symbol function_parameters) [8578 8585])
+                    ("current_url" variable nil (reparse-symbol function_parameters) [8587 8598])
+                    ("_s" variable nil (reparse-symbol function_parameters) [8605 8607]))                  )
+                nil [8551 9376])
+            ("do_judo_request" function
+               (:documentation "handle request to judo server"
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [9398 9402])
+                    ("rel_url" variable nil (reparse-symbol function_parameters) [9404 9411])
+                    ("args" variable nil (reparse-symbol function_parameters) [9413 9417])
+                    ("group" variable nil (reparse-symbol function_parameters) [9419 9424]))                  )
+                nil [9378 10421])
+            ("run_workflow" function
+               (:documentation "run a workflow"
+                :arguments 
+                  ( ("workflow" variable nil (reparse-symbol function_parameters) [10440 10448])
+                    ("user" variable nil (reparse-symbol function_parameters) [10450 10454])
+                    ("group" variable nil (reparse-symbol function_parameters) [10456 10461])
+                    ("entity" variable nil (reparse-symbol function_parameters) [10463 10469])
+                    ("machine" variable nil (reparse-symbol function_parameters) [10471 10478])
+                    ("creds" variable nil (reparse-symbol function_parameters) [10480 10485])
+                    ("params" variable nil (reparse-symbol function_parameters) [10487 10493])
+                    ("notes" variable nil (reparse-symbol function_parameters) [10495 10500])
+                    ("gid" variable nil (reparse-symbol function_parameters) [10502 10505])
+                    ("sync" variable nil (reparse-symbol function_parameters) [10512 10516]))                  )
+                nil [10423 11488])
+            ("workflow_status" function (:arguments 
+              ( ("runid" variable nil (reparse-symbol function_parameters) [11510 11515])
+                ("workflow_name" variable nil (reparse-symbol function_parameters) [11517 11530])
+                ("user" variable nil (reparse-symbol function_parameters) [11532 11536])
+                ("group" variable nil (reparse-symbol function_parameters) [11538 11543]))              ) nil [11490 11746])
+            ("get_arjun_status" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [11769 11773])
+                ("group" variable nil (reparse-symbol function_parameters) [11775 11780]))              ) nil [11748 12042])
+            ("get_arjun_info" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [12063 12067])
+                ("group" variable nil (reparse-symbol function_parameters) [12069 12074]))              ) nil [12044 12730])
+            ("get_arjun_waiting_on" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [12757 12761])
+                ("group" variable nil (reparse-symbol function_parameters) [12763 12768])
+                ("params" variable nil (reparse-symbol function_parameters) [12770 12776]))              ) nil [12732 13126])
+            ("set_arjun_stdin_input" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [13154 13158])
+                ("group" variable nil (reparse-symbol function_parameters) [13160 13165])
+                ("params" variable nil (reparse-symbol function_parameters) [13167 13173]))              ) nil [13128 13522])
+            ("get_medalin_status_info" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [13552 13556])
+                ("group" variable nil (reparse-symbol function_parameters) [13558 13563]))              ) nil [13524 13833])
+            ("get_medalin_pq_info" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [13859 13863])
+                ("group" variable nil (reparse-symbol function_parameters) [13865 13870]))              ) nil [13835 14167])
+            ("reset_medalin_queues" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [14194 14198])
+                ("group" variable nil (reparse-symbol function_parameters) [14200 14205]))              ) nil [14169 14475])
+            ("resume_workflow_2" function (:arguments 
+              ( ("runid" variable nil (reparse-symbol function_parameters) [14499 14504])
+                ("node" variable nil (reparse-symbol function_parameters) [14506 14510])
+                ("workflow" variable nil (reparse-symbol function_parameters) [14512 14520])
+                ("user" variable nil (reparse-symbol function_parameters) [14522 14526])
+                ("group" variable nil (reparse-symbol function_parameters) [14528 14533])
+                ("params" variable nil (reparse-symbol function_parameters) [14535 14541]))              ) nil [14477 15524])
+            ("resume_workflow" function
+               (:documentation "run a workflow"
+                :arguments 
+                  ( ("runid" variable nil (reparse-symbol function_parameters) [15546 15551])
+                    ("workflow" variable nil (reparse-symbol function_parameters) [15553 15561])
+                    ("user" variable nil (reparse-symbol function_parameters) [15563 15567])
+                    ("group" variable nil (reparse-symbol function_parameters) [15569 15574])
+                    ("params" variable nil (reparse-symbol function_parameters) [15576 15582]))                  )
+                nil [15526 15943])
+            ("restart_workflow" function
+               (:documentation "run a workflow"
+                :arguments 
+                  ( ("runid" variable nil (reparse-symbol function_parameters) [15966 15971])
+                    ("workflow" variable nil (reparse-symbol function_parameters) [15973 15981])
+                    ("user" variable nil (reparse-symbol function_parameters) [15983 15987])
+                    ("group" variable nil (reparse-symbol function_parameters) [15989 15994])
+                    ("params" variable nil (reparse-symbol function_parameters) [15996 16002]))                  )
+                nil [15945 16418])
+            ("restart_workflow_with_args" function
+               (:documentation "run a workflow"
+                :arguments 
+                  ( ("runid" variable nil (reparse-symbol function_parameters) [16451 16456])
+                    ("workflow" variable nil (reparse-symbol function_parameters) [16458 16466])
+                    ("user" variable nil (reparse-symbol function_parameters) [16468 16472])
+                    ("group" variable nil (reparse-symbol function_parameters) [16474 16479])
+                    ("entity" variable nil (reparse-symbol function_parameters) [16481 16487])
+                    ("machine" variable nil (reparse-symbol function_parameters) [16489 16496])
+                    ("creds" variable nil (reparse-symbol function_parameters) [16498 16503])
+                    ("params" variable nil (reparse-symbol function_parameters) [16505 16511]))                  )
+                nil [16420 17152])
+            ("restart_last_workflow_with_args" function
+               (:documentation "run a workflow"
+                :arguments 
+                  ( ("runid" variable nil (reparse-symbol function_parameters) [17190 17195])
+                    ("workflow" variable nil (reparse-symbol function_parameters) [17197 17205])
+                    ("user" variable nil (reparse-symbol function_parameters) [17207 17211])
+                    ("group" variable nil (reparse-symbol function_parameters) [17213 17218])
+                    ("entity" variable nil (reparse-symbol function_parameters) [17220 17226])
+                    ("machine" variable nil (reparse-symbol function_parameters) [17228 17235])
+                    ("creds" variable nil (reparse-symbol function_parameters) [17237 17242])
+                    ("params" variable nil (reparse-symbol function_parameters) [17244 17250]))                  )
+                nil [17154 17896])
+            ("abort_workflow_no_massaging" function
+               (:documentation "abort a workflow"
+                :arguments 
+                  ( ("runid" variable nil (reparse-symbol function_parameters) [17930 17935])
+                    ("workflow" variable nil (reparse-symbol function_parameters) [17937 17945])
+                    ("user" variable nil (reparse-symbol function_parameters) [17947 17951])
+                    ("group" variable nil (reparse-symbol function_parameters) [17953 17958]))                  )
+                nil [17898 18235])
+            ("abort_workflow" function (:arguments 
+              ( ("runid" variable nil (reparse-symbol function_parameters) [18256 18261])
+                ("workflow" variable nil (reparse-symbol function_parameters) [18263 18271])
+                ("user" variable nil (reparse-symbol function_parameters) [18273 18277])
+                ("group" variable nil (reparse-symbol function_parameters) [18279 18284])
+                ("_s" variable nil (reparse-symbol function_parameters) [18286 18288]))              ) nil [18237 18460])
+            ("rollback_workflow_no_massaging" function
+               (:documentation "rollback a workflow"
+                :arguments 
+                  ( ("runid" variable nil (reparse-symbol function_parameters) [18497 18502])
+                    ("workflow" variable nil (reparse-symbol function_parameters) [18504 18512])
+                    ("user" variable nil (reparse-symbol function_parameters) [18514 18518])
+                    ("group" variable nil (reparse-symbol function_parameters) [18520 18525]))                  )
+                nil [18462 18794])
+            ("rollback_workflow" function (:arguments 
+              ( ("runid" variable nil (reparse-symbol function_parameters) [18818 18823])
+                ("workflow" variable nil (reparse-symbol function_parameters) [18825 18833])
+                ("user" variable nil (reparse-symbol function_parameters) [18835 18839])
+                ("group" variable nil (reparse-symbol function_parameters) [18841 18846])
+                ("_s" variable nil (reparse-symbol function_parameters) [18848 18850]))              ) nil [18796 19025])
+            ("resend_mails" function
+               (:documentation "resend mails for a workflow"
+                :arguments 
+                  ( ("runid" variable nil (reparse-symbol function_parameters) [19044 19049])
+                    ("workflow" variable nil (reparse-symbol function_parameters) [19051 19059])
+                    ("user" variable nil (reparse-symbol function_parameters) [19061 19065])
+                    ("group" variable nil (reparse-symbol function_parameters) [19067 19072])
+                    ("_s" variable nil (reparse-symbol function_parameters) [19074 19076]))                  )
+                nil [19027 19438])
+            ("get_combined_logs" function
+               (:documentation "run a workflow"
+                :arguments 
+                  ( ("runlog" variable nil (reparse-symbol function_parameters) [19462 19468])
+                    ("fmt" variable nil (reparse-symbol function_parameters) [19470 19473])
+                    ("user" variable nil (reparse-symbol function_parameters) [19475 19479])
+                    ("group" variable nil (reparse-symbol function_parameters) [19481 19486]))                  )
+                nil [19440 19721])
+            ("generate_logs" function
+               (:documentation "run a workflow"
+                :arguments 
+                  ( ("runlog" variable nil (reparse-symbol function_parameters) [19741 19747])
+                    ("fmt" variable nil (reparse-symbol function_parameters) [19749 19752])
+                    ("user" variable nil (reparse-symbol function_parameters) [19754 19758])
+                    ("group" variable nil (reparse-symbol function_parameters) [19760 19765]))                  )
+                nil [19723 20000])
+            ("test_login" function
+               (:documentation "abort a workflow"
+                :arguments 
+                  ( ("machine" variable nil (reparse-symbol function_parameters) [20017 20024])
+                    ("creds" variable nil (reparse-symbol function_parameters) [20026 20031])
+                    ("user" variable nil (reparse-symbol function_parameters) [20033 20037])
+                    ("group" variable nil (reparse-symbol function_parameters) [20039 20044])
+                    ("_s" variable nil (reparse-symbol function_parameters) [20046 20048]))                  )
+                nil [20002 20260])
+            ("get_top_group_parent" function
+               (:documentation "return the top group in the tree"
+                :arguments 
+                  ( ("group" variable nil (reparse-symbol function_parameters) [20287 20292]))                  )
+                nil [20262 20406])
+            ("get_top_user_parent" function
+               (:documentation "return the top user in the tree"
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [20432 20436]))                  )
+                nil [20408 20542])
+            ("get_top_task_parent" function
+               (:documentation "Get the top level task parent"
+                :arguments 
+                  ( ("task" variable nil (reparse-symbol function_parameters) [20568 20572]))                  )
+                nil [20544 20682])
+            ("pretty_params" function (:arguments 
+              ( ("params" variable nil (reparse-symbol function_parameters) [20702 20708]))              ) nil [20684 20780])
+            ("compute_task_ignore_failure" function
+               (:documentation "Compute whether a task is ignoreing errors or not"
+                :arguments 
+                  ( ("task" variable nil (reparse-symbol function_parameters) [20814 20818]))                  )
+                nil [20782 20992])
+            ("compute_task_ignore_warning" function
+               (:documentation "Compute whether a task is ignoreing errors or not"
+                :arguments 
+                  ( ("task" variable nil (reparse-symbol function_parameters) [21026 21030]))                  )
+                nil [20994 21204])
+            ("show_in_reports" function (:arguments 
+              ( ("tr" variable nil (reparse-symbol function_parameters) [21226 21228])
+                ("groups" variable nil (reparse-symbol function_parameters) [21230 21236]))              ) nil [21206 21411])
+            ("make_taskrunlog_dict_ssa" function
+               (:documentation "return a json-able dict for TaskRunLog, with appropriate decisions for SSA"
+                :arguments 
+                  ( ("tr" variable nil (reparse-symbol function_parameters) [21442 21444])
+                    ("user" variable nil (reparse-symbol function_parameters) [21446 21450])
+                    ("group" variable nil (reparse-symbol function_parameters) [21452 21457])
+                    ("_s" variable nil (reparse-symbol function_parameters) [21459 21461])
+                    ("grouplinks_visible" variable nil (reparse-symbol function_parameters) [21463 21481])
+                    ("userlinks_visible" variable nil (reparse-symbol function_parameters) [21488 21505]))                  )
+                nil [21413 24035])
+            ("make_taskrunlog_dict" function
+               (:documentation "return a json-able dict for TaskRunLog"
+                :arguments 
+                  ( ("tr" variable nil (reparse-symbol function_parameters) [24062 24064])
+                    ("user" variable nil (reparse-symbol function_parameters) [24066 24070])
+                    ("group" variable nil (reparse-symbol function_parameters) [24072 24077])
+                    ("wf_link" variable nil (reparse-symbol function_parameters) [24079 24086])
+                    ("perms" variable nil (reparse-symbol function_parameters) [24088 24093])
+                    ("_s" variable nil (reparse-symbol function_parameters) [24095 24097])
+                    ("grouplinks_visible" variable nil (reparse-symbol function_parameters) [24099 24117])
+                    ("userlinks_visible" variable nil (reparse-symbol function_parameters) [24124 24141]))                  )
+                nil [24037 27358])
+            ("get_workflows" function
+               (:documentation " return a list of applicable workflows.
+    Return [(workflow, is_ssa, can_read, can_write, can_execute),..]
+    "
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [27378 27382])
+                    ("group" variable nil (reparse-symbol function_parameters) [27384 27389])
+                    ("S" variable nil (reparse-symbol function_parameters) [27391 27392])
+                    ("pat" variable nil (reparse-symbol function_parameters) [27394 27397])
+                    ("limit" variable nil (reparse-symbol function_parameters) [27404 27409])
+                    ("show_library" variable nil (reparse-symbol function_parameters) [27416 27428])
+                    ("order_by" variable nil (reparse-symbol function_parameters) [27435 27443])
+                    ("allow_deleted" variable nil (reparse-symbol function_parameters) [27467 27480])
+                    ("include_children" variable nil (reparse-symbol function_parameters) [27488 27504])
+                    ("offset" variable nil (reparse-symbol function_parameters) [27511 27517])
+                    ("tags" variable nil (reparse-symbol function_parameters) [27521 27525]))                  )
+                nil [27360 33415])
+            ("make_machine_dict" function
+               (:documentation "make a dict of a machine"
+                :arguments 
+                  ( ("m" variable nil (reparse-symbol function_parameters) [33440 33441])
+                    ("group" variable nil (reparse-symbol function_parameters) [33443 33448]))                  )
+                nil [33418 33963])
+            ("make_cred_dict" function
+               (:documentation "make a dict for a cred"
+                :arguments 
+                  ( ("c" variable nil (reparse-symbol function_parameters) [33984 33985]))                  )
+                nil [33965 34319])
+            ("update_entity_attrs" function (:arguments 
+              ( ("entity" variable nil (reparse-symbol function_parameters) [34345 34351])
+                ("params" variable nil (reparse-symbol function_parameters) [34353 34359])
+                ("user" variable nil (reparse-symbol function_parameters) [34361 34365])
+                ("group" variable nil (reparse-symbol function_parameters) [34367 34372])
+                ("_s" variable nil (reparse-symbol function_parameters) [34374 34376]))              ) nil [34321 36807])
+            ("get_applicable_creds" function
+               (:documentation "
+    Return all applicable creds for a task, group, user combo
+    "
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [36834 36838])
+                    ("task" variable nil (reparse-symbol function_parameters) [36840 36844])
+                    ("group" variable nil (reparse-symbol function_parameters) [36846 36851])
+                    ("show_pg" variable nil (reparse-symbol function_parameters) [36853 36860])
+                    ("_s" variable nil (reparse-symbol function_parameters) [36862 36864]))                  )
+                nil [36809 37822])
+            ("get_applicable_creds_all" function
+               (:documentation "
+    Return all applicable creds for a task, group, user combo
+    "
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [37853 37857])
+                    ("task" variable nil (reparse-symbol function_parameters) [37859 37863])
+                    ("groups" variable nil (reparse-symbol function_parameters) [37865 37871])
+                    ("entity" variable nil (reparse-symbol function_parameters) [37873 37879])
+                    ("machine" variable nil (reparse-symbol function_parameters) [37881 37888])
+                    ("show_pg" variable nil (reparse-symbol function_parameters) [37890 37897])
+                    ("_s" variable nil (reparse-symbol function_parameters) [37899 37901]))                  )
+                nil [37824 39210])
+            ("get_group_creds" function
+               (:documentation "Return all creds for a group"
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [39232 39236])
+                    ("group" variable nil (reparse-symbol function_parameters) [39238 39243])
+                    ("show_pg" variable nil (reparse-symbol function_parameters) [39245 39252]))                  )
+                nil [39212 39873])
+            ("surgery_control_file" function
+               (:documentation "Generate a new control file"
+                :arguments 
+                  ( ("src_control" variable nil (reparse-symbol function_parameters) [39900 39911])
+                    ("dest_control" variable nil (reparse-symbol function_parameters) [39913 39925])
+                    ("dest_sid" variable nil (reparse-symbol function_parameters) [39927 39935])
+                    ("dbf_transform" variable nil (reparse-symbol function_parameters) [39937 39950])
+                    ("log_transform" variable nil (reparse-symbol function_parameters) [39952 39965])
+                    ("temp_transform" variable nil (reparse-symbol function_parameters) [39967 39981]))                  )
+                nil [39875 44080])
+            ("params_from_control_file" function
+               (:documentation "Generate a new control file"
+                :arguments 
+                  ( ("data" variable nil (reparse-symbol function_parameters) [44111 44115]))                  )
+                nil [44082 44978])
+            ("test_mail_server" function nil nil [44980 45156])
+            ("is_duplicate_name" function
+               (:documentation "Check proposed machine name against all other names
+    "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [45180 45184])
+                    ("type" variable nil (reparse-symbol function_parameters) [45186 45190])
+                    ("_s" variable nil (reparse-symbol function_parameters) [45192 45194]))                  )
+                nil [45158 45379])
+            ("HTTPOkJSON" type
+               (:documentation "HTTP OK response with json return values"
+                :superclasses ("HTTPOk")
+                :members 
+                  ( ("generate_response" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45486 45490])
+                            ("environ" variable nil (reparse-symbol function_parameters) [45492 45499])
+                            ("start_response" variable nil (reparse-symbol function_parameters) [45501 45515]))                          )
+                        (reparse-symbol indented_block_body) [45464 45812]))                  
+                :type "class")
+                nil [45381 45812])
+            ("guess_basename" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [45833 45841]))              ) nil [45814 45975])
+            ("total_seconds" function
+               (:documentation "Calculate total seconds from a timedelta object"
+                :arguments 
+                  ( ("t" variable nil (reparse-symbol function_parameters) [45995 45996]))                  )
+                nil [45977 46140])
+            ("get_group_wf_tags" function
+               (:documentation "Get list of wf tags applicable for groups"
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [46164 46168])
+                    ("group" variable nil (reparse-symbol function_parameters) [46170 46175]))                  )
+                nil [46142 47284])
+            ("get_group_machine_tags" function
+               (:documentation "Get list of machine tags applicable for groups"
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [47313 47317])
+                    ("group" variable nil (reparse-symbol function_parameters) [47319 47324]))                  )
+                nil [47286 48558])
+            ("update_machine_tags" function
+               (:documentation "Update tags for a machine"
+                :arguments 
+                  ( ("machine" variable nil (reparse-symbol function_parameters) [48584 48591])
+                    ("tags_string" variable nil (reparse-symbol function_parameters) [48593 48604])
+                    ("user" variable nil (reparse-symbol function_parameters) [48606 48610])
+                    ("group" variable nil (reparse-symbol function_parameters) [48612 48617]))                  )
+                nil [48560 49698]))          
+      :file "util.py"
+      :pointmax 49698
+      :fsize 49697
+      :lastmodtime '(20995 19774)
+      :unmatched-syntax '((INDENT_BLOCK 45086 . 45156) (NEWLINE 45085 . 45086) (COLON 45084 . 45085) (TRY 45008 . 45011) (AS 45080 . 45082) (NAME 25123 . 25132) (IF 25170 . 25172) (ELSE 25200 . 25204) (INDENT_BLOCK 15288 . 15524) (NEWLINE 15287 . 15288) (COLON 15286 . 15287) (TRY 14548 . 14551) (AS 15282 . 15284) (INDENT_BLOCK 14380 . 14475) (NEWLINE 14379 . 14380) (COLON 14378 . 14379) (TRY 14212 . 14215) (AS 14374 . 14376) (INDENT_BLOCK 14062 . 14167) (NEWLINE 14061 . 14062) (COLON 14060 . 14061) (TRY 13877 . 13880) (AS 14056 . 14058) (INDENT_BLOCK 13730 . 13833) (NEWLINE 13729 . 13730) (COLON 13728 . 13729) (TRY 13570 . 13573) (AS 13724 . 13726) (INDENT_BLOCK 13374 . 13522) (NEWLINE 13373 . 13374) (COLON 13372 . 13373) (TRY 13180 . 13183) (AS 13368 . 13370) (INDENT_BLOCK 12978 . 13126) (NEWLINE 12977 . 12978) (COLON 12976 . 12977) (TRY 12783 . 12786) (AS 12972 . 12974) (INDENT_BLOCK 12260 . 12730) (NEWLINE 12259 . 12260) (COLON 12258 . 12259) (TRY 12081 . 12084) (AS 12254 . 12256) (INDENT_BLOCK 11941 . 12042) (NEWLINE 11940 . 11941) (COLON 11939 . 11940) (TRY 11787 . 11790) (AS 11935 . 11937) (INDENT_BLOCK 4834 . 4922) (NEWLINE 4833 . 4834) (COLON 4832 . 4833) (TRY 3696 . 3699) (AS 4828 . 4830) (NAME 3166 . 3185) (IF 3204 . 3206) (ELSE 3232 . 3236) (INDENT_BLOCK 2870 . 3026) (NEWLINE 2869 . 2870) (COLON 2868 . 2869) (TRY 2726 . 2729) (AS 2864 . 2866) (NAME 2551 . 2555) (IF 2577 . 2579) (ELSE 2601 . 2605) (NAME 2459 . 2463) (IF 2484 . 2486) (ELSE 2507 . 2511) (NAME 2356 . 2362) (IF 2401 . 2403) (ELSE 2442 . 2446) (IMPORT 748 . 754) (MULT 755 . 756) (FROM 734 . 738) (PERIOD 739 . 740) (IMPORT 725 . 731) (MULT 732 . 733) (FROM 714 . 718) (PERIOD 719 . 720) (IMPORT 705 . 711) (MULT 712 . 713) (FROM 689 . 693) (PERIOD 694 . 695) (PERIOD 562 . 563) (FROM 556 . 560) (PERIOD 561 . 562) (IMPORT 547 . 553) (MULT 554 . 555) (PERIOD 540 . 541) (FROM 534 . 538) (PERIOD 539 . 540) (FROM 509 . 513) (PERIOD 514 . 515)))
+    (semanticdb-table "helpers.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Helper functions
+
+Consists of functions to typically be used within templates, but also
+available to Controllers. This module is available to templates as 'h'.
+\"\"\"" code nil nil [1 167])
+            ("random" include nil nil [276 301])
+            ("datetime" include nil nil [302 331])
+            ("time" include nil nil [332 343])
+            ("markupsafe" include nil nil [345 399])
+            ("webhelpers.html" include nil nil [401 436])
+            ("webhelpers.html.tags" include nil nil [437 471])
+            ("webhelpers.html.builder" include nil nil [472 509])
+            ("webhelpers" include nil nil [510 537])
+            ("id.db.schema" include nil nil [538 671])
+            ("id.db.schema" include nil nil [672 907])
+            ("id.db.schema" include nil nil [908 1075])
+            ("id.db.schema" include nil nil [1076 1138])
+            ("id.db.schema" include nil nil [1139 1185])
+            ("pylons" include nil nil [1186 1208])
+            ("id.common.prefs" include nil nil [1209 1259])
+            ("id.common.util" include nil nil [1260 1300])
+            ("tasktype_names" variable nil nil [1302 2504])
+            ("keytype_names" variable nil nil [2506 2578])
+            ("ostype_names" variable nil nil [2580 3008])
+            ("decision_types" variable nil nil [3010 3085])
+            ("entity_type_names" variable nil nil [3087 3361])
+            ("obj_type_names" variable nil nil [3363 3444])
+            ("entity_typed_properties" variable nil nil [3446 3626])
+            ("first_task_tab" variable nil nil [3629 5463])
+            ("template_types" variable nil nil [5465 6045])
+            ("template_type_dict" variable nil nil [6047 6088])
+            ("getprop_match" variable nil nil [6090 6254])
+            ("script_type_name" function (:arguments 
+              ( ("typ" variable nil (reparse-symbol function_parameters) [6278 6281]))              ) nil [6257 6376])
+            ("entity_type_name" function
+               (:documentation "return printable names for entity types"
+                :arguments 
+                  ( ("en_type" variable nil (reparse-symbol function_parameters) [6399 6406]))                  )
+                nil [6378 6557])
+            ("obj_type_name" function
+               (:documentation "return printable names for object types"
+                :arguments 
+                  ( ("obj_type" variable nil (reparse-symbol function_parameters) [6577 6585]))                  )
+                nil [6559 6733])
+            ("entity_reserved_name" function
+               (:documentation "return the reserved prop list of an entity type"
+                :arguments 
+                  ( ("en_type" variable nil (reparse-symbol function_parameters) [6760 6767]))                  )
+                nil [6735 6922])
+            ("task_type_requires_rundetails" function
+               (:documentation "return true for types what require a run details section (entity, machine, credentials)"
+                :arguments 
+                  ( ("ttype" variable nil (reparse-symbol function_parameters) [6958 6963]))                  )
+                nil [6924 7340])
+            ("task_type_requires_ignore_error" function
+               (:documentation "return true if this task type requires a ignore_errors attribute"
+                :arguments 
+                  ( ("ttype" variable nil (reparse-symbol function_parameters) [7378 7383]))                  )
+                nil [7342 7715])
+            ("task_type_requires_ignore_warning" function
+               (:documentation "return true if this task type requires a ignore_child_warnings attribute"
+                :arguments 
+                  ( ("ttype" variable nil (reparse-symbol function_parameters) [7755 7760]))                  )
+                nil [7717 7975])
+            ("task_type_requires_child_list" function
+               (:documentation "return true for types which require a tree for children"
+                :arguments 
+                  ( ("ttype" variable nil (reparse-symbol function_parameters) [8011 8016]))                  )
+                nil [7977 8201])
+            ("cred_type_name" function
+               (:documentation "Return the user printable name for creds type"
+                :arguments 
+                  ( ("cred_type" variable nil (reparse-symbol function_parameters) [8222 8231]))                  )
+                nil [8203 8386])
+            ("creds_print" function
+               (:documentation "Printable representation for credential"
+                :arguments 
+                  ( ("creds" variable nil (reparse-symbol function_parameters) [8404 8409]))                  )
+                nil [8388 8509])
+            ("os_type_name" function
+               (:documentation "Return the user printable name for OS"
+                :arguments 
+                  ( ("ostype" variable nil (reparse-symbol function_parameters) [8528 8534]))                  )
+                nil [8511 8670])
+            ("machine_print" function
+               (:documentation "Printable repr for a machine"
+                :arguments 
+                  ( ("m" variable nil (reparse-symbol function_parameters) [8690 8691]))                  )
+                nil [8672 8791])
+            ("task_name" function
+               (:documentation "Return user printable name for task type"
+                :arguments 
+                  ( ("ttype" variable nil (reparse-symbol function_parameters) [8807 8812]))                  )
+                nil [8793 8952])
+            ("best_group" function
+               (:documentation "Get the closest group the task should run as"
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [8969 8973])
+                    ("default" variable nil (reparse-symbol function_parameters) [8975 8982]))                  )
+                nil [8954 9158])
+            ("safe_get" function
+               (:documentation "Safely get an attribute name from obj, return default if None"
+                :arguments 
+                  ( ("obj" variable nil (reparse-symbol function_parameters) [9173 9176])
+                    ("name" variable nil (reparse-symbol function_parameters) [9178 9182])
+                    ("default" variable nil (reparse-symbol function_parameters) [9184 9191]))                  )
+                nil [9160 9423])
+            ("formatBoolean" function
+               (:documentation "convert a boolean into a Yes/No value"
+                :arguments 
+                  ( ("val" variable nil (reparse-symbol function_parameters) [9443 9446]))                  )
+                nil [9425 9546])
+            ("get_task_entity_wfname" function
+               (:documentation "Get a printable name for task entity"
+                :arguments 
+                  ( ("task" variable nil (reparse-symbol function_parameters) [9575 9579]))                  )
+                nil [9548 9722])
+            ("get_task_entity" function
+               (:documentation "get the (entity,entityid) for a task, or (None,None)"
+                :arguments 
+                  ( ("task" variable nil (reparse-symbol function_parameters) [9744 9748]))                  )
+                nil [9724 9899])
+            ("get_task_machine" function
+               (:documentation "get the (machine,machineid) for a task, or (None,None)"
+                :arguments 
+                  ( ("task" variable nil (reparse-symbol function_parameters) [9922 9926]))                  )
+                nil [9901 10081])
+            ("get_task_machine_wfname" function
+               (:documentation "get the printable name for task machine"
+                :arguments 
+                  ( ("task" variable nil (reparse-symbol function_parameters) [10111 10115]))                  )
+                nil [10083 10263])
+            ("get_status_html" function
+               (:documentation "get appropriate html for different run statuses"
+                :arguments 
+                  ( ("status" variable nil (reparse-symbol function_parameters) [10285 10291]))                  )
+                nil [10265 10444])
+            ("obj_type_names" variable nil nil [10445 11063])
+            ("get_obj_link" function
+               (:documentation "return the url for a group"
+                :arguments 
+                  ( ("obj" variable nil (reparse-symbol function_parameters) [11083 11086])
+                    ("action" variable nil (reparse-symbol function_parameters) [11088 11094]))                  )
+                nil [11066 11624])
+            ("get_max_link" function
+               (:documentation "return the highest priv edit or view url for a group"
+                :arguments 
+                  ( ("obj" variable nil (reparse-symbol function_parameters) [11643 11646])
+                    ("user" variable nil (reparse-symbol function_parameters) [11648 11652])
+                    ("group" variable nil (reparse-symbol function_parameters) [11654 11659]))                  )
+                nil [11626 11972])
+            ("_make_group_string" function (:arguments 
+              ( ("group" variable nil (reparse-symbol function_parameters) [11997 12002])
+                ("current_group" variable nil (reparse-symbol function_parameters) [12004 12017]))              ) nil [11974 12204])
+            ("get_prop_from" function
+               (:documentation "return the ancestory of this property object"
+                :arguments 
+                  ( ("pt" variable nil (reparse-symbol function_parameters) [12224 12226])
+                    ("group" variable nil (reparse-symbol function_parameters) [12228 12233]))                  )
+                nil [12206 18837])
+            ("get_rwi_action" function (:arguments 
+              ( ("action" variable nil (reparse-symbol function_parameters) [18858 18864]))              ) nil [18839 19043])
+            ("get_code_type" function
+               (:documentation "Map intelligently to code mirror mode type"
+                :arguments 
+                  ( ("payload" variable nil (reparse-symbol function_parameters) [19063 19070]))                  )
+                nil [19045 19333]))          
+      :file "helpers.py"
+      :pointmax 19333
+      :fsize 19332
+      :lastmodtime '(20994 22450)
+      :unmatched-syntax '((RETURN 6832 . 6838) (IF 6872 . 6874) (ELSE 6910 . 6914)))
+    (semanticdb-table "props.py"
+      :file "props.py"
+      :fsize 18882
+      :lastmodtime '(20994 22450)))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!vaitarna!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

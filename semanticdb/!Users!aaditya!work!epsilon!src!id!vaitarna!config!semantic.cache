@@ -1,0 +1,39 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables
+  (list
+    (semanticdb-table "routing.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"Routes configuration
+
+The more specific and detailed routes should be defined first so they
+may take precedent over the more generic routes. For more information
+refer to the routes manual at http://routes.groovie.org/docs/
+\"\"\"" code nil nil [1 231])
+            ("os" include nil nil [232 241])
+            ("re" include nil nil [242 251])
+            ("pylons" include nil nil [252 277])
+            ("routes" include nil nil [278 303])
+            ("id.vaitarna.lib.app_globals" include nil nil [304 353])
+            ("controller_scan_py_and_pyc" function
+               (:documentation "Scan a directory for py & pyc files and use them as controllers"
+                :arguments 
+                  ( ("directory" variable nil (reparse-symbol function_parameters) [387 396]))                  )
+                nil [356 1486])
+            ("url_expand" function (:arguments 
+              ( ("kw" variable nil (reparse-symbol function_parameters) [1503 1505]))              ) nil [1488 1651])
+            ("make_map" function
+               (:documentation "Create, configure and return the routes Mapper"
+                :arguments 
+                  ( ("config" variable nil (reparse-symbol function_parameters) [1666 1672]))                  )
+                nil [1653 8465]))          
+      :file "routing.py"
+      :pointmax 8465
+      :fsize 8464
+      :lastmodtime '(21002 30693 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!aaditya!work!epsilon!src!id!vaitarna!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

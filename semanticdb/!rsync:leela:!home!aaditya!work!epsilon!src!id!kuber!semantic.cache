@@ -1,0 +1,285 @@
+;; Object kuber/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kuber/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("gevent" include nil nil [40 65])
+            ("monkey" code nil nil [66 87])
+            ("gevent_psycopg2" include nil nil [88 110])
+            ("gevent_psycopg2" code nil nil [111 141])
+            ("gevent.pywsgi" include nil nil [142 162])
+            ("warnings" include nil nil [164 179])
+            ("traceback" include nil nil [180 196])
+            ("sqlalchemy" include nil nil [197 214])
+            ("warnings" code nil nil [216 267])
+            ("warnings" code nil nil [268 325])
+            ("os" include nil nil [327 336])
+            ("sys" include nil nil [337 347])
+            ("time" include nil nil [348 359])
+            ("pprint" include nil nil [360 386])
+            ("waitress" include nil nil [388 403])
+            ("pyramid.config" include nil nil [404 443])
+            ("pyramid.security" include nil nil [444 493])
+            ("pyramid.events" include nil nil [494 531])
+            ("pyramid.paster" include nil nil [532 566])
+            ("pyramid.httpexceptions" include nil nil [567 596])
+            ("pyramid_beaker" include nil nil [598 656])
+            ("beaker" include nil nil [657 691])
+            ("pyramid_whoauth.auth" include nil nil [692 748])
+            ("DBSession" include nil nil [759 775])
+            ("log" include nil nil [790 800])
+            ("Rows" include nil nil [813 842])
+            ("Type" include nil nil [813 842])
+            ("Table" include nil nil [813 842])
+            ("Row" include nil nil [813 842])
+            ("HttpMethodOverrideMiddleware" include nil nil [854 889])
+            ("EpsilonKuberAuthorizationPolicy" include nil nil [905 956])
+            ("RootFactory" include nil nil [905 956])
+            ("init_caches" include nil nil [969 987])
+            ("id.common.reloader" include nil nil [989 1056])
+            ("id.common.logger" include nil nil [1057 1103])
+            ("id.common.secure" include nil nil [1104 1141])
+            ("id.common.config" include nil nil [1142 1184])
+            ("id.scripts.azpath" include nil nil [1185 1227])
+            ("id.db.schema" include nil nil [1228 1287])
+            ("id.common.version" include nil nil [1288 1337])
+            ("default_config_file" variable nil nil [1340 1411])
+            ("test_config_file" variable nil nil [1412 1485])
+            ("ini_path" variable nil nil [1486 1544])
+            ("test_ini_path" variable nil nil [1545 1613])
+            ("default_key_file" variable nil nil [1614 1678])
+            ("conf_dir_path" variable nil nil [1679 1729])
+            ("epsilon_version" variable nil nil [1730 1769])
+            ("request_counter" variable nil nil [1770 1789])
+            ("request_timestamp" variable nil nil [1790 1821])
+            ("stats" variable nil nil [1822 1834])
+            ("load_epsilon_env" function
+               (:documentation "Load up and init the epsilon specific stuff"
+                :arguments 
+                  ( ("settings" variable nil (reparse-symbol function_parameters) [1858 1866]))                  )
+                nil [1837 3665])
+            ("verify_user" function (:arguments 
+              ( ("identity" variable nil (reparse-symbol function_parameters) [3683 3691])
+                ("request" variable nil (reparse-symbol function_parameters) [3693 3700]))              ) nil [3667 4071])
+            ("get_stats" function
+               (:documentation "Get the stats object"
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [4087 4094]))                  )
+                nil [4073 4145])
+            ("get_user" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [4160 4167]))              ) nil [4147 4269])
+            ("get_group" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [4285 4292]))              ) nil [4271 4394])
+            ("get_egroup" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [4411 4418]))              ) nil [4396 4520])
+            ("main" function
+               (:documentation " This function returns a Pyramid WSGI application.
+    "
+                :arguments 
+                  ( ("global_config" variable nil (reparse-symbol function_parameters) [4531 4544])
+                    ("settings" variable nil (reparse-symbol function_parameters) [4546 4556]))                  )
+                nil [4522 10000])
+            ("serve" function (:documentation "Serve over HTTP") nil [10002 10668])
+            ("serve_test" function (:documentation "Serve test config over HTTP") nil [10670 11361])
+            ("if" code nil nil [11363 11402]))          
+      :file "__init__.py"
+      :pointmax 11402
+      :fsize 11401
+      :lastmodtime '(21003 8377)
+      :unmatched-syntax '((FROM 957 . 961) (PERIOD 962 . 963) (FROM 890 . 894) (PERIOD 895 . 896) (FROM 843 . 847) (PERIOD 848 . 849) (FROM 801 . 805) (PERIOD 806 . 807) (FROM 777 . 781) (PERIOD 782 . 783) (FROM 750 . 754) (PERIOD 755 . 756)))
+    (semanticdb-table "logger.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [26 35])
+            ("sys" include nil nil [36 46])
+            ("socket" include nil nil [47 60])
+            ("traceback" include nil nil [61 77])
+            ("datetime" include nil nil [78 107])
+            ("dateutil.tz" include nil nil [108 139])
+            ("logbook" include nil nil [141 155])
+            ("logbook" include nil nil [156 206])
+            ("logbook" include nil nil [207 240])
+            ("logbook.base" include nil nil [241 282])
+            ("logbook.compat" include nil nil [283 332])
+            ("logbook.more" include nil nil [333 380])
+            ("logging" include nil nil [382 396])
+            ("id.scripts.azpath" include nil nil [398 440])
+            ("id.common.logger" include nil nil [441 489])
+            ("id.db.schema" include nil nil [490 532])
+            ("KUBER_LOGGER" variable nil nil [534 559])
+            ("stderr_format_string" variable nil nil [595 852])
+            ("stderr_handler" variable nil nil [927 1000])
+            ("logbook" code nil nil [1001 1042])
+            ("logbook" variable nil nil [1043 1081])
+            ("split_len" function (:arguments 
+              ( ("seq" variable nil (reparse-symbol function_parameters) [1097 1100])
+                ("length" variable nil (reparse-symbol function_parameters) [1102 1108]))              ) nil [1083 1176])
+            ("get_color" function
+               (:documentation "Returns the color for this record."
+                :arguments 
+                  ( ("record" variable nil (reparse-symbol function_parameters) [1214 1220]))                  )
+                nil [1200 1411])
+            ("stderr_handler" variable nil nil [1438 1472])
+            ("log" variable nil nil [1628 1652])
+            ("localtz" variable nil nil [1654 1673])
+            ("update_record" function (:arguments 
+              ( ("record" variable nil (reparse-symbol function_parameters) [1692 1698]))              ) nil [1674 2189])
+            ("log_group" variable nil nil [2190 2275])
+            ("add_logger" function
+               (:documentation "Add a logger to our group of handlers: main inerface for a logger to do what we want"
+                :arguments 
+                  ( ("lg" variable nil (reparse-symbol function_parameters) [2292 2294]))                  )
+                nil [2277 2464])
+            ("add_logger" code nil nil [2465 2480])
+            ("add_logger" code nil nil [2481 2503])
+            ("find_caller_frame" function
+               (:documentation "Tries to find the caller that issued the call."
+                :arguments 
+                  ( ("bypass" variable nil (reparse-symbol function_parameters) [2527 2533]))                  )
+                nil [2505 2924])
+            ("ourRedirectHandler" type
+               (:superclasses ("RedirectLoggingHandler")
+                :members 
+                  ( ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3021 3025])
+                            ("record" variable nil (reparse-symbol function_parameters) [3026 3032]))                          )
+                        (reparse-symbol indented_block_body) [3012 3090])
+                    ("find_caller" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3110 3114])
+                            ("old_record" variable nil (reparse-symbol function_parameters) [3116 3126]))                          
+                        :documentation "Tries to find the caller that issued the call.")
+                        (reparse-symbol indented_block_body) [3094 3226]))                  
+                :type "class")
+                nil [2958 3226])
+            ("del" code nil nil [3268 3296])
+            ("base_logger" variable nil nil [3297 3329])
+            ("logging" code nil nil [3330 3366])
+            ("server_logger" function (:arguments 
+              ( ("cfg" variable nil (reparse-symbol function_parameters) [3386 3389])
+                ("name" variable nil (reparse-symbol function_parameters) [3391 3395]))              ) nil [3368 3796]))          
+      :file "logger.py"
+      :pointmax 3796
+      :fsize 3795
+      :lastmodtime '(21003 8377)
+      :unmatched-syntax nil)
+    (semanticdb-table "security.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("zope.interface" include nil nil [25 63])
+            ("pyramid.interfaces" include nil nil [64 115])
+            ("pyramid.location" include nil nil [116 152])
+            ("" code nil nil [183 260])
+            ("DBSession" include nil nil [271 287])
+            ("log" include nil nil [301 311])
+            ("get_type" include nil nil [324 350])
+            ("get_table" include nil nil [324 350])
+            ("RootFactory" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__parent__" variable nil (reparse-symbol indented_block_body) [383 400])
+                    ("__name__" variable nil (reparse-symbol indented_block_body) [405 420])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [462 484]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [438 442])
+                            ("request" variable nil (reparse-symbol function_parameters) [444 451]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [425 485]))                  
+                :type "class")
+                nil [352 485])
+            ("" code nil nil [499 521])
+            ("EpsilonKuberAuthorizationPolicy" type
+               (:superclasses ("object")
+                :members 
+                  ( ("permits" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [585 589])
+                            ("context" variable nil (reparse-symbol function_parameters) [591 598])
+                            ("principals" variable nil (reparse-symbol function_parameters) [600 610])
+                            ("permission" variable nil (reparse-symbol function_parameters) [612 622]))                          )
+                        (reparse-symbol indented_block_body) [573 3336])
+                    ("principals_allowed_by_permission" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3378 3382])
+                            ("context" variable nil (reparse-symbol function_parameters) [3384 3391])
+                            ("permission" variable nil (reparse-symbol function_parameters) [3393 3403]))                          )
+                        (reparse-symbol indented_block_body) [3341 3440]))                  
+                :type "class")
+                nil [522 3440]))          
+      :file "security.py"
+      :pointmax 3440
+      :fsize 3439
+      :lastmodtime '(20855 32584)
+      :unmatched-syntax '((FROM 312 . 316) (PERIOD 317 . 318) (FROM 288 . 292) (PERIOD 293 . 294) (FROM 262 . 266) (PERIOD 267 . 268)))
+    (semanticdb-table "auth.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [25 39])
+            ("pprint" include nil nil [40 66])
+            ("transaction" include nil nil [68 86])
+            ("zope.interface" include nil nil [88 143])
+            ("repoze.who.classifiers" include nil nil [144 205])
+            ("repoze.who.interfaces" include nil nil [206 254])
+            ("repoze.who.interfaces" include nil nil [255 307])
+            ("repoze.who.interfaces" include nil nil [308 353])
+            ("repoze.who.api" include nil nil [354 388])
+            ("repoze.who.utils" include nil nil [389 431])
+            ("id.db.schema" include nil nil [433 469])
+            ("id.common.auth" include nil nil [470 530])
+            ("id.common.secure" include nil nil [531 568])
+            ("check_user_login" include nil nil [582 605])
+            ("get_cached_group" include nil nil [617 653])
+            ("load_db_obj" include nil nil [617 653])
+            ("log" variable nil nil [655 688])
+            ("EpsilonAuthPlugin" type
+               (:superclasses ("object")
+                :members 
+                  ( ("implements" code nil (reparse-symbol indented_block_body) [729 755])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [800 826]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [774 778])
+                            ("dbsession" variable nil (reparse-symbol function_parameters) [780 789]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [761 827])
+                    ("authenticate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [849 853])
+                            ("environ" variable nil (reparse-symbol function_parameters) [855 862])
+                            ("identity" variable nil (reparse-symbol function_parameters) [864 872]))                          
+                        :documentation "Return username or None.
+        ")
+                        (reparse-symbol indented_block_body) [832 4909])
+                    ("add_metadata" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4983 4987])
+                            ("environ" variable nil (reparse-symbol function_parameters) [4989 4996])
+                            ("identity" variable nil (reparse-symbol function_parameters) [4998 5006]))                          )
+                        (reparse-symbol indented_block_body) [4966 5022]))                  
+                :type "class")
+                nil [691 5022])
+            ("make_auth_plugin" function (:arguments 
+              ( ("dbsession" variable nil (reparse-symbol function_parameters) [5045 5054]))              ) nil [5024 5132]))          
+      :file "auth.py"
+      :pointmax 5132
+      :fsize 5131
+      :lastmodtime '(20948 470)
+      :unmatched-syntax '((FROM 606 . 610) (PERIOD 611 . 612) (FROM 570 . 574) (PERIOD 575 . 576))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!kuber!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

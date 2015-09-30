@@ -1,0 +1,28 @@
+;; Object vaitarna/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vaitarna/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [25 34])
+            ("sys" include nil nil [35 45])
+            ("waitress" include nil nil [47 62])
+            ("paste.deploy" include nil nil [63 95])
+            ("id.scripts.azpath" include nil nil [97 139])
+            ("id.common.reloader" include nil nil [140 207])
+            ("processor" include nil nil [228 249])
+            ("log" include nil nil [228 249])
+            ("default_config_file" variable nil nil [252 323])
+            ("test_config_file" variable nil nil [324 397])
+            ("serve" function (:documentation "Serve over HTTP") nil [400 1171])
+            ("serve_test" function (:documentation "Serve test config over HTTP") nil [1173 1952]))          
+      :file "__init__.py"
+      :pointmax 1952
+      :fsize 1951
+      :lastmodtime '(21003 8375)
+      :unmatched-syntax '((FROM 208 . 212) (PERIOD 213 . 214))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!vaitarna!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

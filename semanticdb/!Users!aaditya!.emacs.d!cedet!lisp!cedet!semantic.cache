@@ -1,0 +1,42 @@
+;; Object cedet/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cedet/"
+  :tables
+  (list
+    (semanticdb-table "cedet-m3.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("semantic/util-modes" include nil nil [1238 1268])
+            ("semantic/senator" include nil nil [1269 1296])
+            ("if" code nil nil [1328 1547])
+            ("global-cedet-m3-minor-mode" variable nil nil [1550 1835])
+            ("cedet-m3-minor-mode" variable nil nil [1837 1927])
+            ("make-variable-buffer-local" code nil nil [1928 1977])
+            ("cedet-m3-minor-mode-hook" variable nil nil [1979 2115])
+            ("cedet-m3-prefix-key" variable (:default-value (if (featurep (quote xemacs)) [button3] [mouse-3])) nil [2117 2243])
+            ("cedet-m3-minor-menu" variable nil nil [2245 2325])
+            ("cedet-m3-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km cedet-m3-prefix-key (quote cedet-m3-menu)) km)) nil [2327 2536])
+            ("cedet-m3-hack-map" variable (:default-value (make-sparse-keymap)) nil [2538 2628])
+            ("define-minor-mode" code nil nil [2645 3149])
+            ("semantic-add-minor-mode" code nil nil [3151 3202])
+            ("define-minor-mode" code nil nil [3219 3545])
+            ("cedet-m3-menu" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [3574 4350])
+            ("cedet-m3-menu-kbd" function (:user-visible-flag t) nil [4352 4603])
+            ("cedet-m3-menu-query-hooks" variable nil nil [4653 4840])
+            ("cedet-m3-menu-visit-hooks" variable nil nil [4842 5037])
+            ("cedet-m3-menu-completions-hooks" variable nil nil [5039 5235])
+            ("cedet-m3-menu-do-hooks" variable nil nil [5237 5422])
+            ("cedet-m3-menu-item" function (:arguments ("itemname" "function" "attributes")) nil [5424 5844])
+            ("cedet-m3-create-menu" function nil nil [5846 6585])
+            ("cedet-m3" package nil nil [6587 6606]))          
+      :file "cedet-m3.el"
+      :pointmax 6634
+      :fsize 6633
+      :lastmodtime '(21002 31509 0 0)
+      :unmatched-syntax '((close-paren 1547 . 1548) (symbol 1309 . 1325) (open-paren 1308 . 1309))))
+  :file "!Users!aaditya!.emacs.d!cedet!lisp!cedet!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

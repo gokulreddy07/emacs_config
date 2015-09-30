@@ -1,0 +1,142 @@
+;; Object bin-internal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin-internal/"
+  :tables
+  (list
+    (semanticdb-table "ad_load_test.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "ad_load_test.py"
+      :pointmax 4889
+      :fsize 4888
+      :lastmodtime '(21003 8267)
+      :unmatched-syntax nil)
+    (semanticdb-table "bulk_insert.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [23 38])
+            ("sqlalchemy" include nil nil [39 56])
+            ("warnings" code nil nil [58 109])
+            ("warnings" code nil nil [110 167])
+            ("os" include nil nil [169 178])
+            ("sys" include nil nil [179 189])
+            ("os.path" include nil nil [203 217])
+            ("logging" include nil nil [218 232])
+            ("argparse" include nil nil [233 248])
+            ("log" variable nil nil [250 283])
+            ("logging" code nil nil [284 374])
+            ("id.scripts.azpath" include nil nil [376 418])
+            ("id.db.schema" include nil nil [420 449])
+            ("id.common.config" include nil nil [450 492])
+            ("id.common.secure" include nil nil [493 530])
+            ("id.common.version" include nil nil [531 580])
+            ("id.common.license" include nil nil [613 648])
+            ("default_config_file" variable nil nil [650 726])
+            ("default_key_file" variable nil nil [727 791])
+            ("default_license_file" variable nil nil [792 860])
+            ("epsilon_version" variable nil nil [861 900])
+            ("global" code nil nil [902 927])
+            ("addusers" function
+               (:documentation "Add users"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [943 947]))                  )
+                nil [930 1799])
+            ("addgroups" function
+               (:documentation "Add users"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [1815 1819]))                  )
+                nil [1801 2863])
+            ("addmachines" function
+               (:documentation "Add machines"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [2881 2885]))                  )
+                nil [2865 3644])
+            ("addcreds" function
+               (:documentation "Add creds"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [3660 3664]))                  )
+                nil [3647 4510])
+            ("addtasks" function
+               (:documentation "Add tasks"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [4526 4530]))                  )
+                nil [4513 6800])
+            ("clonewf" function
+               (:documentation "Clone workflow"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [6815 6819]))                  )
+                nil [6803 7872])
+            ("cloneent" function
+               (:documentation "Clone entity"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [7888 7892]))                  )
+                nil [7875 8945])
+            ("copytrls" function
+               (:documentation "Copy trls"
+                :arguments 
+                  ( ("args" variable nil (reparse-symbol function_parameters) [8961 8965]))                  )
+                nil [8948 11483])
+            ("if" code nil nil [11487 19133]))          
+      :file "bulk_insert.py"
+      :pointmax 19133
+      :fsize 19132
+      :lastmodtime '(21003 8268)
+      :unmatched-syntax nil)
+    (semanticdb-table "ad_add_bulk_users.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("aduseradd" include nil nil [33 49])
+            ("ldap" include nil nil [50 61])
+            ("datetime" include nil nil [62 77])
+            ("time" include nil nil [78 89])
+            ("csv" include nil nil [90 100])
+            ("optparse" include nil nil [101 134])
+            ("random" include nil nil [135 148])
+            ("id.scripts.azpath" include nil nil [149 191])
+            ("Crypto" include nil nil [192 217])
+            ("id.common.util" include nil nil [219 261])
+            ("id.common.idldap" include nil nil [262 349])
+            ("em1" variable nil nil [351 371])
+            ("em2" variable nil nil [372 408])
+            ("em3" variable nil nil [409 440])
+            ("run_ldap" function (:arguments 
+              ( ("pid" variable nil (reparse-symbol function_parameters) [456 459])
+                ("numProc" variable nil (reparse-symbol function_parameters) [461 468])
+                ("dur" variable nil (reparse-symbol function_parameters) [470 473])
+                ("ad_server" variable nil (reparse-symbol function_parameters) [475 484])
+                ("user" variable nil (reparse-symbol function_parameters) [486 490])
+                ("passw" variable nil (reparse-symbol function_parameters) [492 497])
+                ("u1" variable nil (reparse-symbol function_parameters) [499 501])
+                ("base_dn" variable nil (reparse-symbol function_parameters) [503 510]))              ) nil [443 2322])
+            ("fireProc" function (:arguments 
+              ( ("numProc" variable nil (reparse-symbol function_parameters) [2336 2343])
+                ("dur" variable nil (reparse-symbol function_parameters) [2345 2348])
+                ("ad_server" variable nil (reparse-symbol function_parameters) [2350 2359])
+                ("user" variable nil (reparse-symbol function_parameters) [2361 2365])
+                ("passw" variable nil (reparse-symbol function_parameters) [2367 2372])
+                ("u1" variable nil (reparse-symbol function_parameters) [2374 2376])
+                ("base_dn" variable nil (reparse-symbol function_parameters) [2378 2385]))              ) nil [2323 3408])
+            ("if" code nil nil [3424 5249]))          
+      :file "ad_add_bulk_users.py"
+      :pointmax 5249
+      :fsize 5248
+      :lastmodtime '(21003 8268)
+      :unmatched-syntax '((NAME 4421 . 4424) (IF 4447 . 4449) (ELSE 4467 . 4471) (NAME 4368 . 4371) (IF 4388 . 4390) (ELSE 4407 . 4411) (INDENT_BLOCK 1974 . 1999) (NEWLINE 1973 . 1974) (COLON 1972 . 1973) (FINALLY 1965 . 1972)))
+    (semanticdb-table "build-patch.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "build-patch.py"
+      :pointmax 7442
+      :fsize 7441
+      :lastmodtime '(21003 8268)
+      :unmatched-syntax nil)
+    (semanticdb-table "azpath.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "azpath.py"
+      :pointmax 1079
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!bin-internal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

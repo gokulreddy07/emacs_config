@@ -1,0 +1,44 @@
+;; Object task/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "task/"
+  :tables
+  (list
+    (semanticdb-table "taskstatus.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("TaskStatus" type
+               (:members 
+                  ( ("SUCCESS" variable nil (reparse-symbol indented_block_body) [23 43])
+                    ("FAILURE" variable nil (reparse-symbol indented_block_body) [48 68])
+                    ("REPEAT" variable nil (reparse-symbol indented_block_body) [73 91])
+                    ("SUSPEND" variable nil (reparse-symbol indented_block_body) [96 116])
+                    ("WARNING" variable nil (reparse-symbol indented_block_body) [121 141])
+                    ("WAITING" variable nil (reparse-symbol indented_block_body) [146 166])
+                    ("RUNNING" variable nil (reparse-symbol indented_block_body) [171 191])
+                    ("APPROVAL" variable nil (reparse-symbol indented_block_body) [196 218])
+                    ("PARALLEL" variable nil (reparse-symbol indented_block_body) [223 245])
+                    ("ABORTED" variable nil (reparse-symbol indented_block_body) [250 270])
+                    ("MANUAL" variable nil (reparse-symbol indented_block_body) [275 293])
+                    ("DELAY" variable nil (reparse-symbol indented_block_body) [298 314])
+                    ("INPUT" variable nil (reparse-symbol indented_block_body) [319 335])
+                    ("ROLLBACK" variable nil (reparse-symbol indented_block_body) [340 362])
+                    ("CONFIRMATION" variable nil (reparse-symbol indented_block_body) [367 392])
+                    ("REVERTING" variable nil (reparse-symbol indented_block_body) [397 418])
+                    ("RB_SKIPPED" variable nil (reparse-symbol indented_block_body) [423 449])
+                    ("RB_FAILURE" variable nil (reparse-symbol indented_block_body) [454 480])
+                    ("RB_SUCCESS" variable nil (reparse-symbol indented_block_body) [485 511])
+                    ("RB_RUNNING" variable nil (reparse-symbol indented_block_body) [516 542])
+                    ("RB_WARNING" variable nil (reparse-symbol indented_block_body) [547 573])
+                    ("RB_ABORTED" variable nil (reparse-symbol indented_block_body) [578 604])
+                    ("Terminal_states" variable nil (reparse-symbol indented_block_body) [610 734])
+                    ("hd_states" variable nil (reparse-symbol indented_block_body) [739 799]))                  
+                :type "class")
+                nil [1 800]))          
+      :file "taskstatus.py"
+      :pointmax 800
+      :fsize 799
+      :lastmodtime '(21002 30696 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!aaditya!work!epsilon!src!id!db!task!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

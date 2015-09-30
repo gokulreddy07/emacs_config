@@ -1,0 +1,27 @@
+
+;; ----- smex-history -----
+(
+ cider-jack-in
+ speedbar-get-focus
+ battery
+ org-mode
+ count-lines-page
+ replace-regexp
+ dired
+)
+
+;; ----- smex-data -----
+(
+ (cider-quit . 7)
+ (menu-bar-open . 1)
+ (uncomment-region . 1)
+ (org-table-export . 4)
+ (dired . 1)
+ (replace-regexp . 1)
+ (org-mode . 2)
+ (count-lines-page . 1)
+ (flyspell-auto-correct-word . 1)
+ (battery . 2)
+ (speedbar-get-focus . 1)
+ (cider-jack-in . 1)
+)

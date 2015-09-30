@@ -1,0 +1,16 @@
+;; Object epsilon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "epsilon/"
+  :tables
+  (list
+    (semanticdb-table ".dir-locals.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file ".dir-locals.el"
+      :pointmax 93
+      :fsize 92
+      :lastmodtime '(20962 59785)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

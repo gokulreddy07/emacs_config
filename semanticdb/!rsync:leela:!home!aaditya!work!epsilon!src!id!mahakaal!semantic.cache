@@ -1,0 +1,163 @@
+;; Object mahakaal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mahakaal/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [25 40])
+            ("sqlalchemy" include nil nil [41 58])
+            ("warnings" code nil nil [60 111])
+            ("warnings" code nil nil [112 169])
+            ("os" include nil nil [171 180])
+            ("threading" include nil nil [181 197])
+            ("signal" include nil nil [198 211])
+            ("sys" include nil nil [212 222])
+            ("time" include nil nil [223 234])
+            ("waitress" include nil nil [252 267])
+            ("pyramid.config" include nil nil [268 307])
+            ("pyramid.events" include nil nil [359 396])
+            ("pyramid.paster" include nil nil [397 446])
+            ("pyramid_beaker" include nil nil [447 505])
+            ("pyramid_whoauth.auth" include nil nil [506 562])
+            ("zmq" include nil nil [576 586])
+            ("DBSession" include nil nil [616 632])
+            ("processor" include nil nil [646 667])
+            ("log" include nil nil [646 667])
+            ("HttpMethodOverrideMiddleware" include nil nil [679 714])
+            ("EpsilonMahakaalAuthorizationPolicy" include nil nil [730 784])
+            ("RootFactory" include nil nil [730 784])
+            ("setup_routes" include nil nil [799 818])
+            ("cron_loop" include nil nil [834 850])
+            ("id.common.reloader" include nil nil [863 930])
+            ("id.common.logger" include nil nil [931 977])
+            ("id.common.secure" include nil nil [978 1015])
+            ("id.common.config" include nil nil [1016 1058])
+            ("id.scripts.azpath" include nil nil [1060 1102])
+            ("id.db.schema" include nil nil [1103 1157])
+            ("id.db.schema" include nil nil [1158 1177])
+            ("id.common.version" include nil nil [1178 1227])
+            ("id.common.connxns" include nil nil [1241 1277])
+            ("id.common.zwsgi" include nil nil [1278 1319])
+            ("default_config_file" variable nil nil [1395 1471])
+            ("test_config_file" variable nil nil [1472 1545])
+            ("ini_path" variable nil nil [1546 1607])
+            ("test_ini_path" variable nil nil [1608 1679])
+            ("default_key_file" variable nil nil [1680 1744])
+            ("conf_dir_path" variable nil nil [1745 1795])
+            ("epsilon_version" variable nil nil [1796 1835])
+            ("request_counter" variable nil nil [1836 1855])
+            ("request_timestamp" variable nil nil [1856 1887])
+            ("stats" variable nil nil [1888 1900])
+            ("zcontext" variable nil nil [1902 1917])
+            ("connxn" variable nil nil [1918 1931])
+            ("load_epsilon_env" function
+               (:documentation "Load up and init the epsilon specific stuff"
+                :arguments 
+                  ( ("settings" variable nil (reparse-symbol function_parameters) [1954 1962]))                  )
+                nil [1933 3750])
+            ("get_stats" function
+               (:documentation "Get the stats object"
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [3766 3773]))                  )
+                nil [3752 3824])
+            ("MahakaalScheduleDispatcher" type
+               (:superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3922 3944])
+                            ("super" code nil (reparse-symbol indented_block_body) [3953 4003]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3894 3898])
+                            ("epsilon_cfg" variable nil (reparse-symbol function_parameters) [3900 3911]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3881 4004])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4017 4021]))                          )
+                        (reparse-symbol indented_block_body) [4009 4160]))                  
+                :type "class")
+                nil [3825 4160])
+            ("main" function
+               (:documentation " This function returns a Pyramid WSGI application.
+    "
+                :arguments 
+                  ( ("global_config" variable nil (reparse-symbol function_parameters) [4170 4183])
+                    ("settings" variable nil (reparse-symbol function_parameters) [4185 4195]))                  )
+                nil [4161 6326])
+            ("serve" function (:documentation "Serve over ZMQ") nil [6328 7180])
+            ("serve_test" function (:documentation "Serve over ZMQ") nil [7181 8045])
+            ("serve_http" function (:documentation "Serve over HTTP") nil [8046 8697])
+            ("if" code nil nil [8699 8738]))          
+      :file "__init__.py"
+      :pointmax 8738
+      :fsize 8737
+      :lastmodtime '(21003 8374)
+      :unmatched-syntax '((FROM 819 . 823) (PERIOD 824 . 825) (FROM 785 . 789) (PERIOD 790 . 791) (FROM 715 . 719) (PERIOD 720 . 721) (FROM 668 . 672) (PERIOD 673 . 674) (FROM 633 . 637) (PERIOD 638 . 639) (FROM 607 . 611) (PERIOD 612 . 613)))
+    (semanticdb-table "logger.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logbook" include nil nil [26 40])
+            ("id.scripts.azpath" include nil nil [42 84])
+            ("id.common.logger" include nil nil [85 155])
+            ("MAHAKAAL_LOGGER" variable nil nil [158 189])
+            ("stderr_format_string" variable nil nil [191 627])
+            ("log, processor" code nil nil [629 738]))          
+      :file "logger.py"
+      :pointmax 739
+      :fsize 738
+      :lastmodtime '(21003 8374)
+      :unmatched-syntax nil)
+    (semanticdb-table "auth.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [25 39])
+            ("zope.interface" include nil nil [41 78])
+            ("repoze.who.interfaces" include nil nil [79 127])
+            ("repoze.who.utils" include nil nil [128 170])
+            ("log" variable nil nil [172 205])
+            ("EpsilonAuthPlugin" type
+               (:superclasses ("object")
+                :members 
+                  ( ("implements" code nil (reparse-symbol indented_block_body) [246 272])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [317 343]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [291 295])
+                            ("dbsession" variable nil (reparse-symbol function_parameters) [297 306]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [278 344])
+                    ("authenticate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [366 370])
+                            ("environ" variable nil (reparse-symbol function_parameters) [372 379])
+                            ("identity" variable nil (reparse-symbol function_parameters) [381 389]))                          
+                        :documentation "Return username or None.
+        ")
+                        (reparse-symbol indented_block_body) [349 702])
+                    ("add_metadata" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [724 728])
+                            ("environ" variable nil (reparse-symbol function_parameters) [730 737])
+                            ("identity" variable nil (reparse-symbol function_parameters) [739 747]))                          )
+                        (reparse-symbol indented_block_body) [707 763]))                  
+                :type "class")
+                nil [208 763])
+            ("make_auth_plugin" function (:arguments 
+              ( ("dbsession" variable nil (reparse-symbol function_parameters) [786 795]))              ) nil [765 873]))          
+      :file "auth.py"
+      :pointmax 873
+      :fsize 872
+      :lastmodtime '(20994 22450)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!mahakaal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

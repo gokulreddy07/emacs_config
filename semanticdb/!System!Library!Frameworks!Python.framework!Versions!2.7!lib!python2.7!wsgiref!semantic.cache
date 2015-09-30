@@ -1,0 +1,115 @@
+;; Object wsgiref/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wsgiref/"
+  :tables
+  (list
+    (semanticdb-table "simple_server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"BaseHTTPServer that implements the Python WSGI protocol (PEP 333, rev 1.21)
+
+This is both an example of how WSGI can be implemented, and a basis for running
+simple web applications on a local machine, such as might be done when testing
+or debugging an application.  It has not been reviewed for security issues,
+however, and we strongly recommend that you use a \"real\" web server for
+production use.
+
+For example usage, see the 'if __name__==\"__main__\"' block at the end of the
+module.  See also the BaseHTTPServer module docs for other API information.
+\"\"\"" code nil nil [1 561])
+            ("BaseHTTPServer" include nil nil [563 624])
+            ("sys" include nil nil [625 643])
+            ("urllib" include nil nil [625 643])
+            ("wsgiref.handlers" include nil nil [644 686])
+            ("__version__" variable nil nil [688 707])
+            ("__all__" variable nil nil [708 781])
+            ("server_version" code nil nil [784 828])
+            ("sys_version" code nil nil [829 877])
+            ("software_version" code nil nil [878 931])
+            ("ServerHandler" type
+               (:superclasses ("SimpleHandler")
+                :members 
+                  ( ("server_software" variable nil (reparse-symbol indented_block_body) [975 1009])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1025 1029]))                          )
+                        (reparse-symbol indented_block_body) [1015 1221]))                  
+                :type "class")
+                nil [934 1221])
+            ("WSGIServer" type
+               (:documentation "BaseHTTPServer that implements the Python WSGI protocol"
+                :superclasses ("HTTPServer")
+                :members 
+                  ( ("application" variable nil (reparse-symbol indented_block_body) [1326 1344])
+                    ("server_bind" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1366 1370]))                          
+                        :documentation "Override server_bind to store the server name.")
+                        (reparse-symbol indented_block_body) [1350 1500])
+                    ("setup_environ" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1523 1527]))                          )
+                        (reparse-symbol indented_block_body) [1505 1838])
+                    ("get_app" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1855 1859]))                          )
+                        (reparse-symbol indented_block_body) [1843 1894])
+                    ("set_app" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1911 1915])
+                            ("application" variable nil (reparse-symbol function_parameters) [1916 1927]))                          )
+                        (reparse-symbol indented_block_body) [1899 1969]))                  
+                :type "class")
+                nil [1224 1969])
+            ("WSGIRequestHandler" type
+               (:superclasses ("BaseHTTPRequestHandler")
+                :members 
+                  ( ("server_version" code nil (reparse-symbol indented_block_body) [2027 2071])
+                    ("get_environ" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2093 2097]))                          )
+                        (reparse-symbol indented_block_body) [2077 3332])
+                    ("get_stderr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3352 3356]))                          )
+                        (reparse-symbol indented_block_body) [3337 3385])
+                    ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3401 3405]))                          
+                        :documentation "Handle a single HTTP request")
+                        (reparse-symbol indented_block_body) [3390 3833]))                  
+                :type "class")
+                nil [1972 3833])
+            ("demo_app" function (:arguments 
+              ( ("environ" variable nil (reparse-symbol function_parameters) [3849 3856])
+                ("start_response" variable nil (reparse-symbol function_parameters) [3857 3871]))              ) nil [3836 4170])
+            ("make_server" function
+               (:documentation "Create a new WSGI server listening on `host` and `port` for `app`"
+                :arguments 
+                  ( ("host" variable nil (reparse-symbol function_parameters) [4193 4197])
+                    ("port" variable nil (reparse-symbol function_parameters) [4199 4203])
+                    ("app" variable nil (reparse-symbol function_parameters) [4205 4208])
+                    ("server_class" variable nil (reparse-symbol function_parameters) [4210 4222])
+                    ("handler_class" variable nil (reparse-symbol function_parameters) [4235 4248]))                  )
+                nil [4172 4444])
+            ("if" code nil nil [4446 4744]))          
+      :file "simple_server.py"
+      :pointmax 4744
+      :fsize 4743
+      :lastmodtime '(21002 22587 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "handlers.py"
+      :file "handlers.py"
+      :fsize 15932
+      :lastmodtime '(21002 22587 0 0)))
+  :file "!System!Library!Frameworks!Python.framework!Versions!2.7!lib!python2.7!wsgiref!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

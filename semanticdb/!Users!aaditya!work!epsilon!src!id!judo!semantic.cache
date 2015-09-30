@@ -1,0 +1,100 @@
+;; Object judo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "judo/"
+  :tables
+  (list
+    (semanticdb-table "server.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("errno" include nil nil [25 54])
+            ("signal" include nil nil [25 54])
+            ("sys" include nil nil [25 54])
+            ("os" include nil nil [25 54])
+            ("multiprocessing" include nil nil [55 87])
+            ("setproctitle" include nil nil [88 125])
+            ("logger" include nil nil [126 200])
+            ("logger" include nil nil [201 214])
+            ("shared" include nil nil [216 236])
+            ("handler" include nil nil [237 268])
+            ("id.common.config" include nil nil [269 311])
+            ("child" include nil nil [312 340])
+            ("listener" include nil nil [341 371])
+            ("time" include nil nil [372 394])
+            ("id.common.logger" include nil nil [395 441])
+            ("id.common.config" include nil nil [442 483])
+            ("id.engine.cmd" include nil nil [484 528])
+            ("id.engine.cache" include nil nil [529 582])
+            ("sqlalchemy.exc" include nil nil [584 627])
+            ("sqlalchemy.exc" include nil nil [628 671])
+            ("sqlalchemy.sql" include nil nil [672 714])
+            ("Crypto" include nil nil [715 740])
+            ("Crypto.Random.random" include nil nil [742 779])
+            ("shutdown_flag" variable nil nil [782 803])
+            ("s" variable nil nil [805 813])
+            ("max_child_num" variable nil nil [921 936])
+            ("worker_reqs_lower" variable nil nil [937 959])
+            ("worker_reqs_upper" variable nil nil [960 982])
+            ("schema_update" function nil nil [985 1119])
+            ("get_num_worker_reqs" function nil nil [1121 1212])
+            ("make_child" function (:arguments 
+              ( ("log" variable nil (reparse-symbol function_parameters) [1228 1231])
+                ("cfg" variable nil (reparse-symbol function_parameters) [1233 1236])
+                ("max_reqs" variable nil (reparse-symbol function_parameters) [1238 1246])
+                ("index" variable nil (reparse-symbol function_parameters) [1248 1253]))              ) nil [1213 1613])
+            ("abort_runid" function (:arguments 
+              ( ("run_id" variable nil (reparse-symbol function_parameters) [1631 1637])
+                ("cfg" variable nil (reparse-symbol function_parameters) [1639 1642]))              ) nil [1615 1970])
+            ("cleanup_kid" function (:arguments 
+              ( ("children" variable nil (reparse-symbol function_parameters) [1988 1996])
+                ("kid" variable nil (reparse-symbol function_parameters) [1998 2001])
+                ("cfg" variable nil (reparse-symbol function_parameters) [2003 2006]))              ) nil [1972 2962])
+            ("shutdown_server" function (:arguments 
+              ( ("children" variable nil (reparse-symbol function_parameters) [2984 2992])
+                ("log" variable nil (reparse-symbol function_parameters) [2994 2997])
+                ("cfg" variable nil (reparse-symbol function_parameters) [2999 3002]))              ) nil [2964 4161])
+            ("shutdown_handler_int" function (:arguments 
+              ( ("signum" variable nil (reparse-symbol function_parameters) [4187 4193])
+                ("frame" variable nil (reparse-symbol function_parameters) [4195 4200]))              ) nil [4162 4253])
+            ("shutdown_handler_term" function (:arguments 
+              ( ("signum" variable nil (reparse-symbol function_parameters) [4280 4286])
+                ("frame" variable nil (reparse-symbol function_parameters) [4288 4293]))              ) nil [4254 4346])
+            ("shutdown_handler_hup" function (:arguments 
+              ( ("signum" variable nil (reparse-symbol function_parameters) [4372 4378])
+                ("frame" variable nil (reparse-symbol function_parameters) [4380 4385]))              ) nil [4347 4438])
+            ("idle_maintenance" function (:arguments 
+              ( ("children" variable nil (reparse-symbol function_parameters) [4460 4468])
+                ("log" variable nil (reparse-symbol function_parameters) [4470 4473])
+                ("cfg" variable nil (reparse-symbol function_parameters) [4475 4478]))              ) nil [4439 5603])
+            ("init_server" function (:arguments 
+              ( ("cfg" variable nil (reparse-symbol function_parameters) [5620 5623]))              ) nil [5604 8482])
+            ("start_server" function (:arguments 
+              ( ("cfile" variable nil (reparse-symbol function_parameters) [8501 8506]))              ) nil [8484 9305])
+            ("if" code nil nil [9306 9352]))          
+      :file "server.py"
+      :pointmax 9352
+      :fsize 9351
+      :lastmodtime '(21002 30651 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "logger.py"
+      :file "logger.py"
+      :fsize 5330
+      :lastmodtime '(21002 30651 0 0))
+    (semanticdb-table "shared.py"
+      :file "shared.py"
+      :fsize 4220
+      :lastmodtime '(21002 30651 0 0))
+    (semanticdb-table "handler.py"
+      :file "handler.py"
+      :fsize 70235
+      :lastmodtime '(21002 30651 0 0))
+    (semanticdb-table "child.py"
+      :file "child.py"
+      :fsize 2818
+      :lastmodtime '(21002 30651 0 0))
+    (semanticdb-table "listener.py"
+      :file "listener.py"
+      :fsize 1707
+      :lastmodtime '(21002 30651 0 0)))
+  :file "!Users!aaditya!work!epsilon!src!id!judo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

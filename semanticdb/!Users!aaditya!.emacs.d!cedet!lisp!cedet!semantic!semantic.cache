@@ -1,0 +1,109 @@
+;; Object semantic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semantic/"
+  :tables
+  (list
+    (semanticdb-table "util-modes.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("semantic" include nil nil [1155 1174])
+            ("semantic-modes" customgroup (:user-visible-flag t) nil [1219 1326])
+            ("semantic-update-mode-line" variable (:default-value t) nil [1370 1806])
+            ("semantic-mode-line-prefix" variable (:default-value (propertize "S" (quote face) (quote bold))) nil [1808 2044])
+            ("semantic-minor-modes-format" variable nil nil [2046 2197])
+            ("put" code nil nil [2198 2256])
+            ("semantic-minor-mode-alist" variable nil nil [2258 2398])
+            ("semantic-mode-line-update" function nil nil [2400 4476])
+            ("semantic-desktop-ignore-this-minor-mode" function (:arguments ("buffer")) nil [4478 4665])
+            ("semantic-add-minor-mode" function (:arguments ("toggle" "name")) nil [4667 5733])
+            ("semantic-toggle-minor-mode-globally" function (:arguments ("mode" "arg")) nil [5735 6883])
+            ("define-minor-mode" code nil nil [6966 7326])
+            ("semantic-highlight-edits-mode-hook" variable nil nil [7328 7480])
+            ("semantic-highlight-edits-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:background "gray20")) (((class color) (background light)) (:background "gray90"))))
+                :type "face")
+                nil [7482 7813])
+            ("semantic-highlight-edits-new-change-hook-fcn" function (:arguments ("overlay")) nil [7815 8121])
+            ("semantic-highlight-edits-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) km)) nil [8123 8251])
+            ("define-minor-mode" code nil nil [8268 9437])
+            ("semantic-add-minor-mode" code nil nil [9439 9524])
+            ("define-minor-mode" code nil nil [9603 10071])
+            ("semantic-show-unmatched-syntax-mode-hook" variable nil nil [10073 10237])
+            ("semantic-unmatched-syntax-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:underline "red")) (((class color) (background light)) (:underline "red"))))
+                :type "face")
+                nil [10239 10536])
+            ("semantic-unmatched-syntax-overlay-p" function (:arguments ("overlay")) nil [10538 10711])
+            ("semantic-showing-unmatched-syntax-p" function nil nil [10713 11042])
+            ("semantic-show-unmatched-lex-tokens-fetch" function nil nil [11044 11586])
+            ("semantic-clean-unmatched-syntax-in-region" function (:arguments ("beg" "end")) nil [11588 11891])
+            ("semantic-clean-unmatched-syntax-in-buffer" function nil nil [11893 12087])
+            ("semantic-clean-token-of-unmatched-syntax" function (:arguments ("token")) nil [12089 12314])
+            ("semantic-show-unmatched-syntax" function (:arguments ("syntax")) nil [12316 13255])
+            ("semantic-next-unmatched-syntax" function (:arguments ("point" "bound")) nil [13257 13955])
+            ("semantic-show-unmatched-syntax-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km ",`" (quote semantic-show-unmatched-syntax-next)) km)) nil [13957 14176])
+            ("define-minor-mode" code nil nil [14193 16051])
+            ("semantic-add-minor-mode" code nil nil [16053 16144])
+            ("semantic-show-unmatched-syntax-next" function (:user-visible-flag t) nil [16146 16375])
+            ("define-minor-mode" code nil nil [16466 16895])
+            ("semantic-show-parser-state-mode-hook" variable nil nil [16897 17053])
+            ("semantic-show-parser-state-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) km)) nil [17055 17187])
+            ("define-minor-mode" code nil nil [17204 20914])
+            ("semantic-add-minor-mode" code nil nil [20916 21002])
+            ("semantic-show-parser-state-string" variable nil nil [21004 21156])
+            ("make-variable-buffer-local" code nil nil [21157 21220])
+            ("semantic-show-parser-state-marker" function (:arguments ("ignore")) nil [21222 22042])
+            ("semantic-show-parser-state-auto-marker" function nil nil [22044 22362])
+            ("define-minor-mode" code nil nil [22439 22860])
+            ("semantic-stickyfunc-mode-hook" variable nil nil [22862 23004])
+            ("semantic-stickyfunc-mode-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km [header-line down-mouse-1] (quote semantic-stickyfunc-menu)) km)) nil [23006 23199])
+            ("semantic-stickyfunc-popup-menu" variable nil nil [23201 23321])
+            ("easy-menu-define" code nil nil [23323 24470])
+            ("semantic-stickyfunc-indent-string" variable (:default-value (if (and window-system (not (featurep (quote xemacs)))) (concat (condition-case nil (let ((charwidth (frame-char-width)) (scrollpos (frame-parameter (selected-frame) (quote vertical-scroll-bars)))) (if (or (eq scrollpos (quote left)) (eq scrollpos t)) (let ((w (when (boundp (quote scroll-bar-width)) (symbol-value (quote scroll-bar-width))))) (if (not w) (setq w (frame-parameter (selected-frame) (quote scroll-bar-width)))) (if (not w) (setq w (+ (get (quote scroll-bar-width) (quote x-frame-parameter)) 1))) (if (not w) "  " (setq w (+ 2 w)) (make-string (/ w charwidth) 32))) "")) (error "")) (condition-case nil (let* ((f (window-fringes)) (fw (car f)) (numspace (/ fw (frame-char-width)))) (make-string numspace 32)) (error (condition-case nil (if (get (quote fringe) (quote face)) " " "") (error ""))))) "")) nil [24472 26623])
+            ("semantic-stickyfunc-old-hlf" variable nil nil [26625 26725])
+            ("semantic-stickyfunc-header-line-format" variable
+               (:constant-flag t
+                :default-value (cond ((featurep (quote xemacs)) nil) ((>= emacs-major-version 22) (quote (:eval (list (propertize " " (quote display) (quote ((space :align-to 0)))) (semantic-stickyfunc-fetch-stickyline))))) ((= emacs-major-version 21) (quote (:eval (list semantic-stickyfunc-indent-string (semantic-stickyfunc-fetch-stickyline))))) (t nil)))
+                nil [26727 27187])
+            ("define-minor-mode" code nil nil [27204 29199])
+            ("semantic-stickyfunc-sticky-classes" variable (:default-value (quote (function type))) nil [29201 29337])
+            ("make-variable-buffer-local" code nil nil [29338 29402])
+            ("semantic-stickyfunc-show-only-functions-p" variable nil nil [29404 29682])
+            ("semantic-stickyfunc-tag-to-stick" function nil nil [29684 30051])
+            ("semantic-stickyfunc-fetch-stickyline" function nil nil [30053 31872])
+            ("semantic-stickyfunc-menu" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [31874 32344])
+            ("semantic-add-minor-mode" code nil nil [32347 32426])
+            ("define-minor-mode" code nil nil [32680 33120])
+            ("semantic-highlight-func-mode-hook" variable nil nil [33122 33272])
+            ("semantic-highlight-func-mode-map" variable (:default-value (let ((km (make-sparse-keymap)) (m3 (if (featurep (quote xemacs)) [button3] [mouse-3]))) (define-key km m3 (quote semantic-highlight-func-menu)) km)) nil [33274 33510])
+            ("semantic-highlight-func-popup-menu" variable nil nil [33512 33651])
+            ("easy-menu-define" code nil nil [33653 34708])
+            ("semantic-highlight-func-menu" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [34710 35226])
+            ("semantic-highlight-func-ct-overlay" variable nil nil [35228 35331])
+            ("make-variable-buffer-local" code nil nil [35332 35396])
+            ("semantic-highlight-func-current-tag-face" variable
+               (:default-value (quote ((((class color) (background dark)) (:background "gray20")) (((class color) (background light)) (:background "gray90"))))
+                :type "face")
+                nil [35398 35720])
+            ("define-minor-mode" code nil nil [35737 37090])
+            ("semantic-highlight-func-highlight-current-tag" function (:arguments ("disable")) nil [37092 38757])
+            ("semantic-add-minor-mode" code nil nil [38759 38842])
+            ("semantic/util-modes" package nil nil [38889 38919]))          
+      :file "util-modes.el"
+      :pointmax 39084
+      :fsize 39083
+      :lastmodtime '(21002 31888 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "senator.el"
+      :file "senator.el"
+      :fsize 57863
+      :lastmodtime '(21002 31888 0 0)))
+  :file "!Users!aaditya!.emacs.d!cedet!lisp!cedet!semantic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

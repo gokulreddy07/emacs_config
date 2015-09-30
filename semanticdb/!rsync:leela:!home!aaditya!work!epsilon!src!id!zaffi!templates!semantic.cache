@@ -1,0 +1,19 @@
+;; Object templates/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "templates/"
+  :tables
+  (list
+    (semanticdb-table "home.mako"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Kuber, the hoarder for Epsilon" section nil nil [104 158])
+            ("Kuber!" section (:members 
+              ( ("Kuber!" section nil nil [169 240]))              ) nil [158 240]))          
+      :file "home.mako"
+      :pointmax 240
+      :fsize 239
+      :lastmodtime '(21003 50638)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!zaffi!templates!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

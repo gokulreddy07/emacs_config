@@ -1,0 +1,40 @@
+;; Object magit-20130810.1119/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "magit-20130810.1119/"
+  :tables
+  (list
+    (semanticdb-table "magit-wip.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("magit" include nil nil [1844 1860])
+            ("format-spec" include nil nil [1861 1883])
+            ("magit-log-head-label-wip" variable
+               (:default-value (quote ((((class color) (background light)) :box t :background "Grey95" :foreground "LightSkyBlue3") (((class color) (background dark)) :box t :background "Grey07" :foreground "LightSkyBlue4")))
+                :type "face")
+                nil [1906 2235])
+            ("magit-log-get-wip-color" function (:arguments ("suffix")) nil [2237 2345])
+            ("magit-wip-refs-namespace" variable
+               (:constant-flag t
+                :default-value (quote ("wip" magit-log-get-wip-color)))
+                nil [2347 2417])
+            ("define-minor-mode" code nil nil [2434 2755])
+            ("magit-wip-commit-message" variable (:default-value "WIP %r") nil [2783 3098])
+            ("magit-wip-echo-area-message" variable (:default-value "Wrote %f (wip)") nil [3100 3493])
+            ("magit-wip-save-mode-lighter" variable (:default-value " Wip") nil [3495 3538])
+            ("define-minor-mode" code nil nil [3555 3977])
+            ("define-globalized-minor-mode" code nil nil [3994 4112])
+            ("turn-on-magit-wip-save" function nil nil [4114 4417])
+            ("magit-wip-save" function nil nil [4419 5368])
+            ("magit-wip" package nil nil [5370 5390]))          
+      :file "magit-wip.el"
+      :pointmax 5418
+      :fsize 5417
+      :lastmodtime '(21002 29866 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "magit.el"
+      :file "magit.el"
+      :fsize 257068
+      :lastmodtime '(21002 29866 0 0)))
+  :file "!Users!aaditya!.emacs.d!elpa!magit-20130810.1119!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

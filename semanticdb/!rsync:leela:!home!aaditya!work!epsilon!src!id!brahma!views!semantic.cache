@@ -1,0 +1,29 @@
+;; Object views/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "views/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"URL Handler for controller\"\"\"" code nil nil [25 57])
+            ("pyramid.view" include nil nil [59 95])
+            ("pyramid.response" include nil nil [96 133])
+            ("log" include nil nil [149 159])
+            ("" code nil nil [174 198])
+            ("home_view" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [213 220]))              ) nil [199 282])
+            ("" code nil nil [296 325])
+            ("forbidden_view" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [345 352]))              ) nil [326 625])
+            ("" code nil nil [639 671])
+            ("supervisor_event_view" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [698 705]))              ) nil [672 786]))          
+      :file "__init__.py"
+      :pointmax 786
+      :fsize 785
+      :lastmodtime '(20995 19405)
+      :unmatched-syntax '((NAME 435 . 442) (IF 475 . 477) (ELSE 508 . 512) (PERIOD 141 . 142) (FROM 135 . 139) (PERIOD 140 . 141) (PERIOD 141 . 142) (FROM 135 . 139) (PERIOD 140 . 141))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!brahma!views!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

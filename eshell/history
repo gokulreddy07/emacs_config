@@ -1,0 +1,128 @@
+sudo vim /etc/hosts
+ls
+pwd
+sudo vim /etc/hosts
+sudo edit /etc/hosts
+sudo emacs /etc/hosts
+sudo find-file /etc/hosts
+sudo find-file /etc/hosts
+clear
+ssh epsilon@e3
+ssh epsilon@e3
+Thank you. Come again!ss
+ssh epsilon@10.2.6.35
+ssh epsilon@e3
+pwd
+cd ~
+pwd
+cd Documents/
+mkdir training
+cd training/
+ls
+cd js/
+ls
+mv notify.js lib/
+cd examples/
+mkdir main.js
+rm main.js
+rm -r main.js
+mkdir js
+mkdir css
+touch images.html
+cd js/
+touch main.js
+cd ../css/
+tocuh main.css
+ls
+touch main.css
+ls
+cd ../
+pwd
+mkdir mine
+cd min
+cd mine/
+touch mlnotes.org
+ls
+mkdir backbone
+cd backbone/
+ls
+ls ../
+cd ../
+ls
+touch backbone.org
+cd examples/
+mkdir todo
+cd todo/
+ls
+touch todo.html
+mkdir js
+ls
+cd js
+ls
+touch main.js
+ls
+cd ../
+ls -r
+mkdir css
+cd $styx
+pwd
+ls
+ls
+touch quotes.txt
+sudo!
+pwd
+mkdir js
+cd js/
+touch example.js
+ls
+lein deps
+echo $PATH
+lein
+ls
+mv api.clj app.clj
+ls
+pwd
+ls
+mv controllers.clj main.clj
+mv helper-maps.clj location-helpers.clj
+ls
+ls
+mv location-helpers.clj ../
+cd ..
+ls
+rm -rf *~
+lls
+ls
+mv location-helpers.clj goomaps.clj
+mv goomaps.clj gmaps.clj
+mv order.clj orders.clj
+cd ../../../../
+tail -f logs/apiserver.log
+cd ../../../../
+cd ..
+tail -f logs/apiserver.log
+cd data
+pwd
+cd ~
+pwd
+istats
+istats
+istats
+istats scan
+ls
+cd ../../../../../
+cd logs/
+tail -f apiserver.log
+tail -f apiserver.log
+cd ../../../../
+cd ../
+cd logs/
+tail -f  apisever.log
+tail -f  apiserver.log
+cd ../../../../
+cd logs/
+tail -f apiserver.log
+cd ../../../../
+cd ..
+tail -f apiserver.log
+tail -f logs/apiserver.log

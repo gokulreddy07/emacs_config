@@ -1,0 +1,114 @@
+;; Object judo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "judo/"
+  :tables
+  (list
+    (semanticdb-table "logger.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [26 35])
+            ("sys" include nil nil [36 46])
+            ("socket" include nil nil [47 60])
+            ("traceback" include nil nil [61 77])
+            ("datetime" include nil nil [78 107])
+            ("dateutil.tz" include nil nil [108 139])
+            ("logbook" include nil nil [141 155])
+            ("logbook" include nil nil [156 206])
+            ("logbook" include nil nil [207 263])
+            ("logbook.base" include nil nil [264 305])
+            ("logbook.compat" include nil nil [306 355])
+            ("logbook.more" include nil nil [356 403])
+            ("raven" include nil nil [405 429])
+            ("raven.handlers.logbook" include nil nil [430 478])
+            ("logging" include nil nil [480 494])
+            ("id.scripts.azpath" include nil nil [496 538])
+            ("id.common.logger" include nil nil [539 587])
+            ("JUDO_LOGGER" variable nil nil [589 612])
+            ("JUDO_CHILD" variable nil nil [613 628])
+            ("stderr_format_string" variable nil nil [664 1108])
+            ("file_format_string" variable nil nil [1110 1443])
+            ("my_filter" function (:arguments 
+              ( ("r" variable nil (reparse-symbol function_parameters) [1459 1460])
+                ("y" variable nil (reparse-symbol function_parameters) [1462 1463]))              ) nil [1445 1630])
+            ("stderr_handler" variable nil nil [1704 1795])
+            ("logbook" code nil nil [1796 1837])
+            ("logbook" variable nil nil [1838 1876])
+            ("split_len" function (:arguments 
+              ( ("seq" variable nil (reparse-symbol function_parameters) [1892 1895])
+                ("length" variable nil (reparse-symbol function_parameters) [1897 1903]))              ) nil [1878 1971])
+            ("MyRewindFormatter" type
+               (:superclasses ("logbook.StringFormatter")
+                :members 
+                  ( ("format_record" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2045 2049])
+                            ("record" variable nil (reparse-symbol function_parameters) [2051 2057])
+                            ("handler" variable nil (reparse-symbol function_parameters) [2059 2066]))                          )
+                        (reparse-symbol indented_block_body) [2027 2247])
+                    ("format_exception" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2273 2277])
+                            ("record" variable nil (reparse-symbol function_parameters) [2279 2285]))                          )
+                        (reparse-symbol indented_block_body) [2252 2424]))                  
+                :type "class")
+                nil [1973 2424])
+            ("fingers_handler" variable nil nil [2425 2517])
+            ("fingers_handler" code nil nil [2518 2558])
+            ("get_color" function
+               (:documentation "Returns the color for this record."
+                :arguments 
+                  ( ("record" variable nil (reparse-symbol function_parameters) [2596 2602]))                  )
+                nil [2582 2793])
+            ("stderr_handler" variable nil nil [2820 2854])
+            ("log" variable nil nil [2856 2879])
+            ("localtz" variable nil nil [2881 2900])
+            ("update_record" function (:arguments 
+              ( ("record" variable nil (reparse-symbol function_parameters) [2920 2926]))              ) nil [2902 3445])
+            ("log_group" variable nil nil [3446 3531])
+            ("add_logger" function
+               (:documentation "Add a logger to our group of handlers: main inerface for a logger to do what we want"
+                :arguments 
+                  ( ("lg" variable nil (reparse-symbol function_parameters) [3548 3550]))                  )
+                nil [3533 3737])
+            ("add_logger" code nil nil [3738 3753])
+            ("find_caller_frame" function
+               (:documentation "Tries to find the caller that issued the call."
+                :arguments 
+                  ( ("bypass" variable nil (reparse-symbol function_parameters) [3777 3783]))                  )
+                nil [3755 4174])
+            ("ourRedirectHandler" type
+               (:superclasses ("RedirectLoggingHandler")
+                :members 
+                  ( ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4271 4275])
+                            ("record" variable nil (reparse-symbol function_parameters) [4276 4282]))                          )
+                        (reparse-symbol indented_block_body) [4262 4340])
+                    ("find_caller" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4360 4364])
+                            ("old_record" variable nil (reparse-symbol function_parameters) [4366 4376]))                          
+                        :documentation "Tries to find the caller that issued the call.")
+                        (reparse-symbol indented_block_body) [4344 4476]))                  
+                :type "class")
+                nil [4208 4476])
+            ("del" code nil nil [4518 4546])
+            ("base_logger" variable nil nil [4547 4579])
+            ("logging" code nil nil [4580 4616])
+            ("server_logger" function (:arguments 
+              ( ("cfg" variable nil (reparse-symbol function_parameters) [4636 4639])
+                ("name" variable nil (reparse-symbol function_parameters) [4641 4645]))              ) nil [4618 5046])
+            ("setup_sentry" function (:arguments 
+              ( ("epsilon_cfg" variable nil (reparse-symbol function_parameters) [5064 5075]))              ) nil [5047 5342]))          
+      :file "logger.py"
+      :pointmax 5342
+      :fsize 5341
+      :lastmodtime '(21003 8376)
+      :unmatched-syntax '((NAME 2333 . 2334) (IF 2349 . 2351) (ELSE 2354 . 2358) (NAME 2156 . 2157) (IF 2172 . 2174) (ELSE 2177 . 2181))))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!judo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,180 @@
+;; Object nandi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nandi/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [25 34])
+            ("sys" include nil nil [35 45])
+            ("time" include nil nil [46 57])
+            ("waitress" include nil nil [75 90])
+            ("pyramid.config" include nil nil [91 130])
+            ("pyramid.events" include nil nil [182 219])
+            ("pyramid.paster" include nil nil [220 254])
+            ("pyramid_beaker" include nil nil [255 313])
+            ("zmq" include nil nil [327 337])
+            ("DBSession" include nil nil [367 383])
+            ("processor" include nil nil [397 418])
+            ("log" include nil nil [397 418])
+            ("HttpMethodOverrideMiddleware" include nil nil [430 465])
+            ("RootFactory" include nil nil [481 499])
+            ("setup_routes" include nil nil [514 533])
+            ("id.common.reloader" include nil nil [546 613])
+            ("id.common.logger" include nil nil [614 660])
+            ("id.common.secure" include nil nil [661 698])
+            ("id.common.config" include nil nil [699 741])
+            ("id.scripts.azpath" include nil nil [743 785])
+            ("id.db.schema" include nil nil [786 828])
+            ("id.db.schema" include nil nil [829 848])
+            ("id.common.version" include nil nil [849 898])
+            ("id.common.connxns" include nil nil [912 948])
+            ("id.common.zwsgi" include nil nil [949 995])
+            ("default_config_file" variable nil nil [1071 1147])
+            ("test_config_file" variable nil nil [1148 1221])
+            ("ini_path" variable nil nil [1222 1280])
+            ("test_ini_path" variable nil nil [1281 1349])
+            ("default_key_file" variable nil nil [1350 1414])
+            ("conf_dir_path" variable nil nil [1415 1465])
+            ("epsilon_version" variable nil nil [1466 1505])
+            ("request_counter" variable nil nil [1506 1525])
+            ("request_timestamp" variable nil nil [1526 1557])
+            ("stats" variable nil nil [1558 1570])
+            ("zcontext" variable nil nil [1572 1587])
+            ("connxn" variable nil nil [1588 1601])
+            ("load_epsilon_env" function
+               (:documentation "Load up and init the epsilon specific stuff"
+                :arguments 
+                  ( ("settings" variable nil (reparse-symbol function_parameters) [1625 1633]))                  )
+                nil [1604 3507])
+            ("get_stats" function
+               (:documentation "Get the stats object"
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [3523 3530]))                  )
+                nil [3509 3581])
+            ("main" function
+               (:documentation " This function returns a Pyramid WSGI application.
+    "
+                :arguments 
+                  ( ("global_config" variable nil (reparse-symbol function_parameters) [3592 3605])
+                    ("settings" variable nil (reparse-symbol function_parameters) [3607 3617]))                  )
+                nil [3583 4925])
+            ("serve" function (:documentation "Serve over ZMQ") nil [4927 5803])
+            ("serve_test" function (:documentation "Serve over ZMQ") nil [5805 6630])
+            ("serve_http" function (:documentation "Serve over HTTP") nil [6632 7254])
+            ("if" code nil nil [7256 7295]))          
+      :file "__init__.py"
+      :pointmax 7592
+      :fsize 7294
+      :lastmodtime '(21003 52466)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "security.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("zope.interface" include nil nil [26 64])
+            ("pyramid.interfaces" include nil nil [65 116])
+            ("pyramid.security" include nil nil [118 162])
+            ("log" include nil nil [177 187])
+            ("RootFactory" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__parent__" variable nil (reparse-symbol indented_block_body) [221 238])
+                    ("__name__" variable nil (reparse-symbol indented_block_body) [243 258])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [301 323]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [277 281])
+                            ("request" variable nil (reparse-symbol function_parameters) [283 290]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [264 324]))                  
+                :type "class")
+                nil [190 324]))          
+      :file "security.py"
+      :pointmax 324
+      :fsize 323
+      :lastmodtime '(21003 52572)
+      :unmatched-syntax '((FROM 164 . 168) (PERIOD 169 . 170) (FROM 164 . 168) (PERIOD 169 . 170)))
+    (semanticdb-table "routing.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("setup_routes" function
+               (:documentation "Setup URL dispatch"
+                :arguments 
+                  ( ("config" variable nil (reparse-symbol function_parameters) [44 50]))                  )
+                nil [27 914]))          
+      :file "routing.py"
+      :pointmax 869
+      :fsize 913
+      :lastmodtime '(21003 62334)
+      :unmatched-syntax nil)
+    (semanticdb-table "db.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("" code nil nil [28 73])
+            ("zope.sqlalchemy" include nil nil [74 126])
+            ("DBSession" variable nil nil [128 206]))          
+      :file "db.py"
+      :pointmax 207
+      :fsize 206
+      :lastmodtime '(21003 52607)
+      :unmatched-syntax nil)
+    (semanticdb-table "util.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"utils for controller\"\"\"" code nil nil [25 51])
+            ("time" include nil nil [52 63])
+            ("id.db.schema" include nil nil [65 101])
+            ("id.common.auth" include nil nil [102 190])
+            ("id.common.secure" include nil nil [191 228])
+            ("log" include nil nil [243 253])
+            ("DBSession" include nil nil [263 279])
+            ("HttpMethodOverrideMiddleware" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''WSGI middleware for overriding HTTP Request Method for RESTful support
+    '''" code nil (reparse-symbol indented_block_body) [331 412])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [459 489]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [431 435])
+                            ("application" variable nil (reparse-symbol function_parameters) [437 448]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [418 490])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [508 512])
+                            ("environ" variable nil (reparse-symbol function_parameters) [514 521])
+                            ("start_response" variable nil (reparse-symbol function_parameters) [523 537]))                          )
+                        (reparse-symbol indented_block_body) [495 1406]))                  
+                :type "class")
+                nil [282 1406])
+            ("check_user_login" function
+               (:documentation "Check user auth"
+                :arguments 
+                  ( ("username" variable nil (reparse-symbol function_parameters) [1429 1437])
+                    ("groupname" variable nil (reparse-symbol function_parameters) [1439 1448])
+                    ("password" variable nil (reparse-symbol function_parameters) [1450 1458])
+                    ("egroupname" variable nil (reparse-symbol function_parameters) [1460 1470]))                  )
+                nil [1408 3950])
+            ("generate_e3_token" function
+               (:documentation "Generate a signed token for E3 internal use"
+                :arguments 
+                  ( ("username" variable nil (reparse-symbol function_parameters) [3974 3982])
+                    ("groupname" variable nil (reparse-symbol function_parameters) [3984 3993])
+                    ("egroupname" variable nil (reparse-symbol function_parameters) [3995 4005]))                  )
+                nil [3952 4240]))          
+      :file "util.py"
+      :pointmax 4239
+      :fsize 4239
+      :lastmodtime '(21003 63539)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!nandi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

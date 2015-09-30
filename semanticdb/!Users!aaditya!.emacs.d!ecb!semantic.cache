@@ -1,0 +1,457 @@
+;; Object ecb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ecb/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("EMACS" variable (:default-value ("/Applications/Emacs.app/Contents/MacOS/Emacs")) nil [1617 1668])
+            ("CEDET" variable nil nil [2207 2214])
+            ("LOADPATH" variable nil nil [2388 2398])
+            ("MAKEINFO" variable (:default-value ("/usr/bin/makeinfo")) nil [3430 3457])
+            ("TEXI2DVI" variable (:default-value ("/C/Programme/texmf/miktex/bin/texi2dvi")) nil [3457 3505])
+            ("DVIPDFM" variable nil nil [3587 3596])
+            ("DVIPS" variable (:default-value ("/C/Programme/texmf/miktex/bin/dvips")) nil [3683 3725])
+            ("PS2PDF" variable (:default-value ("/C/home/bin/ps2pdf")) nil [3725 3751])
+            ("EMACSINFOPATH" variable (:default-value ("/C/Programme/emacs-22.3/info")) nil [4203 4246])
+            ("INSTALLINFO" variable (:default-value ("/usr/bin/install-info")) nil [4454 4488])
+            ("ecb_VERSION" variable (:default-value ("2.41")) nil [5025 5042])
+            ("ecb-makedef.mk" include nil nil [5043 5066])
+            ("ecb" function (:arguments ("$(ecb_LISP_EL)")) nil [5067 5853])
+            ("all" function (:arguments ("ecb" "online-help")) nil [5854 5875])
+            ("online-help" function (:arguments ("$(ecb_TEXI)")) nil [5876 6623])
+            ("pdf" function (:arguments ("$(ecb_TEXI)")) nil [6624 7403])
+            ("install-help" function (:arguments ("$(ecb_INFO_DIR)/$(ecb_INFO)")) nil [7405 7860])
+            ("clean" function nil nil [7862 7912])
+            ("$(ecb_INFO_DIR)" function (:arguments ("online-help")) nil [7976 8017])
+            ("prepversion" function nil nil [8120 8846])
+            ("autoloads" function nil nil [8848 8952])
+            ("distrib" function (:arguments ("$(ecb_INFO_DIR)/$(ecb_INFO)" "prepversion" "autoloads" "ecb")) nil [9007 9662]))          
+      :file "Makefile"
+      :pointmax 9642
+      :fsize 9680
+      :lastmodtime '(21003 1695 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ecb-makedef.mk"
+      :major-mode 'makefile-bsdmake-mode
+      :tags 
+        '( ("RM" variable (:default-value ("rm" "-f")) nil [1088 1097])
+            ("CP" variable (:default-value ("cp")) nil [1097 1103])
+            ("MV" variable (:default-value ("mv" "-f")) nil [1103 1112])
+            ("MKDIR" variable (:default-value ("mkdir" "-p")) nil [1112 1127])
+            ("EBATCH" variable (:default-value ("$(EMACS)" "-batch" "-no-site-file")) nil [1128 1165])
+            ("ecb_LISP_EL" variable (:default-value ("tree-buffer.el" "ecb-util.el" "ecb-mode-line.el" "ecb-help.el" "ecb-layout.el" "ecb-layout-defs.el" "ecb-navigate.el" "ecb.el" "ecb-eshell.el" "ecb-cycle.el" "ecb-face.el" "ecb-compilation.el" "ecb-upgrade.el" "ecb-create-layout.el" "silentcomp.el" "ecb-speedbar.el" "ecb-examples.el" "ecb-tod.el" "ecb-autogen.el" "ecb-jde.el" "ecb-file-browser.el" "ecb-method-browser.el" "ecb-winman-support.el" "ecb-cedet-wrapper.el" "ecb-compatibility.el" "ecb-common-browser.el" "ecb-analyse.el" "ecb-symboldef.el" "ecb-semantic.el" "ecb-advice-test.el")) nil [1166 1746])
+            ("ecb_LISP_ELC" variable (:default-value ("$(ecb_LISP_EL:.el=.elc)")) nil [1747 1784])
+            ("ecb_AUTOLOADS" variable (:default-value ("ecb-autoloads.el")) nil [1785 1816])
+            ("ecb_ETC" variable (:default-value ("NEWS" "README" "RELEASE_NOTES" "ecb-makedef.mk" "Makefile" "make.bat")) nil [1817 1884])
+            ("ecb_TEXI" variable (:default-value ("ecb.texi")) nil [1885 1903])
+            ("ecb_INFO" variable (:default-value ("$(ecb_TEXI:.texi=.info)")) nil [1904 1937])
+            ("ecb_HTML" variable (:default-value ("$(ecb_TEXI:.texi=.html)")) nil [1937 1970])
+            ("ecb_HTML_DIR" variable (:default-value ("html-help")) nil [1970 1993])
+            ("ecb_INFO_DIR" variable (:default-value ("info-help")) nil [1993 2016])
+            ("ecb_DVI" variable (:default-value ("$(ecb_TEXI:.texi=.dvi)")) nil [2017 2048])
+            ("ecb_PS" variable (:default-value ("$(ecb_TEXI:.texi=.ps)")) nil [2048 2077])
+            ("ecb_PDF" variable (:default-value ("$(ecb_TEXI:.texi=.pdf)")) nil [2077 2108])
+            ("ecb_IMAGE_DIR" variable (:default-value ("ecb-images")) nil [2109 2134])
+            ("ecb_DISTRIB_FILES" variable (:default-value ("$(ecb_LISP_EL)" "$(ecb_AUTOLOADS)" "$(ecb_TEXI)" "$(ecb_ETC)")) nil [2135 2208]))          
+      :file "ecb-makedef.mk"
+      :pointmax 2209
+      :fsize 2208
+      :lastmodtime '(21002 31562 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ecb-upgrade.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("silentcomp" include nil nil [7367 7388])
+            ("ecb-version" variable
+               (:constant-flag t
+                :default-value "2.40")
+                nil [7552 7606])
+            ("cl" include nil nil [7629 7642])
+            ("ecb-util" include nil nil [7645 7664])
+            ("silentcomp-defun" code nil nil [7666 7699])
+            ("silentcomp-defun" code nil nil [7700 7758])
+            ("ecb-upgrade-news" variable
+               (:constant-flag t
+                :default-value (quote (("2.40" "ECB now requires full CEDET being installed (at least 1.0pre6)." "More user-responsible buffer-parsing based on the idle-mechanism of semantic." "ECB is able to work with indirect buffers it the base-buffer is filebased." "The history can now be bucketized, see new `ecb-history-make-buckets'." "New faces `ecb-history-bucket-node-face', `ecb-history-dead-buffer-face', `ecb-history-indirect-buffer-face'." "Sticky parwnt-node for all ECB-windows of type tree-buffer." "New support for Git and Monotone as version-control systems." "New command `ecb-goto-window-edit-by-smart-selection'." "New command `ecb-goto-window-ecb-by-smart-selection'." "New option `ecb-ignore-pop-up-frames'." "Full compatibility with Emacs 22 and 23 - see NEWS file." "Better compatibility with CEDET 1.0preX and semantic 2.0preX - see NEWS file." "The internal download-feature of ECB has been completely disabled.") ("2.32" "New ECB-window (tree-buffer) for the semantic-analyser." "New ECB-window for displaying definition for current symbol at point." "Up- and down-arrow are now also smart in the tree-buffers." "Much better maximizing/minimizing of the ecb-tree-windows." "New option `ecb-maximize-next-after-maximized-select'." "`ecb-truncate-lines' has been renamed to `ecb-tree-truncate-lines'") ("2.30" "Support for displaying the VC-state in the tree-buffers; see NEWS." "ECB is now capable of handling remote paths (e.g. TRAMP-paths)" "Precisely expanding of current node via popup-menu of the methods-buffer." "Time consuming tasks are performed stealthy; see `ecb-stealthy-tasks-delay'") ("2.27" "Much saver resizing-mechanism for permanent compile-window. See NEWS.") ("2.26" "Some regexp-options has been changed to regexp-list-options. See NEWS." "New option `ecb-history-exclude-file-regexps'." "`ecb-expand-methods-nodes' works for non-semantic-buffers too." "Readonly-sourcefiles are display in a different face.") ("2.25" "`ecb-sort-history-items' has been renamed to `ecb-history-sort-method'" "New options `ecb-sources-sort-ignore-case' and `ecb-history-sort-ignore-case'" "New icons for parent-display in the Methods-buffer") ("2.24" "New \"current-type\"-filter for the Methods-buffer" "Now directories are prescanned for emptyness") ("2.23" "New cedet1.0beta2 is supported." "Distinction between functions and function-prototypes in the Methods-buffer" "The command `ecb-toggle-layout' now has a prefix-argument" "Default tag-filters for certain files which are applied automatically" "Double-clicking the mouse-1-button now works with integrated speedbar" "A new hook `ecb-speedbar-before-activate-hook'") ("2.22" "New nifty feature for filtering the tags displayed in the Methods-buffer" "Much smarter mechanism to highlight the current tag in the methods-buffer" "New option `ecb-auto-expand-tag-tree-collapse-other'." "Fixed a bug preventing the native Windows-port of XEmacs from working.") ("2.21" "Advice for `balance-windows' so only the edit-windows are balanced." "Gnus, BBDB, VM, Xrefactory etc. work even when ECB-windows are visible." "Commands using `Electric-pop-up-window' now work correctly with ECB." "Fixed some annoying bugs and one fatal bug.") ("2.20" "Fixed a bug preventing tree-buffers with expand-symbol 'before' to work" "'ecb-major-modes-(de)activate' replaced by `ecb-major-modes-show-or-hide'" "New keybinding for the online-help: [C-c . h]" "The edit-area can be splitted in more than 2 windows." "`ecb-other-window-jump-behavior' renamed in `ecb-other-window-behavior'" "New option `ecb-maximize-ecb-window-after-selection'" "popup-menus of the tree-buffers can be used with the tmm-library" "New option `ecb-change-layout-preserves-compwin-state'" "`delete-window' and `delete-other-windows' handle the compile-window" "Support of the default modeline-mechanisms for deleting other windows") ("2.11" "Using semanticdb to jump to type-tags defined in other files") ("2.01" "Support for semantic 2.0" "The tree-buffers can be displayed graphically with images" "Popup-menus of the tree-buffers support submenus" "The sources- and the history-buffer can be filtered" "Ediff runs per default in the ECB-frame") ("1.96" "ECB can work together with the window-managers escreen and winring" "Much better support of the ECB-compile-window"))))
+                nil [8089 13294])
+            ("ecb-upgradable-option-alist" variable
+               (:constant-flag t
+                :default-value (quote ((ecb-compile-window-temporally-enlarge ecb-compile-window-temporally-enlarge ecb-upgrade-compile-window-temporally-enlarge) (ecb-hide-ecb-windows-hook ecb-hide-ecb-windows-before-hook identity) (ecb-show-ecb-windows-hook ecb-show-ecb-windows-before-hook identity) (ecb-layout-nr ecb-layout-name ecb-upgrade-layout-nr) (ecb-toggle-layout-sequence ecb-toggle-layout-sequence ecb-upgrade-toggle-layout-sequence) (ecb-cache-directory-contents ecb-cache-directory-contents ecb-upgrade-cache-directory-contents) (ecb-layout-always-operate-in-edit-window ecb-layout-always-operate-in-edit-window ecb-upgrade-alway-operate-in-edit-window) (ecb-truncate-lines ecb-tree-truncate-lines ecb-upgrade-truncate-lines) (ecb-mode-line-prefixes ecb-mode-line-prefixes ecb-upgrade-mode-line-prefixes) (ecb-mode-line-data ecb-mode-line-data ecb-upgrade-mode-line-data) (ecb-use-speedbar-for-directories ecb-use-speedbar-instead-native-tree-buffer ecb-upgrade-use-speedbar-for-directories) (ecb-directories-menu-user-extension ecb-directories-menu-user-extension ecb-upgrade-directories-menu-ext) (ecb-sources-menu-user-extension ecb-sources-menu-user-extension ecb-upgrade-sources-menu-ext) (ecb-methods-menu-user-extension ecb-methods-menu-user-extension ecb-upgrade-methods-menu-ext) (ecb-history-menu-user-extension ecb-history-menu-user-extension ecb-upgrade-history-menu-ext) (ecb-bucket-token-display ecb-bucket-node-display identity) (ecb-auto-expand-token-tree ecb-auto-expand-tag-tree identity) (ecb-font-lock-tokens ecb-font-lock-tags identity) (ecb-layout-window-sizes ecb-layout-window-sizes ecb-upgrade-layout-window-sizes) (ecb-token-jump-sets-mark ecb-tag-jump-sets-mark identity) (ecb-token-display-function ecb-tag-display-function ecb-upgrade-token-display-function) (ecb-type-token-display ecb-type-tag-display ecb-upgrade-type-token-display) (ecb-post-process-semantic-tokenlist ecb-post-process-semantic-taglist ecb-upgrade-post-process-semantic-tokenlist) (ecb-show-only-positioned-tokens ecb-show-only-positioned-tags identity) (ecb-show-tokens ecb-show-tags ecb-upgrade-show-tags) (ecb-show-tags ecb-show-tags ecb-upgrade-show-tags) (ecb-highlight-token-with-point ecb-highlight-tag-with-point identity) (ecb-highlight-token-with-point-delay ecb-highlight-tag-with-point-delay identity) (ecb-token-visit-post-actions ecb-tag-visit-post-actions ecb-upgrade-token-visit-post-actions) (ecb-token-header-face ecb-tag-header-face ecb-upgrade-token-header-face) (ecb-post-process-semantic-taglist ecb-post-process-semantic-taglist ecb-upgrade-post-process-semantic-taglist) (ecb-primary-mouse-jump-destination ecb-mouse-click-destination identity) (ecb-split-edit-window ecb-split-edit-window-after-start ecb-upgrade-split-edit-window) (ecb-sort-history-items ecb-history-sort-method ecb-upgrade-sort-history-items) (ecb-other-window-jump-behavior ecb-other-window-behavior ecb-upgrade-other-window-jump-behavior) (ecb-excluded-directories-regexp ecb-excluded-directories-regexps ecb-upgrade-excluded-directories-regexp) (ecb-source-file-regexps ecb-source-file-regexps ecb-upgrade-source-file-regexps) (ecb-exclude-parents-regexp ecb-exclude-parents-regexps ecb-upgrade-exclude-parents-regexp) (ecb-auto-expand-tag-tree-collapse-other ecb-auto-expand-tag-tree-collapse-other ecb-upgrade-auto-expand-tag-tree-collapse-other) (ecb-prescan-directories-for-emptyness ecb-prescan-directories-for-emptyness ecb-upgrade-prescan-directories-for-emptyness) (ecb-sources-perform-read-only-check ecb-sources-perform-read-only-check ecb-upgrade-sources-perform-read-only-check) (ecb-vc-enable-support ecb-vc-enable-support ecb-upgrade-vc-enable-support) (ecb-tree-image-icons-directories ecb-tree-image-icons-directories ecb-upgrade-tree-image-icons-directories) (ecb-tree-RET-selects-edit-window ecb-tree-do-not-leave-window-after-select ecb-upgrade-tree-RET-selects-edit-window) (ecb-grep-find-function ecb-grep-recursive-function identity))))
+                nil [13511 20515])
+            ("ecb-upgrade-compile-window-temporally-enlarge" function (:arguments ("old-val")) nil [20764 20983])
+            ("ecb-upgrade-window-sync" function (:arguments ("old-val")) nil [21014 21150])
+            ("ecb-upgrade-layout-window-sizes" function (:arguments ("old-val")) nil [21152 21267])
+            ("ecb-upgrade-layout-nr2name" function (:arguments ("number")) nil [21352 22420])
+            ("ecb-upgrade-layout-nr" function (:arguments ("old-val")) nil [22422 22585])
+            ("ecb-upgrade-toggle-layout-sequence" function (:arguments ("old-val")) nil [22587 22751])
+            ("ecb-upgrade-use-speedbar-for-directories" function (:arguments ("old-val")) nil [22753 22837])
+            ("ecb-upgrade-major-modes-activate" function (:arguments ("old-val")) nil [22839 23137])
+            ("ecb-upgrade-cache-directory-contents" function (:arguments ("old-val")) nil [23139 23304])
+            ("ecb-upgrade-truncate-lines" function (:arguments ("old-val")) nil [23306 24222])
+            ("ecb-upgrade-alway-operate-in-edit-window" function (:arguments ("old-val")) nil [24224 24377])
+            ("ecb-upgrade-mode-line-prefixes" function (:arguments ("old-val")) nil [24379 24712])
+            ("ecb-upgrade-mode-line-data" function (:arguments ("old-val")) nil [24714 25292])
+            ("ecb-upgrade-menu-extension" function (:arguments ("old-list")) nil [25294 25427])
+            ("ecb-upgrade-directories-menu-ext" function (:arguments ("old-val")) nil [25429 25645])
+            ("ecb-upgrade-sources-menu-ext" function (:arguments ("old-val")) nil [25647 25855])
+            ("ecb-upgrade-methods-menu-ext" function (:arguments ("old-val")) nil [25857 26065])
+            ("ecb-upgrade-history-menu-ext" function (:arguments ("old-val")) nil [26067 26275])
+            ("ecb-upgrade-token-display-function" function (:arguments ("old-val")) nil [26277 28149])
+            ("ecb-upgrade-type-token-display" function (:arguments ("old-val")) nil [28152 28961])
+            ("ecb-upgrade-post-process-semantic-tokenlist" function (:arguments ("old-val")) nil [28963 29375])
+            ("ecb-upgrade-token-visit-post-actions" function (:arguments ("old-val")) nil [29377 30317])
+            ("ecb-upgrade-token-header-face" function (:arguments ("old-val")) nil [30319 30451])
+            ("ecb-upgrade-post-process-semantic-taglist" function (:arguments ("old-val")) nil [30453 30638])
+            ("ecb-upgrade-split-edit-window" function (:arguments ("old-val")) nil [30640 30749])
+            ("ecb-upgrade-other-window-jump-behavior" function (:arguments ("old-val")) nil [30751 30942])
+            ("ecb-upgrade-show-tags" function (:arguments ("old-val")) nil [30944 31063])
+            ("ecb-upgrade-sort-history-items" function (:arguments ("old-val")) nil [31065 31152])
+            ("ecb-upgrade-excluded-directories-regexp" function (:arguments ("old-val")) nil [31154 31228])
+            ("ecb-upgrade-source-file-regexps" function (:arguments ("old-val")) nil [31230 31407])
+            ("ecb-upgrade-exclude-parents-regexp" function (:arguments ("old-val")) nil [31413 31495])
+            ("ecb-upgrade-auto-expand-tag-tree-collapse-other" function (:arguments ("old-val")) nil [31497 31607])
+            ("ecb-upgrade-prescan-directories-for-emptyness" function (:arguments ("old-val")) nil [31609 31706])
+            ("ecb-upgrade-sources-perform-read-only-check" function (:arguments ("old-val")) nil [31708 31803])
+            ("ecb-upgrade-vc-enable-support" function (:arguments ("old-val")) nil [31807 31888])
+            ("ecb-upgrade-tree-image-icons-directories" function (:arguments ("old-val")) nil [31890 32605])
+            ("ecb-upgrade-tree-RET-selects-edit-window" function (:arguments ("old-val")) nil [32607 33123])
+            ("ecb-upgrade-internal" customgroup (:user-visible-flag t) nil [33340 33489])
+            ("ecb-options-version" variable
+               (:user-visible-flag t
+                :default-value ecb-version)
+                nil [33491 33647])
+            ("ecb-custom-file-writeable-p" function nil nil [33649 33965])
+            ("ecb-customize-save-variable" function (:arguments ("option" "value")) nil [33967 34441])
+            ("ecb-customize-set-variable" function (:arguments ("option" "value")) nil [34443 34532])
+            ("ecb-option-set-default" function (:arguments ("option")) nil [34534 34746])
+            ("ecb-option-upgrade" function (:arguments ("old-option")) nil [34748 37196])
+            ("ecb-option-compatible-p" function (:arguments ("option")) nil [37198 37477])
+            ("ecb-old-ecb-version" variable nil nil [37479 37609])
+            ("ecb-options-version=ecb-version-p" function nil nil [37611 37833])
+            ("ecb-store-current-options-version" function nil nil [37835 38137])
+            ("ecb-not-compatible-options" variable nil nil [38142 38471])
+            ("ecb-all-options" variable nil nil [38474 38502])
+            ("ecb-get-all-ecb-options" function nil nil [38504 38796])
+            ("ecb-check-not-compatible-options" function nil nil [38798 39508])
+            ("ecb-upgrade-not-compatible-options" function nil nil [39510 40744])
+            ("ecb-renamed-options" variable nil nil [40751 40783])
+            ("ecb-upgrade-renamed-options" function nil nil [40785 42510])
+            ("wid-edit" include nil nil [42512 42531])
+            ("silentcomp-defvar" code nil nil [42532 42572])
+            ("silentcomp-defvar" code nil nil [42573 42606])
+            ("ecb-upgrade-button-keymap" variable (:default-value (let (parent-keymap mouse-button1 keymap) (if ecb-running-xemacs (setq parent-keymap widget-button-keymap mouse-button1 [button1]) (setq parent-keymap widget-keymap mouse-button1 [down-mouse-1])) (setq keymap (copy-keymap parent-keymap)) (define-key keymap mouse-button1 (function widget-button-click)) keymap)) nil [42608 43034])
+            ("ecb-not-compatible-or-renamed-options-detected" function nil nil [43037 43148])
+            ("ecb-upgrade-make-copy-of-custom-file" function nil nil [43150 43656])
+            ("ecb-display-upgraded-options" function (:user-visible-flag t) nil [43665 56235])
+            ("ecb-display-news-for-upgrade" function
+               (:user-visible-flag t
+                :arguments ("full-news"))
+                nil [56237 57830])
+            ("ecb-upgrade-options" function (:user-visible-flag t) nil [57839 58322])
+            ("ecb-cedet-wrapper" include nil nil [58622 58650])
+            ("ecb-all-requirements-available" variable nil nil [58652 58695])
+            ("ecb-check-requirements" function nil nil [58697 60817])
+            ("ecb-package-version-str2list" function (:arguments ("ver-str")) nil [60820 62052])
+            ("ecb-package-version-list<" function (:arguments ("ver1" "ver2")) nil [62406 62950])
+            ("ecb-package-version-string<" function (:arguments ("ver1-str" "ver2-str")) nil [62952 63225])
+            ("ecb-package-version-list2str" function (:arguments ("ver")) nil [63227 63721])
+            ("silentcomp-provide" code nil nil [64457 64490]))          
+      :file "ecb-upgrade.el"
+      :pointmax 64521
+      :fsize 64520
+      :lastmodtime '(21002 31563 0 0)
+      :unmatched-syntax '((close-paren 7642 . 7643) (symbol 7609 . 7626) (open-paren 7608 . 7609) (close-paren 7388 . 7389) (symbol 7347 . 7364) (open-paren 7346 . 7347)))
+    (semanticdb-table "silentcomp.el"
+      :file "silentcomp.el"
+      :fsize 7341
+      :lastmodtime '(21002 31569 0 0))
+    (semanticdb-table "ecb-util.el"
+      :file "ecb-util.el"
+      :fsize 100274
+      :lastmodtime '(21002 31563 0 0))
+    (semanticdb-table "ecb-cedet-wrapper.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("silentcomp" include nil nil [1852 1873])
+            ("cl" include nil nil [1926 1939])
+            ("ecb-util" include nil nil [1942 1961])
+            ("ecb-cedet-old-sourcetree-structure-detected-p" variable
+               (:constant-flag t
+                :default-value (locate-library "semantic-ctxt"))
+                nil [1963 2113])
+            ("ecb-cedet-lib-registry" variable
+               (:constant-flag t
+                :default-value (quote ((cedet . cedet) (semantic . semantic) (semantic-ctxt . semantic/ctxt) (semantic-analyze . semantic/analyze) (semanticdb . semantic/db) (semanticdb-find . semantic/db-find) (semanticdb-mode . semantic/db-mode) (semantic-el . semantic/bovine/el) (eieio . eieio) (speedbar . speedbar))))
+                nil [2331 3325])
+            ("ecb-cedet-required-version-min" variable
+               (:constant-flag t
+                :default-value (quote (1 0 2 6)))
+                nil [3327 3615])
+            ("ecb-cedet-required-version-max" variable
+               (:constant-flag t
+                :default-value (quote (2 2 4 9)))
+                nil [3617 3782])
+            ("ecb-cedet-missing-libs" function nil nil [3784 4281])
+            ("ecb-cedet-require" function (:arguments ("old-style-lib")) nil [4283 4816])
+            ("ignore-errors" code nil nil [5325 5367])
+            ("ecb-cedet-missing-libraries" variable
+               (:constant-flag t
+                :default-value (ecb-cedet-missing-libs))
+                nil [5369 5525])
+            ("unless" code nil nil [5527 5813])
+            ("ecb-compiled-in-semantic-version" variable
+               (:constant-flag t
+                :default-value (eval-when-compile (ignore-errors semantic-version)))
+                nil [5815 6061])
+            ("ecb-compiled-in-cedet-version" variable
+               (:constant-flag t
+                :default-value (eval-when-compile (ignore-errors cedet-version)))
+                nil [6063 6297])
+            ("ecb-check-semantic-load" function nil nil [6299 8317])
+            ("ecb-check-cedet-load" function nil nil [8319 10971])
+            ("ecb-semantic-2-loaded" variable
+               (:constant-flag t
+                :default-value (ignore-errors (string-match "^2" semantic-version)))
+                nil [10973 11092])
+            ("ecb--semantic-symbol->name-assoc-list" function nil nil [11171 11333])
+            ("ecb--semantic-symbol->name-assoc-list-for-type-parts" function nil nil [11335 11542])
+            ("ecb--semantic-format-tag-functions" function nil nil [11544 11693])
+            ("ecb--semantic-orphaned-member-metaparent-type" function nil nil [11695 11881])
+            ("ecb--semantic-uml-colon-string" function nil nil [11883 12024])
+            ("ecb--semantic-format-face-alist" function nil nil [12026 12170])
+            ("ecb--semantic-after-toplevel-cache-change-hook" function nil nil [12172 12349])
+            ("ecb--semantic-after-partial-cache-change-hook" function nil nil [12351 12525])
+            ("ecb--semantic--before-fetch-tags-hook" function nil nil [12527 12677])
+            ("ecb--ezimage-use-images" function nil nil [12679 12777])
+            ("ecb--semantic-format-use-images-flag" function nil nil [12779 12916])
+            ("ecb--cedet-function-list" variable
+               (:constant-flag t
+                :default-value (quote (semantic--format-colorize-text semantic--tag-get-property semantic--tag-overlay-cdr semantic--tag-put-property semantic--tag-set-overlay semantic-active-p semantic-adopt-external-members semantic-analyze-current-context semantic-analyze-find-tag semantic-analyze-possible-completions semantic-analyze-tag-type semantic-brute-find-first-tag-by-name semantic-bucketize semantic-c-template-string semantic-calculate-scope semantic-clear-toplevel-cache semantic-current-tag semantic-current-tag-parent semantic-dependency-tag-file semantic-documentation-for-tag semantic-equivalent-tag-p semantic-fetch-available-tags semantic-fetch-tags semantic-find-tag-by-overlay semantic-find-tags-by-class semantic-find-tags-by-name semantic-flatten-tags-table semantic-get-local-arguments semantic-go-to-tag semantic-lex-token-start semantic-overlay-live-p semantic-overlay-p semantic-something-to-tag-table semantic-tag semantic-tag-abstract-p semantic-tag-bounds semantic-tag-buffer semantic-tag-calculate-parent semantic-tag-children-compatibility semantic-tag-class semantic-tag-components semantic-tag-components-with-overlays semantic-tag-end semantic-tag-faux-p semantic-tag-function-arguments semantic-tag-function-constructor-p semantic-tag-function-destructor-p semantic-tag-function-parent semantic-tag-get-attribute semantic-tag-name semantic-tag-named-parent semantic-tag-new-variable semantic-tag-overlay semantic-tag-p semantic-tag-protection semantic-tag-prototype-p semantic-tag-start semantic-tag-static-p semantic-tag-type semantic-tag-type-interfaces semantic-tag-type-members semantic-tag-type-superclasses semantic-tag-with-position-p semanticdb-brute-deep-find-tags-by-name semanticdb-deep-find-tags-by-name semanticdb-find-result-length semanticdb-find-result-nth semanticdb-find-tags-by-name semanticdb-full-filename semanticdb-minor-mode-p semanticdb-strip-find-results)))
+                nil [13176 15389])
+            ("ecb--semantic-format-function-list" variable
+               (:constant-flag t
+                :default-value (quote (semantic-format-tag-abbreviate semantic-format-tag-concise-prototype semantic-format-tag-name semantic-format-tag-prin1 semantic-format-tag-prototype semantic-format-tag-summarize semantic-format-tag-uml-abbreviate semantic-format-tag-uml-concise-prototype semantic-format-tag-uml-prototype)))
+                nil [15391 15774])
+            ("unless" code nil nil [15869 16064])
+            ("silentcomp-provide" code nil nil [16066 16105]))          
+      :file "ecb-cedet-wrapper.el"
+      :pointmax 16141
+      :fsize 16140
+      :lastmodtime '(21003 1904 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "ecb.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("silentcomp" include nil nil [5543 5564])
+            ("ecb-upgrade" include nil nil [5636 5658])
+            ("ecb-util" include nil nil [5659 5678])
+            ("ecb-cedet-wrapper" include nil nil [5715 5743])
+            ("when" code nil nil [5804 6035])
+            ("message" code nil nil [6215 6763])
+            ("tree-buffer" include nil nil [6786 6808])
+            ("ecb-file-browser" include nil nil [6809 6836])
+            ("ecb-method-browser" include nil nil [6837 6866])
+            ("ecb-jde" include nil nil [6867 6885])
+            ("ecb-layout" include nil nil [6886 6907])
+            ("ecb-create-layout" include nil nil [6908 6936])
+            ("ecb-mode-line" include nil nil [6937 6961])
+            ("ecb-help" include nil nil [6962 6981])
+            ("ecb-navigate" include nil nil [6982 7005])
+            ("ecb-eshell" include nil nil [7006 7027])
+            ("ecb-compilation" include nil nil [7028 7054])
+            ("ecb-cycle" include nil nil [7055 7075])
+            ("ecb-face" include nil nil [7076 7095])
+            ("ecb-tod" include nil nil [7096 7114])
+            ("ecb-speedbar" include nil nil [7115 7138])
+            ("ecb-autogen" include nil nil [7139 7161])
+            ("ecb-winman-support" include nil nil [7162 7191])
+            ("ecb-compatibility" include nil nil [7192 7220])
+            ("ecb-analyse" include nil nil [7233 7255])
+            ("ecb-symboldef" include nil nil [7256 7280])
+            ("assoc" include nil nil [7299 7315])
+            ("cl" include nil nil [7367 7380])
+            ("silentcomp-defun" code nil nil [7394 7428])
+            ("silentcomp-defvar" code nil nil [7429 7461])
+            ("silentcomp-defvar" code nil nil [7462 7513])
+            ("silentcomp-defun" code nil nil [7523 7564])
+            ("silentcomp-defun" code nil nil [7565 7606])
+            ("silentcomp-defvar" code nil nil [7608 7643])
+            ("silentcomp-defun" code nil nil [7644 7677])
+            ("silentcomp-defun" code nil nil [7678 7708])
+            ("silentcomp-defun" code nil nil [7709 7744])
+            ("silentcomp-defun" code nil nil [7745 7778])
+            ("silentcomp-defun" code nil nil [7780 7822])
+            ("silentcomp-defvar" code nil nil [7823 7867])
+            ("ecb-major-mode-selected-source" variable nil nil [7993 8081])
+            ("ecb-item-in-tree-buffer-selected" variable nil nil [8083 8210])
+            ("ecb-initialize-all-internals" function (:arguments ("no-caches")) nil [8212 8478])
+            ("ecb-minor-mode" variable nil nil [8531 8659])
+            ("ecb-activated-window-configuration" variable nil nil [8661 8766])
+            ("ecb" customgroup (:user-visible-flag t) nil [8896 8971])
+            ("ecb-general" customgroup (:user-visible-flag t) nil [8973 9079])
+            ("ecb-most-important" customgroup (:user-visible-flag t) nil [9081 9201])
+            ("ecb-use-recursive-edit" variable (:user-visible-flag t) nil [9203 9388])
+            ("ecb-auto-activate" variable (:user-visible-flag t) nil [9390 9611])
+            ("ecb-activation-selects-ecb-frame-if-already-active" variable
+               (:user-visible-flag t
+                :default-value (quote ask))
+                nil [9613 10151])
+            ("ecb-clear-caches-before-activate" variable (:user-visible-flag t) nil [10153 10860])
+            ("ecb-stealthy-tasks-delay" variable
+               (:user-visible-flag t
+                :default-value 1)
+                nil [10862 12134])
+            ("ecb-minor-mode-text" variable
+               (:user-visible-flag t
+                :default-value " ECB")
+                nil [12158 12543])
+            ("ecb-auto-compatibility-check" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [12545 13360])
+            ("ecb-version-check" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [13362 13630])
+            ("ecb-debug-mode" variable (:user-visible-flag t) nil [13632 14203])
+            ("ecb-run-ediff-in-ecb-frame" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [14205 14726])
+            ("ecb-activate-before-layout-draw-hook" variable (:user-visible-flag t) nil [14729 15951])
+            ("ecb-before-activate-hook" variable (:user-visible-flag t) nil [15954 16520])
+            ("ecb-activate-hook" variable (:user-visible-flag t) nil [16523 16866])
+            ("ecb-deactivate-hook" variable (:user-visible-flag t) nil [16868 17055])
+            ("ecb-before-deactivate-hook" variable (:user-visible-flag t) nil [17057 17394])
+            ("ecb-kill-buffer-hook" function nil nil [17521 18802])
+            ("ecb-window-sync" function (:user-visible-flag t) nil [18805 19601])
+            ("ecb-customize" function (:user-visible-flag t) nil [19603 19757])
+            ("ecb-customize-most-important" function (:user-visible-flag t) nil [19759 19949])
+            ("ecb-menu-item" function (:arguments ("item")) nil [20112 20608])
+            ("ecb-menu-name" variable (:default-value "ECB") nil [20610 20638])
+            ("ecb-menu-bar" variable (:default-value (list ecb-menu-name (ecb-menu-item ["Select ECB frame" ecb-select-ecb-frame :active (and ecb-minor-mode (not (equal (selected-frame) ecb-frame))) :help "Select the ECB-frame."]) (ecb-menu-item ["Synchronize ECB windows" (ecb-window-sync) :active (and (equal (selected-frame) ecb-frame) (ecb-point-in-edit-window-number)) :help "Synchronize the ECB windows with the current edit-window."]) (ecb-menu-item ["Update directories buffer" ecb-update-directories-buffer :active (equal (selected-frame) ecb-frame) :help "Updates the directories buffer with current disk-state"]) (ecb-menu-item ["Add all buffers to history" ecb-add-all-buffers-to-history :active (and (equal (selected-frame) ecb-frame) (ecb-window-live-p ecb-history-buffer-name)) :help "Add all current file-buffers to history"]) "-" (ecb-menu-item ["Rebuild methods buffer" ecb-rebuild-methods-buffer :active (equal (selected-frame) ecb-frame) :help "Rebuild the methods buffer completely"]) (ecb-menu-item ["Expand methods buffer" ecb-expand-methods-nodes :active (equal (selected-frame) ecb-frame) :help "Expand all nodes of a certain indent-level"]) (ecb-menu-item ["Toggle auto. expanding of the method buffer" ecb-toggle-auto-expand-tag-tree :active (equal (selected-frame) ecb-frame) :help "Toggle auto. expanding of the method buffer"]) "-" (ecb-menu-item ["Change layout" ecb-change-layout :active (equal (selected-frame) ecb-frame) :help "Change the layout."]) (ecb-menu-item ["Redraw layout" ecb-redraw-layout :active (equal (selected-frame) ecb-frame) :help "Redraw the current layout."]) (ecb-menu-item ["Toggle layout" ecb-toggle-layout :active (and (equal (selected-frame) ecb-frame) (> (length ecb-toggle-layout-sequence) 1)) :help "Toggle between several layouts"]) (ecb-menu-item ["Toggle visibility of ECB windows" ecb-toggle-ecb-windows :active (equal (selected-frame) ecb-frame) :help "Toggle the visibility of all ECB windows."]) (list "Layout administration" (ecb-menu-item ["Store current window-sizes" ecb-store-window-sizes :active (equal (selected-frame) ecb-frame) :help "Store current sizes of the ecb-windows in current layout."]) (ecb-menu-item ["Restore sizes of the ecb-windows" ecb-restore-window-sizes :active (equal (selected-frame) ecb-frame) :help "Restore the sizes of the ecb-windows in current layout."]) (ecb-menu-item ["Restore default-sizes of the ecb-windows" ecb-restore-default-window-sizes :active (equal (selected-frame) ecb-frame) :help "Restore the default-sizes of the ecb-windows in current layout."]) "-" (ecb-menu-item ["Create new layout" ecb-create-new-layout :active (equal (selected-frame) ecb-frame) :help "Create a new ECB-layout."]) (ecb-menu-item ["Delete new layout" ecb-delete-new-layout :active (equal (selected-frame) ecb-frame) :help "Delete an user-created ECB-layout."]) "-" (ecb-menu-item ["Show help for a layout" ecb-show-layout-help :active t :help "Show the documentation for a layout."])) "-" (ecb-menu-item ["Toggle compile window" ecb-toggle-compile-window :active (equal (selected-frame) ecb-frame) :help "Toggle visibility of compile window."]) (ecb-menu-item ["Toggle enlarged compile window" ecb-toggle-compile-window-height :active (and (equal (selected-frame) ecb-frame) ecb-compile-window (ecb-compile-window-live-p)) :help "Toggle enlarged compile window."]) "-" (list "Navigate" (ecb-menu-item ["Previous (back)" ecb-nav-goto-previous :active t :help "Go to the previous navigation point"]) (ecb-menu-item ["Next (forward)" ecb-nav-goto-next :active t :help "Go to the next navigation point"])) (list "Goto window" (ecb-menu-item ["Last selected edit-window" ecb-goto-window-edit-last :active t :help "Go to the last selected edit-window"]) (ecb-menu-item ["Edit-window 1" ecb-goto-window-edit1 :active t :help "Go to the first edit-window"]) (ecb-menu-item ["Edit-window 2" ecb-goto-window-edit2 :active (ecb-edit-window-splitted) :help "Go to the second edit-window (if splitted)"]) (ecb-menu-item ["Directories" ecb-goto-window-directories :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-directories-buffer-name) :help "Go to the directories window"]) (ecb-menu-item ["Sources" ecb-goto-window-sources :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-sources-buffer-name) :help "Go to the sources window"]) (ecb-menu-item ["Methods and Variables" ecb-goto-window-methods :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-methods-buffer-name) :help "Go to the methods/variables window"]) (ecb-menu-item ["History" ecb-goto-window-history :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-history-buffer-name) :help "Go to the history window"]) (ecb-menu-item ["Analyse" ecb-goto-window-analyse :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-analyse-buffer-name) :help "Go to the analyse window"]) (ecb-menu-item ["Speedbar" ecb-goto-window-speedbar :active (and ecb-use-speedbar-instead-native-tree-buffer (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-speedbar-buffer-name)) :help "Go to the integrated speedbar window"]) (ecb-menu-item ["Compilation" ecb-goto-window-compilation :active (equal (quote visible) (ecb-compile-window-state)) :help "Go to the history window"])) (list "Display window maximized" (ecb-menu-item ["Directories" ecb-maximize-window-directories :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-directories-buffer-name) :help "Maximize the directories window - even if currently not visible"]) (ecb-menu-item ["Sources" ecb-maximize-window-sources :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-sources-buffer-name) :help "Maximize the sources window - even if currently not visible"]) (ecb-menu-item ["Methods and Variables" ecb-maximize-window-methods :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-methods-buffer-name) :help "Maximize the methods/variables window - even if currently not visible"]) (ecb-menu-item ["History" ecb-maximize-window-history :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-history-buffer-name) :help "Maximize the history window - even if currently not visible"]) (ecb-menu-item ["Analyse" ecb-maximize-window-analyse :active (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-analyse-buffer-name) :help "Maximize the analyse window - even if currently not visible"]) (ecb-menu-item ["Speedbar" ecb-maximize-window-speedbar :active (and ecb-use-speedbar-instead-native-tree-buffer (ecb-buffer-is-ecb-buffer-of-current-layout-p ecb-speedbar-buffer-name)) :help "Maximize the integrated speedbar window - even if not visible"])) "-" (list "Preferences" (ecb-menu-item ["Most important..." (customize-group "ecb-most-important") :active t :help "Customize the most important options"]) (ecb-menu-item ["All..." (ecb-customize) :active t :help "Display all available option-groups..."]) "-" (ecb-menu-item ["General..." (customize-group "ecb-general") :active t :help "Customize general ECB options"]) (ecb-menu-item ["Directories..." (customize-group "ecb-directories") :active t :help "Customize ECB directories"]) (ecb-menu-item ["Sources..." (customize-group "ecb-sources") :active t :help "Customize ECB sources"]) (ecb-menu-item ["Methods..." (customize-group "ecb-methods") :active t :help "Customize ECB method display"]) (ecb-menu-item ["History..." (customize-group "ecb-history") :active t :help "Customize ECB history"]) (ecb-menu-item ["Analyse..." (customize-group "ecb-analyse") :active t :help "Customize ECB analyse ingeractor"]) (ecb-menu-item ["Version control..." (customize-group "ecb-version-control") :active t :help "Customize the version-control-support"]) (ecb-menu-item ["Layout..." (customize-group "ecb-layout") :active t :help "Customize ECB layout"]) (ecb-menu-item ["Tree-buffer style and handling..." (customize-group "ecb-tree-buffer") :active t :help "Customize the tree-buffers of ECB"]) (ecb-menu-item ["Face options..." (customize-group "ecb-face-options") :active t :help "Customize ECB faces"]) (ecb-menu-item ["Help options..." (customize-group "ecb-help") :active t :help "Customize options for the online help of ECB"]) (ecb-menu-item ["ECB/eshell options..." (customize-group "ecb-eshell") :active t :help "Customize options for the eshell integration of ECB"]) (ecb-menu-item ["Supporting non-semantic-sources..." (customize-group "ecb-non-semantic") :active t :help "Customize options for parsing non-semantic-sources"]) (ecb-menu-item ["Supporting window-managers..." (customize-group "ecb-winman-support") :active t :help "Customize options for the window-manager-support"])) (list "Upgrade ECB" (ecb-menu-item ["Upgrade ECB-options to current ECB-version" ecb-upgrade-options :active (equal (selected-frame) ecb-frame) :help "Try to upgrade ECB-options to current ECB-version if necessary."])) (list "Help" (ecb-menu-item ["Show Online Help" ecb-show-help :active t :help "Show the online help of ECB."]) (ecb-menu-item ["ECB NEWS" (ecb-display-news-for-upgrade t) :active t :help "Displays the NEWS-file of ECB."]) (ecb-menu-item ["List of most important options" (let ((ecb-show-help-format (quote info))) (ecb-show-help) (Info-goto-node "Most important options")) :active t :help "Displays a a list of options which you should know."]) (ecb-menu-item ["List of all options" (let ((ecb-show-help-format (quote info))) (ecb-show-help) (Info-goto-node "Option Index")) :active t :help "Displays an index of all user-options in the online-help."]) (ecb-menu-item ["List of all commands" (let ((ecb-show-help-format (quote info))) (ecb-show-help) (Info-goto-node "Command Index")) :active t :help "Displays an index of all commands in the online-help."]) (ecb-menu-item ["FAQ" (let ((ecb-show-help-format (quote info))) (ecb-show-help) (Info-goto-node "FAQ")) :active t :help "Show the FAQ of ECB."]) (ecb-menu-item ["Conflicts with other packages" (let ((ecb-show-help-format (quote info))) (ecb-show-help) (Info-goto-node "Conflicts and bugs")) :active t :help "What to do for conflicts with other packages."]) (ecb-menu-item ["Submit problem report" ecb-submit-problem-report :active t :help "Submit a problem report to the ECB mailing list."]) (ecb-menu-item ["ECB Debug mode" (setq ecb-debug-mode (not ecb-debug-mode)) :active t :style toggle :selected ecb-debug-mode :help "Print debug-informations about parsing files in the message buffer."]) (ecb-menu-item ["ECB Layout Debug mode" (setq ecb-layout-debug-mode (not ecb-layout-debug-mode)) :active t :style toggle :selected ecb-layout-debug-mode :help "Print debug-informations about window-operations in the message buffer."]) "-" (ecb-menu-item ["Help preferences..." (customize-group "ecb-help") :active t :help "Customize options for the online help of ECB"]) "-" (concat "ECB " ecb-version)) "-" (ecb-menu-item ["Deactivate ECB" ecb-deactivate :active t :help "Deactivate ECB."]))) nil [20639 34142])
+            ("ecb-add-to-minor-modes" function nil nil [34144 34641])
+            ("ecb-mode-map" variable nil nil [34643 34709])
+            ("ecb-key-map" variable
+               (:user-visible-flag t
+                :default-value (quote ("C-c ." (t "fh" ecb-history-filter) (t "fs" ecb-sources-filter) (t "fm" ecb-methods-filter) (t "fr" ecb-methods-filter-regexp) (t "ft" ecb-methods-filter-tagclass) (t "fc" ecb-methods-filter-current-type) (t "fp" ecb-methods-filter-protection) (t "fn" ecb-methods-filter-nofilter) (t "fl" ecb-methods-filter-delete-last) (t "ff" ecb-methods-filter-function) (t "p" ecb-nav-goto-previous) (t "n" ecb-nav-goto-next) (t "lc" ecb-change-layout) (t "lr" ecb-redraw-layout) (t "lw" ecb-toggle-ecb-windows) (t "lt" ecb-toggle-layout) (t "s" ecb-window-sync) (t "r" ecb-rebuild-methods-buffer) (t "a" ecb-toggle-auto-expand-tag-tree) (t "x" ecb-expand-methods-nodes) (t "h" ecb-show-help) (t "gl" ecb-goto-window-edit-last) (t "g1" ecb-goto-window-edit1) (t "g2" ecb-goto-window-edit2) (t "gc" ecb-goto-window-compilation) (t "gd" ecb-goto-window-directories) (t "gs" ecb-goto-window-sources) (t "gm" ecb-goto-window-methods) (t "gh" ecb-goto-window-history) (t "ga" ecb-goto-window-analyse) (t "gb" ecb-goto-window-speedbar) (t "md" ecb-maximize-window-directories) (t "ms" ecb-maximize-window-sources) (t "mm" ecb-maximize-window-methods) (t "mh" ecb-maximize-window-history) (t "ma" ecb-maximize-window-analyse) (t "mb" ecb-maximize-window-speedbar) (t "e" eshell) (t "o" ecb-toggle-scroll-other-window-scrolls-compile) (t "\\" ecb-toggle-compile-window) (t "/" ecb-toggle-compile-window-height) (t "," ecb-cycle-maximized-ecb-buffers) (t "." ecb-cycle-through-compilation-buffers))))
+                nil [34711 41075])
+            ("ecb-activate" function (:user-visible-flag t) nil [41092 41407])
+            ("ecb-activate-internal" function nil nil [41409 41940])
+            ("ecb-upgrade-check-done" variable nil nil [41943 41978])
+            ("ecb-clean-up-after-activation-failure" function (:arguments ("msg" "err")) nil [41980 42385])
+            ("ecb-last-window-config-before-deactivation" variable nil nil [42387 42567])
+            ("ecb-temporary-changed-emacs-variables-alist" variable nil nil [42569 42803])
+            ("ecb-modify-emacs-variable" function (:arguments ("var" "action" "new-value")) nil [42805 43881])
+            ("ecb-activate--impl" function nil nil [43884 58623])
+            ("ecb-deactivate" function (:user-visible-flag t) nil [58626 58751])
+            ("ecb-deactivate-internal" function (:arguments ("run-no-hooks")) nil [58753 66051])
+            ("ecb-minor-mode" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [66068 66597])
+            ("ecb-compile-file-if-necessary" function (:arguments ("file" "force")) nil [66625 67036])
+            ("ecb-byte-compile" function
+               (:user-visible-flag t
+                :arguments ("force-all"))
+                nil [67053 67747])
+            ("ecb-auto-activate-hook" function nil nil [67749 67887])
+            ("add-hook" code nil nil [67889 67943])
+            ("silentcomp-defvar" code nil nil [67945 67984])
+            ("condition-case" code nil nil [67985 68626])
+            ("eval-after-load" code nil nil [68707 72787])
+            ("condition-case" code nil nil [72826 77876])
+            ("dolist" code nil nil [78147 78249])
+            ("ecb-file-browser-initialize" code nil nil [78301 78330])
+            ("ecb-method-browser-initialize" code nil nil [78331 78362])
+            ("silentcomp-provide" code nil nil [78364 78389]))          
+      :file "ecb.el"
+      :pointmax 78412
+      :fsize 78411
+      :lastmodtime '(21002 31564 0 0)
+      :unmatched-syntax '((close-paren 7380 . 7381) (symbol 7318 . 7335) (open-paren 7317 . 7318) (close-paren 5564 . 5565) (symbol 5523 . 5540) (open-paren 5522 . 5523)))
+    (semanticdb-table "tree-buffer.el"
+      :file "tree-buffer.el"
+      :fsize 168794
+      :lastmodtime '(21002 31569 0 0))
+    (semanticdb-table "ecb-file-browser.el"
+      :file "ecb-file-browser.el"
+      :fsize 235590
+      :lastmodtime '(21002 31553 0 0))
+    (semanticdb-table "ecb-method-browser.el"
+      :file "ecb-method-browser.el"
+      :fsize 244311
+      :lastmodtime '(21002 31562 0 0))
+    (semanticdb-table "ecb-jde.el"
+      :file "ecb-jde.el"
+      :fsize 6999
+      :lastmodtime '(21002 31562 0 0))
+    (semanticdb-table "ecb-layout.el"
+      :file "ecb-layout.el"
+      :fsize 320875
+      :lastmodtime '(21002 31562 0 0))
+    (semanticdb-table "ecb-create-layout.el"
+      :file "ecb-create-layout.el"
+      :fsize 34663
+      :lastmodtime '(21002 31552 0 0))
+    (semanticdb-table "ecb-mode-line.el"
+      :file "ecb-mode-line.el"
+      :fsize 17050
+      :lastmodtime '(21002 31563 0 0))
+    (semanticdb-table "ecb-help.el"
+      :file "ecb-help.el"
+      :fsize 21296
+      :lastmodtime '(21002 31553 0 0))
+    (semanticdb-table "ecb-navigate.el"
+      :file "ecb-navigate.el"
+      :fsize 13526
+      :lastmodtime '(21002 31563 0 0))
+    (semanticdb-table "ecb-eshell.el"
+      :file "ecb-eshell.el"
+      :fsize 17296
+      :lastmodtime '(21002 31552 0 0))
+    (semanticdb-table "ecb-compilation.el"
+      :file "ecb-compilation.el"
+      :fsize 13597
+      :lastmodtime '(21002 31552 0 0))
+    (semanticdb-table "ecb-cycle.el"
+      :file "ecb-cycle.el"
+      :fsize 5106
+      :lastmodtime '(21002 31552 0 0))
+    (semanticdb-table "ecb-face.el"
+      :file "ecb-face.el"
+      :fsize 35631
+      :lastmodtime '(21002 31553 0 0))
+    (semanticdb-table "ecb-tod.el"
+      :file "ecb-tod.el"
+      :fsize 9180
+      :lastmodtime '(21002 31563 0 0))
+    (semanticdb-table "ecb-speedbar.el"
+      :file "ecb-speedbar.el"
+      :fsize 23386
+      :lastmodtime '(21002 31563 0 0))
+    (semanticdb-table "ecb-autogen.el"
+      :file "ecb-autogen.el"
+      :fsize 5951
+      :lastmodtime '(21002 31552 0 0))
+    (semanticdb-table "ecb-winman-support.el"
+      :file "ecb-winman-support.el"
+      :fsize 13305
+      :lastmodtime '(21002 31563 0 0))
+    (semanticdb-table "ecb-compatibility.el"
+      :file "ecb-compatibility.el"
+      :fsize 16360
+      :lastmodtime '(21002 31552 0 0))
+    (semanticdb-table "ecb-analyse.el"
+      :file "ecb-analyse.el"
+      :fsize 32650
+      :lastmodtime '(21002 31552 0 0))
+    (semanticdb-table "ecb-symboldef.el"
+      :file "ecb-symboldef.el"
+      :fsize 27845
+      :lastmodtime '(21002 31563 0 0)))
+  :file "!Users!aaditya!.emacs.d!ecb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

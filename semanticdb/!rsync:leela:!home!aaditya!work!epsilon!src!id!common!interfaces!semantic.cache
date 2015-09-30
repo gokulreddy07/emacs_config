@@ -1,0 +1,46 @@
+;; Object interfaces/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "interfaces/"
+  :tables
+  (list
+    (semanticdb-table "kuber.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("Kuber" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    This class defines the interface to use Kuber Server
+    '''" code nil (reparse-symbol indented_block_body) [49 117])
+                    ("SUCCESS" variable nil (reparse-symbol indented_block_body) [138 149])
+                    ("ERROR" variable nil (reparse-symbol indented_block_body) [154 163])
+                    ("OK_MESSAGE" variable nil (reparse-symbol indented_block_body) [168 185]))                  
+                :type "class")
+                nil [24 186]))          
+      :file "kuber.py"
+      :pointmax 186
+      :fsize 185
+      :lastmodtime '(20803 2870)
+      :unmatched-syntax nil)
+    (semanticdb-table "zaffi.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("Zaffi" type
+               (:superclasses ("object")
+                :members 
+                  ( ("'''
+    This class defines the interface to use Zaffi Server
+    '''" code nil (reparse-symbol indented_block_body) [49 117])
+                    ("SUCCESS" variable nil (reparse-symbol indented_block_body) [138 149])
+                    ("ERROR" variable nil (reparse-symbol indented_block_body) [154 163])
+                    ("OK_MESSAGE" variable nil (reparse-symbol indented_block_body) [168 185]))                  
+                :type "class")
+                nil [24 186]))          
+      :file "zaffi.py"
+      :pointmax 186
+      :fsize 185
+      :lastmodtime '(21003 50778)
+      :unmatched-syntax nil))
+  :file "!rsync:leela:!home!aaditya!work!epsilon!src!id!common!interfaces!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
